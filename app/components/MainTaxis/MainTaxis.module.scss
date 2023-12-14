@@ -1,0 +1,35 @@
+@import '../../styles/settings/_settings';
+
+.main_taxis_sec {
+    .main_taxis {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+
+        .main_taxis_child {
+            width: 48%;
+            display: flex;
+
+            .main_taxis_child_image {
+                img {
+                    object-fit: contain;
+                }
+            }
+
+            .taxi_content {
+                h4 {
+                    font-size: 20px;
+                    font-family: 'Poppins', sans-serif;
+                    line-height: 24px;
+                    font-weight: 400;
+                }
+
+                p {
+                    margin: 20px 0;
+                }
+            }
+
+
+        }
+    }
+}
