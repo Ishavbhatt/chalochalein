@@ -1,7 +1,8 @@
-import './styles/globals.scss';
+import './styles/globals.scss'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
 
 export const metadata = {
   title: 'Chalo Chalein Tour and Travel',
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
       <body>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )

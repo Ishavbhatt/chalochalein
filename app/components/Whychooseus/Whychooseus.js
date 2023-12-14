@@ -40,7 +40,7 @@ const Whychooseus = () => {
                 <div className="container">
                     <div className={styles.whychooseus_sec_main}>
                         {whychooseData.map((item) => (
-                            <div className={styles.whychooseus_sec_child}>
+                            <div className={styles.whychooseus_sec_child} key={item.id}>
                                 <span className={styles.whychooseus_sec_child_icon}>{item.icon}</span>
                                 <h4>{item.title}</h4>
                                 <p>{item.description}</p>

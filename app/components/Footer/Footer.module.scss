@@ -1,2 +1,50 @@
-@import url('../../styles/settings/');
-
+@import '../../styles/settings/_settings';
+.footer_head {
+    padding: 40px 0px;
+  }
+  .footer_column {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    .column {
+      width: 25%;
+      cursor: pointer;
+      .footer_logo_main {
+        padding-bottom: 20px;
+      }
+      h4 {
+        padding-bottom: 20px;
+      }
+      li {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        span {
+          padding-left: 10px;
+        }
+      }
+      .projects_container {
+        display: flex;
+        justify-content: space-between;
+        // position: relative;
+        flex-wrap: wrap;
+        .projects_list {
+          width: 31%;
+          position: relative;
+          margin-bottom: 10px;
+          height: 100px;
+          overflow: hidden;
+          .project_image{
+              &:hover {
+                  width: 31%;
+                  height: 100px;
+                transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) all;
+                transform: scale(1.2);
+              }
+          }
+         
+        }
+      }
+    }
+  }
+  
