@@ -1,0 +1,22 @@
+@import '../settings/_settings';
+
+.taxi_services {
+    .taxi_services_top {
+        display: flex;
+        gap: 20px;
+
+        .taxi_services_top_left {
+            width: 70%;
+        }
+
+        .taxi_services_top_right {
+            width: 30%;
+
+            .taxi_services_top_right_inner {
+                position: sticky;
+                top: 30px;
+            }
+
+        }
+    }
+}

@@ -1,6 +1,6 @@
 import { HomeBanner } from "./components/Banners/HomeBanner/HomeBanner";
 import PageBanner from "./components/Banners/PageBanner/PageBanner";
-import MainTaxis from "./components/MainTaxis/MainTaxis";
+import MainTaxis from "./components/Taxis/MainTaxis";
 import Whychooseus from "./components/Whychooseus/Whychooseus";
 
 export default function Home() {
@@ -11,7 +11,7 @@ export default function Home() {
       <p>fasdfasdfsdfdsa</p>
       <Whychooseus />
       <PageBanner />
-      {/* <MainTaxis /> */}
+      <MainTaxis />
     </main>
   )
 }

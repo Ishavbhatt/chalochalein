@@ -1,0 +1,158 @@
+@import '../../styles/settings/_settings';
+
+.main_taxis_sec {
+    background-color: $bg-grey;
+    padding: 40px 0;
+
+    .main_taxis {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .main_taxis_child {
+            width: 49%;
+            display: flex;
+            position: relative;
+            align-items: center;
+            background-color: $white-color;
+            padding: 20px 0;
+
+            .main_taxis_child_image {
+                padding: 0 10px;
+
+                img {
+                    object-fit: contain;
+                }
+            }
+
+            a {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+
+            .taxi_content {
+                padding: 0 10px;
+
+                h4 {
+                    font-size: 20px;
+                    font-family: 'Poppins', sans-serif;
+                    line-height: 24px;
+                    font-weight: 500;
+                    margin-bottom: 5px;
+                }
+
+                // p {
+                //     margin: 10px 0;
+                // }
+            }
+
+            .taxi_btn {
+                padding: 0 20px;
+                border: none;
+                background: transparent;
+                transition: 0.3s;
+                font-size: 22px;
+            }
+
+            &:hover {
+                .taxi_btn {
+                    padding-right: 10px;
+                }
+            }
+
+        }
+    }
+}
+
+.taxi_service_overview {
+    .text_container {
+        .showhide_Btn {
+            font-size: 14px;
+            border: none;
+            background: transparent;
+            color: $primary-color;
+            font-weight: 700;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+        }
+
+    }
+
+    .key_features {
+        margin: 20px 0;
+
+        ul {
+            font-size: 14px;
+            list-style: square;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+
+            li {
+                list-style-type: none;
+                position: relative;
+                padding-left: 18px;
+                margin: 10px 0;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 10px;
+                    width: 7px;
+                    height: 7px;
+                    background-color: $primary-color;
+                }
+            }
+        }
+
+        p {
+            margin: 10px 0;
+        }
+    }
+}
+
+.benefits_sec {
+    .benefits_sec_main {
+        display: flex;
+        gap: 20px;
+
+        .benefits_sec_main_child {
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 10px;
+            box-shadow: 0 0 1px 1px $light-gray;
+
+            .benefits_sec_main_child_image {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background-color: $primary-color;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $white-color;
+                font-size: 24px;
+                transition: .5s;
+            }
+
+            .benefits_content {
+                h4 {
+                    margin: 10px 0;
+                }
+            }
+
+            &:hover {
+                box-shadow: 0 0 2px 2px $light-gray;
+
+                .benefits_sec_main_child_image {
+                    background-color: $secoundary-color;
+                }
+
+            }
+        }
+    }
+}

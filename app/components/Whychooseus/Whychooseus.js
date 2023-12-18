@@ -38,6 +38,11 @@ const Whychooseus = () => {
         <>
             <section className={`${styles.whychooseus_sec} common_margin`}>
                 <div className="container">
+                    <div className="common_heading">
+                        <h4>Ride, Explore, Trek</h4>
+                        <h5>Seamless Transport, Unforgettable Tours, Thrilling Treks</h5>
+                        <span></span>
+                    </div>
                     <div className={styles.whychooseus_sec_main}>
                         {whychooseData.map((item) => (
                             <div className={styles.whychooseus_sec_child} key={item.id}>
