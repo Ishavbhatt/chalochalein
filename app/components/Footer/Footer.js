@@ -10,7 +10,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer>
+    <footer  className={styles.footer_parent}>
       <div className="container">
         <div className={styles.footer_container}>
           <div className={styles.footer_head}>
@@ -68,6 +68,8 @@ export default function Footer() {
                     alt="Picture of the author"
                     fill={true}
                   />
+                  <p>Thailand</p>
+
                 </div>
                 <div className={styles.projects_list}>
                 <Image className= {styles.project_image}
@@ -75,6 +77,8 @@ export default function Footer() {
                    fill={true}
                     alt="Picture of the author"
                   />
+                  <p>Thailand</p>
+
                 </div>
                 <div className={styles.projects_list}>
                 <Image className= {styles.project_image}
@@ -82,6 +86,8 @@ export default function Footer() {
                     fill={true}
                     alt="Picture of the author"
                   />
+                  <p>Thailand</p>
+
                 </div>
                 <div className={styles.projects_list}>
                 <Image className= {styles.project_image}
@@ -89,6 +95,8 @@ export default function Footer() {
                     fill={true}
                     alt="Picture of the author"
                   />
+                  <p>Thailand</p>
+
                 </div>
                 <div className={styles.projects_list}>
                 <Image className= {styles.project_image}
@@ -96,6 +104,8 @@ export default function Footer() {
                     fill={true}
                     alt="Picture of the author"
                   />
+                  <p>Thailand</p>
+
                 </div>
                 <div className={styles.projects_list}>
                 <Image className= {styles.project_image}
@@ -103,19 +113,25 @@ export default function Footer() {
                    fill={true}
                     alt="Picture of the author"
                   />
+                  <p>Thailand</p>
+
                 </div>
                 <div className={styles.projects_list}>
                 <Image className= {styles.project_image}
                     src="/images/singapore.png"
                    fill={true}
                     alt="Picture of the author"
-                  />                </div>
+                  />  
+                  <p>Thailand</p>
+              </div>
                 <div className={styles.projects_list}>
                   <Image className= {styles.project_image}
                     src="/images/srilanka.png"
                     alt=""
                    fill={true}
                   />
+                  <p>Thailand</p>
+
                 </div>
                 <div className={styles.projects_list}>
                 <Image className= {styles.project_image}
@@ -123,6 +139,7 @@ export default function Footer() {
                    fill={true}
                     alt="Picture of the author"
                   />
+                  <p>Thailand</p>
                 </div>
               </div>
             </div>

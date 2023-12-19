@@ -1,0 +1,31 @@
+.destination_section{
+    h1{
+        text-align: center;
+        padding-bottom: 20px;
+    }
+  .destinations_parent{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    .single_destonation{
+        width: 31%;
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+        width:350px;
+        box-shadow: 0 4px 4px 0px rgba(127, 155, 179, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+        p{
+            padding:10px 0px ;
+        }
+        
+        .btn_parent{
+            text-align: center;
+        }
+    }
+}
+.image_parent{
+    position: relative;
+    // width: 350px;
+    height: 220px;
+}  
+}
