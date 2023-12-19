@@ -112,6 +112,37 @@
             margin: 10px 0;
         }
     }
+
+    .mainly_taxi_service {
+        .mainly_taxi_service_main {
+            display: flex;
+            gap: 20px;
+
+            .mainly_taxi_service_main_child {
+                position: relative;
+                height: 300px;
+                width: 33%;
+                border-radius: 8px;
+                overflow: hidden;
+
+                img {
+                    object-fit: cover;
+                }
+
+                .mainly_taxi_service_content {
+                    position: absolute;
+                    bottom: 0;
+                    text-align: center;
+                    width: 100%;
+
+                    h4 {
+                        color: white;
+                    }
+
+                }
+            }
+        }
+    }
 }
 
 .benefits_sec {
@@ -151,7 +182,6 @@
                 .benefits_sec_main_child_image {
                     background-color: $secoundary-color;
                 }
-
             }
         }
     }

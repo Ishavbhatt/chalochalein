@@ -7,8 +7,6 @@ export default function Home() {
   return (
     <main>
       <HomeBanner />
-      <h2>fsdfasdfsad</h2>
-      <p>fasdfasdfsdfdsa</p>
       <Whychooseus />
       <PageBanner />
       <MainTaxis />
