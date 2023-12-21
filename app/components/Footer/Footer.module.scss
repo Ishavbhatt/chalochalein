@@ -1,23 +1,29 @@
 @import '../../styles/settings/_settings';
 .footer_head {
-    padding: 40px 0px;
+    padding: 20px 0px;
+  }
+  .footer_parent{
+    background-color: rgb(247, 245, 245);
+    padding: 20px 0px 30px;
   }
   .footer_column {
     display: flex;
     justify-content: space-between;
     width: 100%;
     .column {
-      width: 25%;
+      width: 23%;
       cursor: pointer;
       .footer_logo_main {
         padding-bottom: 20px;
       }
       h4 {
         padding-bottom: 20px;
+        font-size: 20px;
       }
       li {
         list-style: none;
         display: flex;
+        font-size: 15px;
         align-items: center;
         span {
           padding-left: 10px;
@@ -32,15 +38,29 @@
           width: 31%;
           position: relative;
           margin-bottom: 10px;
-          height: 100px;
+          height: 90px;
+          display: flex;
+          align-items: center;
           overflow: hidden;
+          background: rgba(0,0,0,.1);
           .project_image{
-              &:hover {
+            position: relative;
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);            
+             &:hover { 
                   width: 31%;
                   height: 100px;
                 transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) all;
                 transform: scale(1.2);
               }
+          }
+          p{
+            position: absolute;
+            // bottom: 0;
+            // top: 5px;
+            font-size: 10px;
+            padding-left: 15px;
+            color: white;
+            font-weight: bold;
           }
          
         }

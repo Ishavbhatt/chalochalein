@@ -4,6 +4,8 @@ import styles from './Taxis.module.scss';
 import { FaAngleDown } from "react-icons/fa";
 import { FaAngleUp } from "react-icons/fa";
 import Image from 'next/image';
+import Link from 'next/link';
+import { IoCallSharp } from "react-icons/io5";
 
 export default function TaxiServiceContent() {
 
@@ -16,18 +18,20 @@ export default function TaxiServiceContent() {
     const mainlyTaxiService = [
         {
             id: 1,
-            title: `Taxi Service in\nDharamshala`,
+            title: `Taxi Service in\n Dharamshala`,
             taxi_image: '/images/taxi/taxi.jpg'
         },
         {
             id: 2,
-            title: `Taxi Service in\nKangra Airport`,
+            title: `Taxi Service in\n Kangra Airport`,
             taxi_image: '/images/taxi/taxi.jpg'
+
         },
         {
             id: 3,
-            title: `Taxi Service in\nMcLeod Ganj`,
+            title: `Taxi Service in\n McLeod Ganj`,
             taxi_image: '/images/taxi/taxi.jpg'
+
         }
     ]
 
@@ -73,9 +77,11 @@ export default function TaxiServiceContent() {
                         <div className={styles.mainly_taxi_service_main_child} key={item.id}>
                             <Image src={item.taxi_image} alt={item.title} fill={true} priority />
                             <div className={styles.mainly_taxi_service_content}>
-                                {item.title.split('\n').map((line, index) => (
-                                    <h4 key={index}>{line}</h4>
-                                ))}
+                                <h4>{item.title}</h4>
+                                <Link href="tel:9418249045" className="transparent_button">
+                                    <IoCallSharp />
+                                    Book Now
+                                </Link>
                             </div>
                         </div>
                     ))}
