@@ -1,8 +1,4 @@
 import styles from "./Footer.module.scss";
-// import { FaInstagram } from "react-icons/fa6";
-// import { FaTwitter } from "react-icons/fa";
-// import { FaFacebook } from "react-icons/fa";
-// import { FaYoutube } from "react-icons/fa";
 import { IoCall } from "react-icons/io5";
 import { IoMail } from "react-icons/io5";
 import { FaLocationDot } from "react-icons/fa6";
@@ -59,7 +55,7 @@ export default function Footer() {
                 <li> More</li>
               </ul>
             </div>
-            <div className={styles.column }>
+            <div className={`${styles.column} ${styles.footer_last_column}` }>
               <h4> Latest Projects</h4>
               <div className={styles.projects_container}>
                 <div className={styles.projects_list}>
@@ -69,6 +65,7 @@ export default function Footer() {
                     fill={true}
                   />
                   <p>Thailand</p>
+                  <div className={styles.gradient}>/</div>
 
                 </div>
                 <div className={styles.projects_list}>
