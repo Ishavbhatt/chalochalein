@@ -33,8 +33,9 @@ export default function TaxiServiceContent() {
             taxi_image: '/images/taxi/taxi.jpg'
 
         }
-    ]
+    ];
 
+  
     return (
         <div className={`${styles.taxi_service_overview} `}>
             <div className='common_heading'>
@@ -58,19 +59,7 @@ export default function TaxiServiceContent() {
                     }
                 </p>
             </div>
-            <div className={styles.key_features}>
-                <div className='common_heading'>
-                    {/* <h6>Chalo Chalein Specialties:</h6> */}
-                    <h6>Benefits of Choosing Chalo Chalein:</h6>
-                    <ul>
-                        <li><strong>Punctuality Assured:</strong> We understand the value of your time. With Chalo Chalein, expect punctual pickups and drop-offs, allowing you to adhere to your schedule without stress.</li>
-                        <li><strong>Effortless Booking Experience:</strong> Our user-friendly booking system ensures convenience at your fingertips. Simply say "Chalo Chalein" and embark on your journey hassle-free.</li>
-                        <li><strong>Local Insights and Expertise:</strong> Discover Dharamshala's hidden gems and the wonders of Himachal Pradesh with our insider knowledge. Our team ensures that every trip is infused with local insights, making your experiences authentic and unforgettable.</li>
-                    </ul>
-                    <p>Whether you're exploring Dharamshala's cultural richness, delving into the tranquility of nature, or seeking thrilling adventures off the beaten path, Chalo Chalein is your partner in creating memories that linger long after your journey ends.</p>
-                    <p>Let's venture into the heart of Himachal Pradesh together. Chalo Chalein – Let's go!</p>
-                </div>
-            </div>
+
             <div className={styles.mainly_taxi_service}>
                 <div className={styles.mainly_taxi_service_main}>
                     {mainlyTaxiService.map((item) => (
@@ -87,6 +76,21 @@ export default function TaxiServiceContent() {
                     ))}
                 </div>
             </div>
+
+            <div className={styles.key_features}>
+                <div className='common_heading'>
+                    {/* <h6>Chalo Chalein Specialties:</h6> */}
+                    <h6>Benefits of Choosing Chalo Chalein:</h6>
+                    <ul>
+                        <li><strong>Punctuality Assured:</strong> We understand the value of your time. With Chalo Chalein, expect punctual pickups and drop-offs, allowing you to adhere to your schedule without stress.</li>
+                        <li><strong>Effortless Booking Experience:</strong> Our user-friendly booking system ensures convenience at your fingertips. Simply say "Chalo Chalein" and embark on your journey hassle-free.</li>
+                        <li><strong>Local Insights and Expertise:</strong> Discover Dharamshala's hidden gems and the wonders of Himachal Pradesh with our insider knowledge. Our team ensures that every trip is infused with local insights, making your experiences authentic and unforgettable.</li>
+                    </ul>
+                    <p>Whether you're exploring Dharamshala's cultural richness, delving into the tranquility of nature, or seeking thrilling adventures off the beaten path, Chalo Chalein is your partner in creating memories that linger long after your journey ends.</p>
+                    <p>Let's venture into the heart of Himachal Pradesh together. Chalo Chalein – Let's go!</p>
+                </div>
+            </div>
+
         </div>
     )
 }

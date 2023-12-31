@@ -19,4 +19,80 @@
 
         }
     }
+
+    .taxis_listing {
+        .taxis_listing_main {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+
+            .taxis_listing_child {
+                width: calc(25% - 20px);
+                box-sizing: border-box;
+                border-radius: 8px;
+                border: 1px solid $light-gray;
+                overflow: hidden;
+
+                .taxis_listing_child_image {
+                    height: 190px;
+                    width: 100%;
+                    position: relative;
+                    overflow: hidden;
+
+                    img {
+                        object-fit: cover;
+                        transition: 0.5s;
+                    }
+                }
+
+                .taxis_listing_child_content {
+                    padding: 10px;
+
+                    h4 {
+                        span {
+                            font-size: 12px;
+                            font-weight: 400;
+                        }
+                    }
+
+                    ul {
+                        font-size: 12px;
+                        list-style: square;
+                        padding-top: 8px;
+                        padding-bottom: 15px;
+                        font-family: 'Poppins', sans-serif;
+                        display: flex;
+                        gap: 8px;
+                        flex-wrap: wrap;
+
+                        li {
+                            list-style-type: none;
+                            position: relative;
+                            padding-left: 13px;
+
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                left: 0;
+                                top: 6px;
+                                width: 7px;
+                                height: 7px;
+                                background-color: $primary-color;
+                            }
+                        }
+                    }
+                }
+
+                &:hover {
+                    .taxis_listing_child_image {
+                        img {
+                            transform: scale(1.05);
+                            transition: 0.5s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }

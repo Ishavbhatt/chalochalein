@@ -82,8 +82,6 @@
     }
 
     .key_features {
-        margin: 20px 0;
-
         ul {
             font-size: 14px;
             list-style: square;
@@ -114,6 +112,8 @@
     }
 
     .mainly_taxi_service {
+        margin: 20px 0;
+
         .mainly_taxi_service_main {
             display: flex;
             gap: 10px;
@@ -203,6 +203,62 @@
 
                 .benefits_sec_main_child_image {
                     background-color: $secoundary-color;
+                }
+            }
+        }
+    }
+}
+
+.popular_routes {
+    .popular_routes_main {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        .popular_routes_child {
+            border: 1px solid $light-gray;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: calc(33% - 20px);
+            position: relative;
+
+            a {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+
+            .popular_routes_child_image {
+                width: 80px;
+                height: 80px;
+                position: relative;
+                overflow: hidden;
+                border-radius: 3px;
+
+                img {
+                    object-fit: cover;
+                    transition: 0.3s;
+                }
+
+            }
+
+            .popular_routes_child_right {
+                p {
+                    font-size: 15px;
+                }
+
+                span {
+                    font-size: 13px;
+                    color: $dark-grey;
+                }
+            }
+
+            &:hover {
+                .popular_routes_child_image {
+                    img {
+                        transform: scale(1.05);
+                    }
                 }
             }
         }

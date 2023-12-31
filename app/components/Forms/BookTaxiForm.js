@@ -36,7 +36,6 @@ export default function BookTaxiForm() {
           +91 94182-49045
         </Link>
       </div>
-
     </>
   );
 }

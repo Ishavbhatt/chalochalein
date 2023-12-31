@@ -26,11 +26,11 @@ const Destinations = () => {
     {
       ImageSrc: "/images/destinations/destination6.jpg",
       destinationName: "Hongkong",
-      description:"Immerse yourself in nature's beauty on our thrilling treks.",
+      description: "Immerse yourself in nature's beauty on our thrilling treks.",
       button: "More Details",
     },
     {
-      ImageSrc: "/images/destinations/destination7.jpg",        
+      ImageSrc: "/images/destinations/destination7.jpg",
 
       destinationName: "India",
       description:
@@ -66,14 +66,14 @@ const Destinations = () => {
       button: "More Details",
     },
   ];
+
   return (
     <section className={styles.destination_section}>
       <div className="container">
-       <h1>Popular Destinations</h1>
-      <div className={styles.destinations_parent}>
-      {DestinationsData.map((destination) => {
-        return (
-            <div className={styles.single_destonation}>
+        <h1>Popular Destinations</h1>
+        <div className={styles.destinations_parent}>
+          {DestinationsData.map((destination) => (
+            <div className={styles.single_destonation} key={destination.destinationName}>
               <div className={styles.image_parent}>
                 <Image
                   src={destination.ImageSrc}
@@ -82,20 +82,19 @@ const Destinations = () => {
                 />
               </div>
               <div className={styles.btn_parent}>
-              
-              <h3>{destination.destinationName}</h3>
-              <p>{destination.description}</p> 
-              <button className="common_btn">{destination.button}</button>              
-              </div>
-              
-            </div>
-        );
-      })}
-      </div>
 
-    </div>
+                <h3>{destination.destinationName}</h3>
+                <p>{destination.description}</p>
+                <button className="common_btn">{destination.button}</button>
+              </div>
+
+            </div>
+          ))}
+        </div>
+
+      </div>
     </section>
-    
+
   );
 };
 export default Destinations;
