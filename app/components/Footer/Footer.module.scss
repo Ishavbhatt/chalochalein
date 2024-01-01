@@ -4,7 +4,7 @@
 }
 .footer_parent {
   background-color: rgb(247, 245, 245);
-  padding: 20px 0px 30px;
+  padding: 20px 0px 0px;
 }
 .footer_column {
   display: flex;
@@ -23,12 +23,34 @@
     li {
       list-style: none;
       display: flex;
-      font-size: 15px;
+      font-size: 14px;
       align-items: center;
+      line-height: 30px;
       span {
         padding-left: 10px;
       }
     }
+    .social_icons_main{
+      display: flex;
+      padding-top: 11px;
+      .social_icons{
+        background-color: rgb(155, 155, 151);
+        border-radius: 50%;
+        // color: white;
+        height: 28px;
+        width: 28px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .3s all;
+        margin-right: 15px;
+        &:hover{
+          background-color: #6EBD5E;
+          color: white;
+        }
+      }
+    }
+    
     .projects_container {
       display: flex;
       justify-content: space-between;
@@ -91,4 +113,10 @@
   .footer_last_column {
     width: 27%;
   }
+}
+.footer_bottom{
+  text-align: center;
+  background-color: #a1a89f;
+  color: white;
+  padding: 20px 0px;
 }

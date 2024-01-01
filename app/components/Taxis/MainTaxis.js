@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import styles from './MainTaxis.module.scss'
+import styles from './Taxis.module.scss';
+import { FaArrowRight } from "react-icons/fa6";
 
 const MainTaxis = () => {
 
@@ -39,18 +40,24 @@ const MainTaxis = () => {
         <>
             <section className={`${styles.main_taxis_sec} common_margin`}>
                 <div className="container">
+                    <div className="common_heading">
+                        <h4>Our Fleet of Reliable Taxis</h4>
+                        <h5>Explore Our Diverse Range of Vehicles for Every Need</h5>
+                        <span></span>
+                    </div>
                     <div className={styles.main_taxis}>
                         {taxisData.map((taxi) => (
                             <div className={styles.main_taxis_child} key={taxi.id}>
+                                <Link href={'/'}></Link>
                                 <div className={styles.main_taxis_child_image}>
-                                <Image src={taxi.taxi_image} height={150} width={150} alt={taxi.taxi_name} priority={true} />
+                                    <Image src={taxi.taxi_image} height={150} width={150} alt={taxi.taxi_name} priority={true} />
                                 </div>
                                 <div className={styles.taxi_content}>
                                     <h4>{taxi.taxi_name}</h4>
                                     <p>{taxi.description}</p>
                                 </div>
                                 <button className={styles.taxi_btn}>
-                                    next
+                                    <FaArrowRight />
                                 </button>
                             </div>
                         ))}

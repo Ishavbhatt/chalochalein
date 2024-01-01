@@ -31,6 +31,9 @@ a {
   max-width: 1100px;
   margin: 0 auto;
   // padding: 12px 0;
+  @media only screen and (max-width: 768px) {
+    padding: 0 10px;
+  }
 }
 
 h1,
@@ -42,6 +45,39 @@ h6,
 p {
   margin: 0;
   padding: 0;
+}
+
+.common_heading h4 {
+  font-size: 22px;
+  line-height: 25px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: $title-color;
+  margin-bottom: 5px;
+}
+.common_heading h5 {
+  font-size: 16px;
+  line-height: 19px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: $title-color;
+}
+
+.common_heading h6 {
+  font-size: 16px;
+  line-height: 19px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: $title-color;
+}
+
+
+.common_heading span {
+  border: 2px solid $primary-color;
+  width: 100px;
+  height: 2px;
+  display: block;
+  margin: 14px 0 20px 0;
 }
 
 .flex_center {
@@ -56,6 +92,12 @@ p {
 
 .d_flex {
   display: flex;
+}
+.inline-block {
+  display: inline-block;
+}
+.py-10 {
+  padding: 10px 0;
 }
 
 .gap_10 {
@@ -96,7 +138,7 @@ p {
 
   &:hover {
     background: $primary-color;
-  border: 1px solid $primary-color;
+    border: 1px solid $primary-color;
 
   }
 }
@@ -146,4 +188,10 @@ p {
 
 .banner_slider .slick-dots li button::before {
   display: none;
+}
+
+.booktaxiform__date_picker_wrapper {
+  .react-datepicker-wrapper {
+    width: 100%;
+  }
 }
