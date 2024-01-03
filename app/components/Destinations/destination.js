@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./destination.module.scss";
+// import styles from "./destination.module.scss";
 const Destinations = () => {
   const DestinationsData = [
     {
@@ -68,32 +68,33 @@ const Destinations = () => {
   ];
 
   return (
-    <section className={styles.destination_section}>
-      <div className="container">
-        <h1>Popular Destinations</h1>
-        <div className={styles.destinations_parent}>
-          {DestinationsData.map((destination) => (
-            <div className={styles.single_destonation} key={destination.destinationName}>
-              <div className={styles.image_parent}>
-                <Image
-                  src={destination.ImageSrc}
-                  fill={true}
-                  alt="Picture of the destination"
-                />
-              </div>
-              <div className={styles.btn_parent}>
+    <p>Destination</p>
+    // <section className={styles.destination_section}>
+    //   <div className="container">
+    //     <h1>Popular Destinations</h1>
+    //     <div className={styles.destinations_parent}>
+    //       {DestinationsData.map((destination) => (
+    //         <div className={styles.single_destonation} key={destination.destinationName}>
+    //           <div className={styles.image_parent}>
+    //             <Image
+    //               src={destination.ImageSrc}
+    //               fill={true}
+    //               alt="Picture of the destination"
+    //             />
+    //           </div>
+    //           <div className={styles.btn_parent}>
 
-                <h3>{destination.destinationName}</h3>
-                <p>{destination.description}</p>
-                <button className="common_btn">{destination.button}</button>
-              </div>
+    //             <h3>{destination.destinationName}</h3>
+    //             <p>{destination.description}</p>
+    //             <button className="common_btn">{destination.button}</button>
+    //           </div>
 
-            </div>
-          ))}
-        </div>
+    //         </div>
+    //       ))}
+    //     </div>
 
-      </div>
-    </section>
+    //   </div>
+    // </section>
 
   );
 };

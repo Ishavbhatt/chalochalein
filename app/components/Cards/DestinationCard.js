@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import styles from './DestinationPageCard.module.scss';
+import styles from './Cards.module.scss';
 import Link from 'next/link';
 import { PiArrowUpRightLight } from "react-icons/pi";
 import { PiMountainsFill } from "react-icons/pi";

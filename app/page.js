@@ -5,8 +5,9 @@ import MainTaxis from "./components/Taxis/MainTaxis";
 import Whychooseus from "./components/Whychooseus/Whychooseus";
 import Destinations from "./components/Destinations/destination";
 import destinationsData from "./Data/destinationsData";
-import DestinationCard from "./components/DestionationPageCard/DestinationCard";
-
+import DestinationCard from "./components/Cards/DestinationCard";
+import Tours from "./components/Tours/tours";
+import Loader from './components/Loader/Loader'; ''
 export default function Home() {
   return (
     <main>
@@ -14,7 +15,7 @@ export default function Home() {
       <Whychooseus />
       <PageBanner />
       <MainTaxis />
-      <Destinations />
+      {/* <Tours /> */}
 
       <section className={styles.popular_destinations}>
         <div className="container">
@@ -27,6 +28,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </main> 
+    </main>
   )
 }

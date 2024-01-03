@@ -1,5 +1,5 @@
 import destinationsData from "../Data/destinationsData";
-import DestinationPageCard from "../components/DestionationPageCard/DestinationPageCard";
+import DestinationPageCard from "../components/Cards/DestinationPageCard";
 import styles from '../styles/pages/destination.module.scss';
 
 export default function Destinations() {
