@@ -1,8 +1,12 @@
-import { HomeBanner } from "./components/Banners/HomeBanner/HomeBanner";
+import styles from './styles/pages/page.module.scss';
+import HomeBanner from "./components/Banners/HomeBanner/HomeBanner";
 import PageBanner from "./components/Banners/PageBanner/PageBanner";
 import MainTaxis from "./components/Taxis/MainTaxis";
 import Whychooseus from "./components/Whychooseus/Whychooseus";
 import Destinations from "./components/Destinations/destination";
+import destinationsData from "./Data/destinationsData";
+import DestinationCard from "./components/DestionationPageCard/DestinationCard";
+
 export default function Home() {
   return (
     <main>
@@ -11,6 +15,18 @@ export default function Home() {
       <PageBanner />
       <MainTaxis />
       <Destinations />
-    </main>
+
+      <section className={styles.popular_destinations}>
+        <div className="container">
+          <div className={styles.popular_destinations_cards}>
+            {destinationsData && destinationsData.slice(0, 4).map((destination, index) => (
+              <div className={styles.popular_destinations_card} key={index} >
+                <DestinationCard destination={destination} />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </main> 
   )
 }
