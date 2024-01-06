@@ -7,7 +7,7 @@ import { CgMenuRight } from "react-icons/cg";
 import { RxCross2 } from "react-icons/rx";
 
 const NewHeader = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menu, setMenuOpen] = useState(false);
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
