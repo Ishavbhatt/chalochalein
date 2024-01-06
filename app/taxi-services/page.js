@@ -4,7 +4,6 @@ import TaxiServiceContent from '../components/Taxis/TaxiServiceContent';
 import Benefits from '../components/Taxis/Benifits';
 import Image from 'next/image';
 import { MdOutlineAirlineSeatReclineNormal } from "react-icons/md";
-
 import Link from 'next/link';
 import PopularRoutes from '../components/Taxis/PopularRouts';
 
