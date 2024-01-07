@@ -1,15 +1,13 @@
-
-.about_us_sec{
-    .about_us_banner{
-        background-image: url("/images/about-us.jpg");
-        background-size: cover;
-        height: 200px;
-        h1{
-            color: white;
-            text-align: center;
-            font-size: 60px;
-            padding-top: 40px;
-        }
+.about_us_banner{
+    background-image: url("/images/about-us.jpg");
+    background-size: cover;
+    height: 200px;
+    
+    h1 {
+        color: white;
+        text-align: center;
+        font-size: 60px;
+        padding-top: 40px;
     }
     .about_us_content{
         // padding: 100px 0px;
