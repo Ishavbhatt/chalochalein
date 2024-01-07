@@ -7,7 +7,7 @@ import { CgMenuRight } from "react-icons/cg";
 import { RxCross2 } from "react-icons/rx";
 
 const NewHeader = () => {
-  const [menu, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
@@ -31,20 +31,20 @@ const NewHeader = () => {
                   <RxCross2 />
                 </button>
               )}
-              <Link href="/about-us" onClick={toggleMenu}>
+              <Link href="/about" onClick={toggleMenu}>
                 About Us
               </Link>
               <Link href="/taxi-services" onClick={toggleMenu}>
                 Taxi Services
               </Link>
-              <Link href="/tours" onClick={toggleMenu}>
+              <Link href="/countries" onClick={toggleMenu}>
                 Tours
               </Link>
-              {/* <Link href="/courses" onClick={toggleMenu}>
+              <Link href="/courses" onClick={toggleMenu}>
                 Trekking
-              </Link> */}
-              <Link href="/destinations" onClick={toggleMenu}>
-                Destinations
+              </Link>
+              <Link href="/blogs" onClick={toggleMenu}>
+                Sightseeing
               </Link>
               <Link href="/contact-us" onClick={toggleMenu}>
                 Contact Us

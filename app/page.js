@@ -11,10 +11,10 @@ import Loader from './components/Loader/Loader'; ''
 export default function Home() {
   return (
     <main>
-      <HomeBanner />
+      {/* <HomeBanner />
       <Whychooseus />
       <PageBanner />
-      <MainTaxis />
+      <MainTaxis /> */}
       {/* <Tours /> */}
 
       <section className={styles.popular_destinations}>
