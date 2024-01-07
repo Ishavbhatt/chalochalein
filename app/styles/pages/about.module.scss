@@ -9,4 +9,20 @@
         font-size: 60px;
         padding-top: 40px;
     }
+    .about_us_content{
+        // padding: 100px 0px;
+        width: 100%;
+        gap: 30px;
+       .left_sec{
+        width: 50%;
+       }
+       .right_sec{
+        width: 50%;
+        .about_image{
+            height: 350px;
+            width: 100%;
+            position: relative;
+        }
+       } 
+    }
 }
