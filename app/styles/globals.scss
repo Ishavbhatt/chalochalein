@@ -105,7 +105,9 @@ p {
 .align_items_center {
   align-items: center;
 }
-
+.justify_content_between {
+  justify-content: space-between;
+}
 .inline-block {
   display: inline-block;
 }
@@ -151,25 +153,6 @@ p {
   border-radius: 2px;
   font-size: 14px;
   border: 1px solid $secoundary-color;
-  transition: 0.5s;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-
-  &:hover {
-    background: $primary-color;
-    border: 1px solid $primary-color;
-  }
-}
-
-.tarnary_btn {
-  background: $ternary-color;
-  color: white;
-  padding: 8px 20px;
-  border-radius: 2px;
-  font-size: 14px;
-  border: 1px solid $ternary-color;
   transition: 0.5s;
   cursor: pointer;
   display: inline-flex;
