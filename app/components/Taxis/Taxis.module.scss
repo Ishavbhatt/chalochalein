@@ -1,7 +1,9 @@
 @import '../../styles/settings/_settings';
 
 .main_taxis_sec {
-    background-color: $bg-grey;
+    background-color: $secoundary-color;
+
+    // background-color: $light-gray;
     padding: 40px 0;
 
     .main_taxis {
@@ -20,8 +22,6 @@
 
             .main_taxis_child_image {
                 padding: 0 10px;
-                width: 30%;
-
                 img {
                     object-fit: contain;
                 }
@@ -35,8 +35,6 @@
 
             .taxi_content {
                 padding: 0 10px;
-                width: 60%;
-
                 h4 {
                     font-size: 20px;
                     font-family: 'Poppins', sans-serif;
@@ -56,12 +54,11 @@
                 background: transparent;
                 transition: 0.3s;
                 font-size: 22px;
-                width: 10%;
             }
 
             &:hover {
                 .taxi_btn {
-                    margin-left: 10px;
+                    padding-left: 30px;
                 }
             }
 
