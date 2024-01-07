@@ -7,12 +7,14 @@
 
         .whychooseus_sec_child {
             width: 33%;
+            position: relative;
 
             .whychooseus_sec_child_icon {
                 font-size: 32px;
                 display: flex;
                 align-content: center;
                 margin-bottom: 14px;
+                transition: transform 0.3s ease-in-out;
             }
 
             h4 {
@@ -44,6 +46,12 @@
 
                 &:hover::after {
                     width: 100%;
+                }
+            }
+
+            &:hover {
+                .whychooseus_sec_child_icon {
+                    transform: translateY(-8px); 
                 }
             }
         }

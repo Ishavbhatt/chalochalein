@@ -1,67 +1,60 @@
 const toursData = [
     {
       ImageSrc: "/images/destinations/destination2.jpg",
-      tourName: "Andman",
+      tourName: "Mcleodganj Taxi Tour",
       description:
         "Immerse yourself in nature's beauty on our thrilling treks.",
-      title: "Powered Paragliding in Rishikesh",
-      Duration: "2D/3N",
+      duration: "1D",
     },
     {
       ImageSrc: "/images/destinations/destination3.jpg",
-      tourName: "Bali",
+      tourName: "Baijnath Taxi Tour",
       description:
         "Immerse yourself in nature's beauty on our thrilling treks.",
-      title: "Powered Paragliding in Rishikesh",
-      Duration: "2D/3N",
+      duration: "1D",
     },
     {
       ImageSrc: "/images/destinations/destination4.jpg",
-      tourName: "Dubai",
+      tourName: "Dharamshala Taxi Tour",
       description:
         "Immerse yourself in nature's beauty on our thrilling treks.",
-      title: "Powered Paragliding in Rishikesh",
-      Duration: "2D/3N",
+      duration: "4D/3N",
     },
     {
       ImageSrc: "/images/destinations/destination6.jpg",
-      tourName: "Hongkong",
-      title: "Powered Paragliding in Rishikesh",
+      tourName: "Dharamshala Dalhousie Taxi Tour",
       description:
         "Immerse yourself in nature's beauty on our thrilling treks.",
-      Duration: "2D/3N",
+      duration: "2D/3N",
     },
     {
       ImageSrc: "/images/destinations/destination2.jpg",
-      tourName: "Andman",
+      tourName: "Dharamshala Dalhousie Manali Shimla Taxi Tour",
       description:
         "Immerse yourself in nature's beauty on our thrilling treks.",
-      title: "Powered Paragliding in Rishikesh",
-      Duration: "2D/3N",
+      duration: "11N/12D",
     },
     {
       ImageSrc: "/images/destinations/destination3.jpg",
-      tourName: "Bali",
+      tourName: "Dharamshala Dalhousie Manali Taxi Tour",
       description:
         "Immerse yourself in nature's beauty on our thrilling treks.",
-      title: "Powered Paragliding in Rishikesh",
-      Duration: "2D/3N",
+      duration: "(8N/9D)",
     },
     {
       ImageSrc: "/images/destinations/destination4.jpg",
-      tourName: "Dubai",
+      tourName: "Devi Darshan Taxi Tour",
       description:
         "Immerse yourself in nature's beauty on our thrilling treks.",
-      title: "Powered Paragliding in Rishikesh",
-      Duration: "2D/3N",
+      duration: "2D/3N",
     },
     {
       ImageSrc: "/images/destinations/destination6.jpg",
-      tourName: "Hongkong",
+      tourName: "Golden Temple Taxi Tour",
       title: "Powered Paragliding in Rishikesh",
       description:
         "Immerse yourself in nature's beauty on our thrilling treks.",
-      Duration: "2D/3N",
+      duration: "1N/2D",
     },
 ];
 export default toursData;
