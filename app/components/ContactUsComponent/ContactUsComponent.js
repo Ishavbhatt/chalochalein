@@ -177,11 +177,11 @@ function ContactUsComponent() {
                                             value={formData.message}
                                             onChange={handleInputChange}
                                             rows="4"
-                                            placeholder="Write your message..."
+                                            placeholder="Write Your Message..."
                                             required
                                         />
                                     </div>
-                                    <button type="submit" className="common_btn">
+                                    <button type="submit" className="common_btn justify_content_center">
                                         Send Message
                                     </button>
                                 </form>

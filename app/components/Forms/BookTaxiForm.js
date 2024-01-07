@@ -27,7 +27,7 @@ export default function BookTaxiForm() {
               required
             />
           </div>
-          <button className="common_btn">Request Service</button>
+          <button className="common_btn justify_content_center">Request Service</button>
         </form>
       </div>
       <div className={styles.info_contact}>
