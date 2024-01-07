@@ -1,6 +1,5 @@
 import styles from './styles/pages/page.module.scss';
-import HomeBanner from "./components/Banners/HomeBanner/HomeBanner";
-import PageBanner from "./components/Banners/PageBanner/PageBanner";
+import HomeBanner from "./components/Banners/HomeBanner";
 import MainTaxis from "./components/Taxis/MainTaxis";
 import Whychooseus from "./components/Whychooseus/Whychooseus";
 import Destinations from "./components/Destinations/destination";
@@ -11,6 +10,7 @@ import Loader from './components/Loader/Loader';
 import Link from 'next/link';
 import { GoArrowUpRight } from "react-icons/go";
 import { HiOutlineArrowUpRight } from "react-icons/hi2";
+import BookTaxiBanner from './components/Banners/BookTaxiBanner';
 
 
 export default function Home() {
@@ -18,7 +18,6 @@ export default function Home() {
     <main>
       <HomeBanner />
       <Whychooseus />
-      <PageBanner />
       <MainTaxis />
       {/* <Tours /> */}
 
@@ -45,6 +44,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <BookTaxiBanner />
     </main>
   )
 }

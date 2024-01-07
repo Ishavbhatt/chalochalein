@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import styles from './PageBanner.module.scss'
+import styles from './Banners.module.scss'
 
-const PageBanner = () => {
+const BookTaxiBanner = () => {
     return (
         <>
             <div className="common_margin">
@@ -28,4 +28,4 @@ const PageBanner = () => {
     );
 };
 
-export default PageBanner;
+export default BookTaxiBanner;

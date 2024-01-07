@@ -1,6 +1,6 @@
 'use client'
 import Image from "next/image";
-import styles from "./HomeBanner.module.scss";
+import styles from "./Banners.module.scss";
 import Slider from "react-slick";
 import Link from "next/link";
 import { FaTaxi } from "react-icons/fa";

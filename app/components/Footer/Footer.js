@@ -6,10 +6,11 @@ import Image from "next/image";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer  className={styles.footer_parent}>
+    <footer className={styles.footer_parent}>
       <div className="container">
         <div className={styles.footer_container}>
           {/* <div className={styles.footer_head}>
@@ -17,9 +18,9 @@ export default function Footer() {
             <h3>#Chalo Chalein</h3>
           </div> */}
           <div className={styles.footer_column}>
-            <div className={styles.column }>
-            <h4>Follow Us</h4>
-            <ul>
+            <div className={styles.column}>
+              <h4>Follow Us</h4>
+              <ul>
                 <li>
                   <IoCall />
                   <span>+91 9876543210</span>
@@ -33,42 +34,39 @@ export default function Footer() {
                   <span>Office San Diego — 845 15th</span>
                 </li>
               </ul>
-            <div className={styles.social_icons_main}>
-           
-              <div className={styles.social_icons}>
-              <FaFacebookF />
-              </div>
-              <div className={styles.social_icons}>
-              <FaInstagram />
-              </div>
-              <div className={styles.social_icons}>
-              <FaTwitter />
+              <div className={styles.social_icons_main}>
+                <Link href="/" className={styles.social_icons}>
+                  <FaFacebookF />
+                </Link>
+                <Link href="/" className={styles.social_icons}>
+                  <FaInstagram />
+                </Link>
+                <Link href="/" className={styles.social_icons}>
+                  <FaTwitter />
+                </Link>
               </div>
             </div>
-            </div>
-            <div className={styles.column }>
+            <div className={styles.column}>
               <h4>Quick Links</h4>
               <ul>
                 <li>
-                  About Us
+                  <Link href='/about-us'>About Us</Link>
                 </li>
                 <li>
-                  Taxi Services
+                  <Link href='/taxi-services'>Taxi Services</Link>
                 </li>
                 <li>
-                  Tours
-                </li><li>
-                  Trekking
+                  <Link href='/tours'>Tours</Link>
                 </li>
                 <li>
-                  Sightseeing
+                  <Link href='/destinations'>Destinations</Link>
                 </li>
                 <li>
-                  Contact Us
+                  <Link href='/contact-us'>Contact Us</Link>
                 </li>
               </ul>
             </div>
-            <div className={styles.column }>
+            <div className={styles.column}>
               <h4>Tours</h4>
               <ul className="tours_list">
                 <li>Gulmarg </li>
@@ -78,96 +76,65 @@ export default function Footer() {
                 <li> More</li>
               </ul>
             </div>
-            <div className={`${styles.column} ${styles.footer_last_column}` }>
+            <div className={`${styles.column} ${styles.footer_last_column}`}>
               <h4> Latest Projects</h4>
               <div className={styles.projects_container}>
                 <div className={styles.projects_list}>
-                  <Image className= {styles.project_image}
+                  <Image className={styles.project_image}
                     src="/images/andman.png"
                     alt="Picture of the author"
                     fill={true}
                   />
-                  <p>Thailand</p>
-                  <div className={styles.gradient}>/</div>
-
+                  <Link href='/'>Thailand</Link>
                 </div>
                 <div className={styles.projects_list}>
-                <Image className= {styles.project_image}
+                  <Image className={styles.project_image}
                     src="/images/Bali.png"
-                   fill={true}
+                    fill={true}
                     alt="Picture of the author"
                   />
-                  <p>Thailand</p>
-
+                  <Link href='/'>Thailand</Link>
                 </div>
                 <div className={styles.projects_list}>
-                <Image className= {styles.project_image}
+                  <Image className={styles.project_image}
                     src="/images/dubai.png"
                     fill={true}
                     alt="Picture of the author"
                   />
-                  <p>Thailand</p>
-
+                  <Link href='/'>Thailand</Link>
                 </div>
                 <div className={styles.projects_list}>
-                <Image className= {styles.project_image}
+                  <Image className={styles.project_image}
                     src="/images/hongkong.png"
                     fill={true}
                     alt="Picture of the author"
                   />
-                  <p>Thailand</p>
-
+                  <Link href='/'>Thailand</Link>
                 </div>
                 <div className={styles.projects_list}>
-                <Image className= {styles.project_image}
+                  <Image className={styles.project_image}
                     src="/images/india.png"
                     fill={true}
                     alt="Picture of the author"
                   />
-                  <p>Thailand</p>
-
+                  <Link href='/'>Thailand</Link>
                 </div>
                 <div className={styles.projects_list}>
-                <Image className= {styles.project_image}
+                  <Image className={styles.project_image}
                     src="/images/ladakh.png"
-                   fill={true}
+                    fill={true}
                     alt="Picture of the author"
                   />
-                  <p>Thailand</p>
-
-                </div>
-                <div className={styles.projects_list}>
-                <Image className= {styles.project_image}
-                    src="/images/singapore.png"
-                   fill={true}
-                    alt="Picture of the author"
-                  />  
-                  <p>Thailand</p>
-              </div>
-                <div className={styles.projects_list}>
-                  <Image className= {styles.project_image}
-                    src="/images/srilanka.png"
-                    alt=""
-                   fill={true}
-                  />
-                  <p>Thailand</p>
-
-                </div>
-                <div className={styles.projects_list}>
-                <Image className= {styles.project_image}
-                    src="/images/thailand.png"
-                   fill={true}
-                    alt="Picture of the author"
-                  />
-                  <p>Thailand</p>
+                  <Link href='/'>Thailand</Link>
                 </div>
               </div>
             </div>
           </div>
-          
         </div>
       </div>
-      <div className={styles.footer_bottom}><p>Copyright © 2024 ChaloChalein - Theme by Shufflehound</p></div>
+      <div className={styles.footer_bottom}>
+        <p>Copyright © 2024 Chalo Chalein Tour & Travel</p>
+      </div>
     </footer>
   );
 }

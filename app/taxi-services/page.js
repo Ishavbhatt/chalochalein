@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { MdOutlineAirlineSeatReclineNormal } from "react-icons/md";
 import Link from 'next/link';
 import PopularRoutes from '../components/Taxis/PopularRouts';
+import PageTopBanner from '../components/Banners/PageTopBanner';
 
 export default function TaxiServices() {
 
@@ -73,51 +74,58 @@ export default function TaxiServices() {
     ];
 
     return (
-        <section className={`${styles.taxi_services} common_margin`}>
-            <div className="container">
-                <div className={styles.taxi_services_top}>
-                    <div className={styles.taxi_services_top_left}>
-                        <TaxiServiceContent />
-                    </div>
+        <>
+            <PageTopBanner
+                bannerImage={'/images/banners/about-banner.jpg'}
+                title={'Taxi Services'}
+                subtitle={'Reliable Transport Solutions'}
+            />
+            <section className={`${styles.taxi_services} common_margin`}>
+                <div className="container">
+                    <div className={styles.taxi_services_top}>
+                        <div className={styles.taxi_services_top_left}>
+                            <TaxiServiceContent />
+                        </div>
 
-                    <div className={styles.taxi_services_top_right}>
-                        <div className={styles.taxi_services_top_right_inner}>
-                            <BookTaxiForm />
+                        <div className={styles.taxi_services_top_right}>
+                            <div className={styles.taxi_services_top_right_inner}>
+                                <BookTaxiForm />
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className={styles.taxis_listing}>
-                    <div className='common_heading'>
-                        <h4>Welcome to Chalo Chalein Taxi Service- </h4>
-                        <h5>Your Trusted Travel Companion in Dharamshala</h5>
-                        <span></span>
-                    </div>
-                    <div className={styles.taxis_listing_main}>
-                        {taxis.map((taxi, index) => (
-                            <div className={styles.taxis_listing_child} key={index}>
-                                <div className={styles.taxis_listing_child_image}>
-                                    <Image src={taxi.taxi_image} fill={true} alt={taxi.taxi_name} />
+                    <div className={styles.taxis_listing}>
+                        <div className='common_heading'>
+                            <h4>Welcome to Chalo Chalein Taxi Service- </h4>
+                            <h5>Your Trusted Travel Companion in Dharamshala</h5>
+                            <span></span>
+                        </div>
+                        <div className={styles.taxis_listing_main}>
+                            {taxis.map((taxi, index) => (
+                                <div className={styles.taxis_listing_child} key={index}>
+                                    <div className={styles.taxis_listing_child_image}>
+                                        <Image src={taxi.taxi_image} fill={true} alt={taxi.taxi_name} />
+                                    </div>
+                                    <div className={styles.taxis_listing_child_content}>
+                                        <h4>{taxi.taxi_name} <span>(<MdOutlineAirlineSeatReclineNormal />   {taxi.seats})</span> </h4>
+                                        <ul>
+                                            <li>No Extra Charge</li>
+                                            <li>Charging Port</li>
+                                            <li>AC</li>
+                                            <li>Music System</li>
+                                            <li>Diesel</li>
+                                        </ul>
+                                        <Link href="tel:7894651320" className='common_btn inline-block'>
+                                            Call to Book
+                                        </Link>
+                                    </div>
                                 </div>
-                                <div className={styles.taxis_listing_child_content}>
-                                    <h4>{taxi.taxi_name} <span>(<MdOutlineAirlineSeatReclineNormal />   {taxi.seats})</span> </h4>
-                                    <ul>
-                                        <li>No Extra Charge</li>
-                                        <li>Charging Port</li>
-                                        <li>AC</li>
-                                        <li>Music System</li>
-                                        <li>Diesel</li>
-                                    </ul>
-                                    <Link href="tel:7894651320" className='common_btn inline-block'>
-                                        Call to Book
-                                    </Link>
-                                </div>
-                            </div>
-                        ))}
+                            ))}
+                        </div>
                     </div>
+                    <Benefits />
+                    <PopularRoutes />
                 </div>
-                <Benefits />
-                <PopularRoutes />
-            </div>
-        </section>
+            </section>
+        </>
     )
 }
