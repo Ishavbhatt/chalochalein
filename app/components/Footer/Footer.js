@@ -83,14 +83,17 @@ export default function Footer() {
                   <Image className={styles.project_image}
                     src="/images/andman.png"
                     alt="Picture of the author"
-                    fill={true}
+                    // fill={true}
+                    height={90}
+                    width={88}
                   />
                   <Link href='/'>Thailand</Link>
                 </div>
                 <div className={styles.projects_list}>
                   <Image className={styles.project_image}
                     src="/images/Bali.png"
-                    fill={true}
+                    height={90}
+                    width={88}
                     alt="Picture of the author"
                   />
                   <Link href='/'>Thailand</Link>
@@ -98,7 +101,8 @@ export default function Footer() {
                 <div className={styles.projects_list}>
                   <Image className={styles.project_image}
                     src="/images/dubai.png"
-                    fill={true}
+                    height={90}
+                    width={88}
                     alt="Picture of the author"
                   />
                   <Link href='/'>Thailand</Link>
@@ -106,7 +110,8 @@ export default function Footer() {
                 <div className={styles.projects_list}>
                   <Image className={styles.project_image}
                     src="/images/hongkong.png"
-                    fill={true}
+                    height={90}
+                    width={88}
                     alt="Picture of the author"
                   />
                   <Link href='/'>Thailand</Link>
@@ -114,7 +119,8 @@ export default function Footer() {
                 <div className={styles.projects_list}>
                   <Image className={styles.project_image}
                     src="/images/india.png"
-                    fill={true}
+                    height={90}
+                    width={88}
                     alt="Picture of the author"
                   />
                   <Link href='/'>Thailand</Link>
@@ -122,7 +128,8 @@ export default function Footer() {
                 <div className={styles.projects_list}>
                   <Image className={styles.project_image}
                     src="/images/ladakh.png"
-                    fill={true}
+                    height={90}
+                    width={88}
                     alt="Picture of the author"
                   />
                   <Link href='/'>Thailand</Link>
