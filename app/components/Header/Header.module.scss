@@ -55,6 +55,26 @@
             color: $primary-color;
           }
         }
+        .header_ancor {
+          display: inline-block;
+          color: $black-color;
+          text-decoration: none;
+          font-size: 14px;
+          line-height: 24px;
+
+          &::after {
+              content: '';
+              display: block;
+              width: 0;
+              height: 1px;
+              background:$black-color;
+              transition: width .4s;
+          }
+
+          &:hover::after {
+              width: 100%;
+          }
+      }
       }
 
       // .cross_btn {

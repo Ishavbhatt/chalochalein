@@ -16,9 +16,9 @@ import { HiOutlineArrowUpRight } from "react-icons/hi2";
 export default function Home() {
   return (
     <main>
-      <HomeBanner />
+      {/* <HomeBanner /> */}
       <Whychooseus />
-      <PageBanner />
+      {/* <PageBanner /> */}
       <MainTaxis />
       {/* <Tours /> */}
 

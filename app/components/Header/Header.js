@@ -5,7 +5,7 @@ import Image from "next/image";
 import styles from "./Header.module.scss";
 import { CgMenuRight } from "react-icons/cg";
 import { RxCross2 } from "react-icons/rx";
-
+// import styles from './Whychooseus.module.scss';
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => {
@@ -31,22 +31,23 @@ const Header = () => {
                   <RxCross2 />
                 </button>
               )}
-              <Link href="/about-us" onClick={toggleMenu}>
+              <Link href="/about-us" onClick={toggleMenu} className={styles.header_ancor}>
                 About Us
               </Link>
-              <Link href="/taxi-services" onClick={toggleMenu}>
+              {/* <Link className={styles.header_ancor} href='/'>{item.cta_text}</Link> */}
+              <Link href="/taxi-services" onClick={toggleMenu} className={styles.header_ancor}>
                 Taxi Services
               </Link>
-              <Link href="/tours" onClick={toggleMenu}>
+              <Link href="/tours" onClick={toggleMenu} className={styles.header_ancor}>
                 Tours
               </Link>
               {/* <Link href="/courses" onClick={toggleMenu}>
                 Trekking
               </Link> */}
-              <Link href="/destinations" onClick={toggleMenu}>
+              <Link href="/destinations" onClick={toggleMenu} className={styles.header_ancor}>
                 Destinations
               </Link>
-              <Link href="/contact-us" onClick={toggleMenu}>
+              <Link href="/contact-us" onClick={toggleMenu} className={styles.header_ancor}>
                 Contact Us
               </Link>
             </div>
