@@ -1,15 +1,16 @@
 const destinationsData = [
+    
     {
         destination_name: 'Shimla',
         short_description: 'The capital city known for its colonial architecture, Mall Road, and panoramic views.',
-        destination_image: '/images/taxi/taxi.jpg',
+        destination_image: '/images/destinations/shimla.jpg',
         region: 'Shivalik Range',
         best_time_to_visit: ' March to June, and October to February'
     },
     { 
         destination_name: 'Manali',
         short_description: 'A popular hill station famous for adventure sports, lush valleys, and scenic beauty.',
-        destination_image: '/images/taxi/taxi.jpg',
+        destination_image: '/images/destinations/manali.jpg',
         region: 'Kullu Valley',
         best_time_to_visit: ' October to June'
     },
@@ -23,14 +24,13 @@ const destinationsData = [
     {
         destination_name: 'Dalhousie',
         short_description: 'Known for its colonial-era charm, stunning views of snow-capped peaks, and pine-covered valleys.',
-        destination_image: '/images/taxi/taxi.jpg',
-        region: 'Chamba District',
+        destination_image: '/images/destinations/dalhousie.jpg',
         best_time_to_visit: ' March to May, and October to November'
     },
     {
         destination_name: 'Kullu',
         short_description: 'Famous for its Dussehra festival, adventure sports, and scenic beauty.',
-        destination_image: '/images/taxi/taxi.jpg',
+        destination_image: '/images/destinations/kullu.jpg',
         region: 'Kullu Valley',
         best_time_to_visit: ' March to June, and September to November'
     },
@@ -65,11 +65,11 @@ const destinationsData = [
     {
         destination_name: 'Kufri',
         short_description: 'Known for skiing, snow-capped landscapes, and Himalayan wildlife zoo.',
-        destination_image: '/images/taxi/taxi.jpg',
+        destination_image: '/images/destinations/kufri.jpg',
         region: 'Shimla District',
         best_time_to_visit: ' December to February'
     },
-    // Add more destinations with their best time to visit
+    // Add more destinations with their best time to visit 
     // ...
 ];
 export default destinationsData;

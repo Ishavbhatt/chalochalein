@@ -11,15 +11,17 @@ import Link from 'next/link';
 import { GoArrowUpRight } from "react-icons/go";
 import { HiOutlineArrowUpRight } from "react-icons/hi2";
 import BookTaxiBanner from './components/Banners/BookTaxiBanner';
-
+import AdventureActivities from './components/adventure -activities/adventure';
 
 export default function Home() {
   return (
     <main>
+      {/* <AdventureActivities /> */}
+
       <HomeBanner />
       <Whychooseus />
       <MainTaxis />
-      {/* <Tours /> */}
+      <Tours />
 
       <section className={`${styles.popular_destinations} common_margin`}>
         <div className="container">
