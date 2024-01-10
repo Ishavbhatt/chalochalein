@@ -1,12 +1,16 @@
 @import '../settings/_settings';
 
-.popular_destinations {
-    .popular_destinations_cards {
+.popular_destinations,
+.popular_tours {
+
+    .popular_destinations_cards,
+    .popular_tours_cards {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         gap: 20px;
 
+        .popular_destinations_card,
         .popular_destinations_card {
             width: calc(25% - 20px);
             box-shadow: 0 8px 16px 0 rgba(15, 41, 77, 0.06);

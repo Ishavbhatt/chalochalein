@@ -12,7 +12,7 @@ export default function Destinations() {
                 subtitle={'Your Gateway to Adventure'}
             />
             <section className={`${styles.destinations_page} common_margin`}>
-                <div className="container">
+                <div className="container-sm">
                     <div className={styles.destinations_cards}>
                         {destinationsData && destinationsData.map((destination, index) => (
                             <div className={styles.destinations_page_card} key={index} >

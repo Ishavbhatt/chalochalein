@@ -61,16 +61,14 @@
           text-decoration: none;
           font-size: 14px;
           line-height: 24px;
-
           &::after {
               content: '';
               display: block;
               width: 0;
               height: 1px;
-              background:$black-color;
+              background:$primary-color;
               transition: width .4s;
           }
-
           &:hover::after {
               width: 100%;
           }

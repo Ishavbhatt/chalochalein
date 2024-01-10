@@ -12,17 +12,93 @@
             margin-bottom: 30px;
             box-shadow: 0 8px 16px 0 rgba(15, 41, 77, 0.06);
             border-radius: 5px;
-            overflow: hidden;   
+            overflow: hidden;
         }
     }
 
 }
 
 .single_destination {
-  
+
     .single_destination_content {
         border: 1px solid $light-gray;
         border-radius: 5px;
-        padding: 10px;
+        padding: 0 10px;
+
+        h3 {
+            font-size: 20px;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 1px;
+            margin-bottom: 7px;
+        }
+
+        .destination_top_icons {
+            display: flex;
+            gap: 40px;
+            margin: 20px 0;
+
+            .top_icon_col {
+                text-align: center;
+
+                svg {
+                    font-size: 26px;
+                    color: $primary-color;
+                }
+
+                h5 {
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .destination_overview {
+            margin: 10px 0;
+
+            ul {
+                font-size: 14px;
+                list-style: square;
+                padding: 0;
+                font-family: 'Poppins', sans-serif;
+
+                li {
+                    list-style-type: none;
+                    position: relative;
+                    padding-left: 18px;
+                    margin: 10px 0;
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 10px;
+                        width: 7px;
+                        height: 7px;
+                        background-color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.popular_destinations,
+.popular_tours {
+
+    .popular_destinations_cards,
+    .popular_tours_cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+
+        .popular_destinations_card,
+        .popular_destinations_card {
+            width: calc(25% - 20px);
+            box-shadow: 0 8px 16px 0 rgba(15, 41, 77, 0.06);
+            border-radius: 5px;
+            overflow: hidden;
+        }
     }
 }

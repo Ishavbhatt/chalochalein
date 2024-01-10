@@ -4,10 +4,14 @@ import styles from "./ContactUsComponent.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import CustomToast from "../CustomToast/CustomToast";
 // import { ToastContainer, toast } from 'react-toastify';
 // import 'react-toastify/dist/ReactToastify.css';
 
 function ContactUsComponent() {
+    const [showToast, setShowToast] = useState(false);
+    const [status, setStatus] = useState("");
+
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -24,7 +28,7 @@ function ContactUsComponent() {
     const sendMail = async (e) => {
         e.preventDefault();
 
-        const response = await fetch('/api/sendEmail', {
+        const response = await fetch('/api/sendContactForm', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -39,23 +43,17 @@ function ContactUsComponent() {
 
         if (response.status === 200) {
             setFormData({ name: '', email: '', message: '', phoneNumber: '' });
-            toast.success('Message Sent Successfully!', {
-            });
+            setStatus("success")
         } else {
-            toast.error('Something Went Wrong!', {
-            });
+            setStatus("failed")
         }
     };
 
 
     return (
         <>
-            {/* <Pagebanner
-        title="Contact Us"
-        imgUrl="/images/about/about-top-banner.png"
-        imgAlt="Sightseeings-top-banner-image"
-        description='Lorem ipsum dolor sit amet consectetur. Dui libero rhoncus vitae sit id sodales nunc sit aliquam. Consectetur consectetur eget vel adipiscing id dui congue cras.'
-      /> */}
+            {showToast && <CustomToast status={status} duration={3000} onClose={closeFormToast} />}
+
             <section className={styles.footer_sec}>
                 <div className="container">
                     <div className="common_margin">
