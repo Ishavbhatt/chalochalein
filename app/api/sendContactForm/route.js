@@ -12,7 +12,7 @@ export async function POST(request) {
       secure: true,
       auth: {
         user: "ishavbhattkhaniyara@gmail.com",
-        pass: "Ishav@143",
+        pass: "fdqs lttd hdry edof",
       },
     });
 
@@ -22,11 +22,11 @@ export async function POST(request) {
       subject: "Email From Chalo Chalein Contact Us Form",
       html: `
       <h4>Chalo Chalein Website Contact Form Enquiry. Here are the Details:</h4>
-      <p><strong> Name:</strong> ${name}</p>
-      <p><strong> Email: </strong>${email}</p> 
+      <p><strong>Name:</strong> ${name}</p>
+      <p><strong>Email:</strong> ${email}</p> 
       <p><strong>Contact Number:</strong> ${phoneNumber}</p>
-      <p><strong> message:</strong> ${message}</p> 
-        `,
+      <p><strong>Message:</strong> ${message}</p> 
+      `,
     };
 
     await transporter.sendMail(mailOption);

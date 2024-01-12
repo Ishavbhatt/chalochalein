@@ -4,14 +4,14 @@ import styles from "./ContactUsComponent.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import CustomToast from "../CustomToast/CustomToast";
-// import { ToastContainer, toast } from 'react-toastify';
-// import 'react-toastify/dist/ReactToastify.css';
+import { showErrorToast, showSuccessToast } from "../../utils/toastUtils";
+import { IoCall } from "react-icons/io5";
+import { IoMdMailUnread } from "react-icons/io";
+import { PiMapPinFill } from "react-icons/pi";
+import { FaFacebookF } from "react-icons/fa6";
+import { FiInstagram } from "react-icons/fi";
 
 function ContactUsComponent() {
-    const [showToast, setShowToast] = useState(false);
-    const [status, setStatus] = useState("");
-
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -42,18 +42,15 @@ function ContactUsComponent() {
         });
 
         if (response.status === 200) {
+            showSuccessToast("Message Submit Successfuly!")
             setFormData({ name: '', email: '', message: '', phoneNumber: '' });
-            setStatus("success")
         } else {
-            setStatus("failed")
+            showErrorToast("Something Went Wrong. Please Try Again Later...")
         }
     };
 
-
     return (
         <>
-            {showToast && <CustomToast status={status} duration={3000} onClose={closeFormToast} />}
-
             <section className={styles.footer_sec}>
                 <div className="container">
                     <div className="common_margin">
@@ -62,54 +59,29 @@ function ContactUsComponent() {
                                 <div className={`${styles.contact_main_left_details}`}>
                                     <h4 className="text-white"> Get In Touch</h4>
                                     <div className={styles.contact_main_left_details_child}>
-                                        <Image
-                                            src="/icons/phone.svg"
-                                            width={16}
-                                            height={16}
-                                            alt="Phone Icon"
-                                        />
+                                        <IoCall />
                                         <Link href="tel:8219454140" className={styles.contact_links}>
                                             82194-54140
                                         </Link>
                                     </div>
                                     <div className={styles.contact_main_left_details_child}>
-                                        <Image
-                                            src="/icons/mail.svg"
-                                            width={16}
-                                            height={16}
-                                            alt="Mail Icon"
-                                        />
+                                        <IoMdMailUnread />
                                         <Link href="mailto:rahul@asianclassictravels.com" className={styles.contact_links}>
                                             rahul@asianclassictravels.com
                                         </Link>
                                     </div>
                                     <div className={styles.contact_main_left_details_child}>
-                                        <Image
-                                            src="/icons/locatn.svg"
-                                            width={16}
-                                            height={16}
-                                            alt="Location Icon"
-                                        />
+                                        <PiMapPinFill />
                                         <Link href="https://maps.app.goo.gl/kGgCUqjXfRjm8Wtf8" className={styles.contact_links}>
                                             101 Kitchener Road, Jln Besar, #03-32 A, Singapore 208511
                                         </Link>
                                     </div>
                                     <div className="d_flex gap_10">
                                         <Link href="https://www.facebook.com/asianclassic?fref=ts" className={styles.round_icons}>
-                                            <Image
-                                                src="/icons/ri_facebook-fill.svg"
-                                                width={20}
-                                                height={20}
-                                                alt="Facebook Icon"
-                                            />
+                                           <FaFacebookF />
                                         </Link>
                                         <Link href="https://www.instagram.com/act_dmc_singapore/" className={styles.round_icons}>
-                                            <Image
-                                                src="/icons/insta.svg"
-                                                width={18}
-                                                height={20}
-                                                alt="Instagram Icon"
-                                            />
+                                           <FiInstagram />
                                         </Link>
                                     </div>
                                 </div>

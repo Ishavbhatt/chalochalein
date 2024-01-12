@@ -1,8 +1,10 @@
 import './styles/globals.scss'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Header from './components/Header/Header'
-import Footer from './components/Footer/Footer'
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export const metadata = {
   title: 'Chalo Chalein Tour and Travel',
@@ -16,6 +18,19 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <Footer />
+        
+        <ToastContainer
+          position="top-center"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick={false}
+          rtl={false}
+          pauseOnFocusLoss={false}
+          draggable={false}
+          pauseOnHover={false}
+          theme="light"
+        />
       </body>
     </html>
   )

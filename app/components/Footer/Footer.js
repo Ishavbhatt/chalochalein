@@ -81,58 +81,58 @@ export default function Footer() {
               <div className={styles.projects_container}>
                 <div className={styles.projects_list}>
                   <Image className={styles.project_image}
-                    src="/images/andman.png"
+                    src="/images/destinations/dharamshala.png"
                     alt="Picture of the author"
                     // fill={true}
                     height={90}
                     width={88}
                   />
-                  <Link href='/'>Thailand</Link>
+                  <Link href='/'>Dharamshala</Link>
                 </div>
                 <div className={styles.projects_list}>
                   <Image className={styles.project_image}
-                    src="/images/Bali.png"
+                    src="/images/destinations/shimla.png"
                     height={90}
                     width={88}
                     alt="Picture of the author"
                   />
-                  <Link href='/'>Thailand</Link>
+                  <Link href='/'>Shimla</Link>
                 </div>
                 <div className={styles.projects_list}>
                   <Image className={styles.project_image}
-                    src="/images/dubai.png"
+                    src="/images/destinations/dalhousie.png"
                     height={90}
                     width={88}
                     alt="Picture of the author"
                   />
-                  <Link href='/'>Thailand</Link>
+                  <Link href='/'>Dalhousie</Link>
                 </div>
                 <div className={styles.projects_list}>
                   <Image className={styles.project_image}
-                    src="/images/hongkong.png"
+                    src="/images/destinations/kullu.png"
                     height={90}
                     width={88}
                     alt="Picture of the author"
                   />
-                  <Link href='/'>Thailand</Link>
+                  <Link href='/'>Kullu</Link>
                 </div>
                 <div className={styles.projects_list}>
                   <Image className={styles.project_image}
-                    src="/images/india.png"
+                    src="/images/destinations/kasol.png"
                     height={90}
                     width={88}
                     alt="Picture of the author"
                   />
-                  <Link href='/'>Thailand</Link>
+                  <Link href='/'>kasol</Link>
                 </div>
                 <div className={styles.projects_list}>
                   <Image className={styles.project_image}
-                    src="/images/ladakh.png"
+                    src="/images/destinations/manali.png"
                     height={90}
                     width={88}
                     alt="Picture of the author"
                   />
-                  <Link href='/'>Thailand</Link>
+                  <Link href='/'>Manali</Link>
                 </div>
               </div>
             </div>

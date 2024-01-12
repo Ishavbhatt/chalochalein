@@ -52,11 +52,12 @@
                 background: transparent;
                 transition: 0.3s;
                 font-size: 22px;
+                transition: transform 0.5s;
             }
 
             &:hover {
                 .taxi_btn {
-                    padding-left: 30px;
+                    transform: translateX(10px);
                 }
             }
 
