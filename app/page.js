@@ -11,16 +11,14 @@ import Link from 'next/link';
 import { GoArrowUpRight } from "react-icons/go";
 import { HiOutlineArrowUpRight } from "react-icons/hi2";
 import BookTaxiBanner from './components/Banners/BookTaxiBanner';
-import AdventureActivities from './components/adventure -activities/adventure';
 import ToursPageCard from './components/Cards/ToursPageCard';
+import Activities from './components/Activities/activities';
 
 export default function Home() {
   return (
     <main>
-      {/* <AdventureActivities /> */}
-
       <HomeBanner />
-      <Whychooseus />
+
       <MainTaxis />
 
       <section className={`${styles.popular_destinations} common_margin`}>
@@ -47,6 +45,24 @@ export default function Home() {
         </div>
       </section>
 
+      <section className={`${styles.activities_sec} common_margin`}>
+        <div className="container">
+          <div className="d_flex justify_content_between align_items_center">
+            <div className="common_heading">
+              <h4>Adventure Awaits</h4>
+              <h5>Explore the Thrill of Our Popular Activities</h5>
+              <span></span>
+            </div>
+            {/* <div>
+              <Link href="/destinations" className='common_btn inline-block'>
+                Explore More <HiOutlineArrowUpRight />
+              </Link>
+            </div> */}
+          </div>
+          <Activities />
+        </div>
+      </section>
+
       <section className={`${styles.popular_tours} common_margin`}>
         <div className="container">
           <div className="d_flex justify_content_between align_items_center">
@@ -57,7 +73,7 @@ export default function Home() {
             </div>
             <div>
               <Link href="/tours" className='common_btn inline-block'>
-              View All Tours <HiOutlineArrowUpRight />
+                View All Tours <HiOutlineArrowUpRight />
               </Link>
             </div>
           </div>

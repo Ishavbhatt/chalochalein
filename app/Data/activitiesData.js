@@ -1,4 +1,4 @@
-const adventureActivitiesData = [
+const activitiesData = [
     {
         activity_name: 'Trekking',
         short_description: 'Renowned for its picturesque landscapes, trekking trails, and backpacking culture.',
@@ -14,7 +14,5 @@ const adventureActivitiesData = [
         short_description: 'A cold desert mountain valley famous for its landscapes, monasteries, and adventure expeditions.',
         activity_image: '/images/adventure-activities/camping.jpg',
     },
-    // Add more activities
-    // ...
 ];
-export default adventureActivitiesData;
+export default activitiesData;
