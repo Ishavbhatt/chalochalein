@@ -14,7 +14,7 @@ const Whychooseus = () => {
             title: 'Efficient Transport',
             description: 'Experience hassle-free transportation with our 24/7 service. Our professional drivers ensure punctuality and comfort, while our seamless booking system makes your travel effortless.',
             cta_text: 'Book Now',
-            cta_link: '',
+            cta_link: '/taxi-services',
         },
         {
             id: 2,
@@ -22,7 +22,7 @@ const Whychooseus = () => {
             title: 'Memorable Excursions',
             description: 'Embark on unforgettable journeys with our curated tours. Explore captivating destinations led by knowledgeable guides, creating memories that last a lifetime.',
             cta_text: 'Discover Tours',
-            cta_link: '',
+            cta_link: '/tours',
         },
         {
             id: 3,

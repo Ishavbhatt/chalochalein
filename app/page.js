@@ -18,6 +18,7 @@ export default function Home() {
   return (
     <main>
       <HomeBanner />
+      <Whychooseus />
 
       <MainTaxis />
 
@@ -88,6 +89,7 @@ export default function Home() {
       </section>
 
       <BookTaxiBanner />
+
     </main>
   )
 }

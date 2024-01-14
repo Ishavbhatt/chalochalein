@@ -18,7 +18,7 @@ export default function DestinationCard({ destination }) {
                     <h4>{destination.destination_name}</h4>
                 </div> */}
             </div>
-            <Link className={styles.popular_destination_name} href='/destinations'>
+            <Link className={styles.popular_destination_name} href={`/destinations/${destination.slug}`}>
                 <span>
                     {destination.destination_name}
                 </span>

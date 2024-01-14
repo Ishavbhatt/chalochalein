@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from './Taxis.module.scss';
 import { FaArrowRight } from "react-icons/fa6";
+import { HiOutlineArrowUpRight } from "react-icons/hi2";
 
 const MainTaxis = () => {
 
@@ -38,17 +39,24 @@ const MainTaxis = () => {
 
     return (
         <>
-            <section className={`${styles.main_taxis_sec} common_margin`}>
+            <section className={`${styles.main_taxis_sec} `}>
                 <div className="container">
-                    <div className="common_heading">
-                        <h4>Our Fleet of Reliable Taxis</h4>
-                        <h5>Explore Our Diverse Range of Vehicles for Every Need</h5>
-                        <span></span>
+                    <div className="d_flex justify_content_between align_items_center">
+                        <div className="common_heading">
+                            <h4>Our Fleet of Reliable Taxis</h4>
+                            <h5>Explore Our Diverse Range of Vehicles for Every Need</h5>
+                            <span></span>
+                        </div>
+                        <div>
+                            <Link href="/taxi-services" className='common_btn inline-block'>
+                                View More <HiOutlineArrowUpRight />
+                            </Link>
+                        </div>
                     </div>
                     <div className={styles.main_taxis}>
                         {taxisData.map((taxi) => (
                             <div className={styles.main_taxis_child} key={taxi.id}>
-                                <Link href={'/'}></Link>
+                                <Link href={'/taxi-services'}></Link>
                                 <div className={styles.main_taxis_child_image}>
                                     <Image src={taxi.taxi_image} height={150} width={150} alt={taxi.taxi_name} priority={true} />
                                 </div>

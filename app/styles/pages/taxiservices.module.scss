@@ -40,8 +40,9 @@
                     overflow: hidden;
 
                     img {
+                        transition: transform 0.5s;
                         object-fit: cover;
-                        transition: 0.5s;
+                        transform: scale(1.05);
                     }
                 }
 
@@ -86,8 +87,7 @@
                 &:hover {
                     .taxis_listing_child_image {
                         img {
-                            transform: scale(1.05);
-                            transition: 0.5s;
+                            transform: scale(1);
                         }
                     }
                 }

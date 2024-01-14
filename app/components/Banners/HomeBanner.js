@@ -25,7 +25,7 @@ const HomeBanner = () => {
       description: `Explore Himachal's wonders with our curated tours. Discover the beauty and culture that define this mesmerizing region`,
       imgSrc: "/images/banners/tours-banner.jpg",
       mobileBannerImage: "/images/banners/tours-banner.jpg",
-      button_text: 'Explore Tours',
+      button_text: 'Book a Tours',
       button_icon: <MdOutlineTour />
     },
     {

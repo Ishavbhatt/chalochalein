@@ -7,6 +7,7 @@ import { MdOutlineAirlineSeatReclineNormal } from "react-icons/md";
 import Link from 'next/link';
 import PopularRoutes from '../components/Taxis/PopularRouts';
 import PageTopBanner from '../components/Banners/PageTopBanner';
+import { IoCallSharp } from 'react-icons/io5';
 
 export default function TaxiServices() {
 
@@ -93,10 +94,10 @@ export default function TaxiServices() {
                             </div>
                         </div>
                     </div>
-                    <div className={styles.taxis_listing}>
+                    <div className={`${styles.taxis_listing} common_margin`}>
                         <div className='common_heading'>
-                            <h4>Welcome to Chalo Chalein Taxi Service- </h4>
-                            <h5>Your Trusted Travel Companion in Dharamshala</h5>
+                            <h4>Explore Our Diverse Fleet of Taxis</h4>
+                            <h5>Discover the Perfect Ride for Every Journey</h5>
                             <span></span>
                         </div>
                         <div className={styles.taxis_listing_main}>
@@ -115,7 +116,7 @@ export default function TaxiServices() {
                                             <li>Diesel</li>
                                         </ul>
                                         <Link href="tel:7894651320" className='common_btn inline-block'>
-                                            Call to Book
+                                           <IoCallSharp /> Call to Book
                                         </Link>
                                     </div>
                                 </div>
