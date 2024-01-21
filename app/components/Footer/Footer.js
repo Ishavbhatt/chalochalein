@@ -59,6 +59,9 @@ export default function Footer() {
                   <Link href='/tours'>Tours</Link>
                 </li>
                 <li>
+                  <Link href='/activities'>Activities</Link>
+                </li>
+                <li>
                   <Link href='/destinations'>Destinations</Link>
                 </li>
                 <li>
@@ -77,7 +80,7 @@ export default function Footer() {
               </ul>
             </div>
             <div className={`${styles.column} ${styles.footer_last_column}`}>
-              <h4> Latest Projects</h4>
+              <h4>Destinations</h4>
               <div className={styles.projects_container}>
                 <div className={styles.projects_list}>
                   <Image className={styles.project_image}

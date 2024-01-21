@@ -41,9 +41,9 @@ const Header = () => {
               <Link href="/tours" onClick={toggleMenu} className={styles.header_ancor}>
                 Tours
               </Link>
-              {/* <Link href="/courses" onClick={toggleMenu}>
-                Trekking
-              </Link> */}
+              <Link href="/activities" onClick={toggleMenu}>
+                Activities
+              </Link>
               <Link href="/destinations" onClick={toggleMenu} className={styles.header_ancor}>
                 Destinations
               </Link>
