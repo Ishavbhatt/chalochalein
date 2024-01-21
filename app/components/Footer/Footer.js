@@ -87,7 +87,7 @@ export default function Footer() {
                     height={90}
                     width={88}
                   />
-                  <Link href='/'>Dharamshala</Link>
+                  <Link href='/destinations/dharamshala'>Dharamshala</Link>
                 </div>
                 <div className={styles.projects_list}>
                   <Image className={styles.project_image}
@@ -96,7 +96,7 @@ export default function Footer() {
                     width={88}
                     alt="Picture of the author"
                   />
-                  <Link href='/'>Shimla</Link>
+                  <Link href='/destinations/shimla'>Shimla</Link>
                 </div>
                 <div className={styles.projects_list}>
                   <Image className={styles.project_image}
@@ -105,7 +105,7 @@ export default function Footer() {
                     width={88}
                     alt="Picture of the author"
                   />
-                  <Link href='/'>Dalhousie</Link>
+                  <Link href='/destinations/dalhousie'>Dalhousie</Link>
                 </div>
                 <div className={styles.projects_list}>
                   <Image className={styles.project_image}
@@ -114,7 +114,7 @@ export default function Footer() {
                     width={88}
                     alt="Picture of the author"
                   />
-                  <Link href='/'>Kullu</Link>
+                  <Link href='/destinations/kullu'>Kullu</Link>
                 </div>
                 <div className={styles.projects_list}>
                   <Image className={styles.project_image}
@@ -123,7 +123,7 @@ export default function Footer() {
                     width={88}
                     alt="Picture of the author"
                   />
-                  <Link href='/'>kasol</Link>
+                  <Link href='/destinations/kasol'>kasol</Link>
                 </div>
                 <div className={styles.projects_list}>
                   <Image className={styles.project_image}
@@ -132,7 +132,7 @@ export default function Footer() {
                     width={88}
                     alt="Picture of the author"
                   />
-                  <Link href='/'>Manali</Link>
+                  <Link href='/destinations/manali'>Manali</Link>
                 </div>
               </div>
             </div>

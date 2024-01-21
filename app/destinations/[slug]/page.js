@@ -4,6 +4,7 @@ import styles from '../../styles/pages/destination.module.scss'
 import { FaMountainSun, FaPersonHiking } from "react-icons/fa6";
 import { FaPrayingHands, FaLandmark } from "react-icons/fa";
 import DestinationCard from '../../components/Cards/DestinationCard';
+import WeatherWidget from '../../components/WeatherWidget/WeatherWidget';
 
 function getDestination(slug) {
     return destinationsData.find(destination => destination.slug === slug);
@@ -14,6 +15,7 @@ function otherDestination(slug) {
 }
 
 const page = ({ params }) => {
+    const todayDate = new Date();
     const single_destination = getDestination(params?.slug);
     const other_destinaiton = otherDestination(params?.slug);
 
@@ -21,58 +23,84 @@ const page = ({ params }) => {
         return <div>Destination not found</div>;
     }
 
+    const WeatherAPIKey = process.env.openweatherapikey;
+
+    const getWeatherLocation = (destinationName) => {
+        switch (destinationName) {
+            case "Spiti Valley":
+                return { city: "Keylong", latitude: 32.4512, longitude: 77.6476 };
+            case "Dharamshala":
+                return { city: "Dharamsala", latitude: 32.2190, longitude: 76.3234 };
+            // Add more cases for other destinations as needed
+            default:
+                return { city: destinationName };
+        }
+    };
+
+    const destinationWeather = getWeatherLocation(single_destination.destination_name);
+
     return (
         <>
             <section className={`${styles.single_destination} common_margin`}>
                 <div className='container'>
-                    <div className={styles.single_destination_content}>
-                        <div className={styles.destination_top_icons}>
-                            <div className={styles.top_icon_col}>
-                                <FaMountainSun />
-                                <h5>Scenic Beauty</h5>
+                    <div className='d_flex gap_20 justify_content_between'>
+                        <div className={styles.single_destination_content}>
+                            <div className={styles.destination_top_icons}>
+                                <div className={styles.top_icon_col}>
+                                    <FaMountainSun />
+                                    <h5>Scenic Beauty</h5>
+                                </div>
+                                <div className={styles.top_icon_col}>
+                                    <FaPersonHiking />
+                                    <h5>Adventure Trails</h5>
+                                </div>
+                                <div className={styles.top_icon_col}>
+                                    <FaPrayingHands />
+                                    <h5>Spiritual Haven</h5>
+                                </div>
+                                <div className={styles.top_icon_col}>
+                                    <FaLandmark />
+                                    <h5>Cultural Delights</h5>
+                                </div>
                             </div>
-                            <div className={styles.top_icon_col}>
-                                <FaPersonHiking />
-                                <h5>Adventure Trails</h5>
+
+                            <div className={styles.destination_overview}>
+                                <h3>{single_destination.destination_name} Overview</h3>
+                                <p>{single_destination.breif_overview}</p>
                             </div>
-                            <div className={styles.top_icon_col}>
-                                <FaPrayingHands />
-                                <h5>Spiritual Haven</h5>
+
+                            <div className={styles.destination_overview}>
+                                <h3>Best Time to Visit:</h3>
+                                <p>{single_destination.brief_best_time_to_visit}
+                                </p>
                             </div>
-                            <div className={styles.top_icon_col}>
-                                <FaLandmark />
-                                <h5>Cultural Delights</h5>
+
+                            <div className={styles.destination_overview}>
+                                <h3>Places To Visit in {single_destination.destination_name}:</h3>
+
+                                <ul>
+                                    {single_destination.places_to_visit.map((item, index) => (
+                                        <li key={index}><strong>{item.name}:</strong> {item.description}</li>
+                                    ))}
+                                </ul>
+                            </div>
+
+                            <div className={styles.destination_overview}>
+                                <h3>Travel Tips</h3>
+                                <ul>
+                                    {single_destination.travel_tips.map((item, index) => (
+                                        <li key={index}><strong>{item.title}:</strong> {item.description}</li>
+                                    ))}
+                                </ul>
                             </div>
                         </div>
-
-                        <div className={styles.destination_overview}>
-                            <h3>{single_destination.destination_name} Overview</h3>
-                            <p>{single_destination.breif_overview}</p>
-                        </div>
-
-                        <div className={styles.destination_overview}>
-                            <h3>Best Time to Visit:</h3>
-                            <p>{single_destination.brief_best_time_to_visit}
-                            </p>
-                        </div>
-
-                        <div className={styles.destination_overview}>
-                            <h3>Places To Visit in {single_destination.destination_name}:</h3>
-
-                            <ul>
-                                {single_destination.places_to_visit.map((item, index) => (
-                                    <li key={index}><strong>{item.name}:</strong> {item.description}</li>
-                                ))}
-                            </ul>
-                        </div>
-
-                        <div className={styles.destination_overview}>
-                            <h3>Travel Tips</h3>
-                            <ul>
-                                {single_destination.travel_tips.map((item, index) => (
-                                    <li key={index}><strong>{item.title}:</strong> {item.description}</li>
-                                ))}
-                            </ul>
+                        <div className={styles.weather_widget}>
+                            <WeatherWidget
+                                city={destinationWeather.city}
+                                latitude={destinationWeather.latitude}
+                                longitude={destinationWeather.longitude}
+                                apiKey={WeatherAPIKey}
+                            />
                         </div>
                     </div>
 

@@ -17,7 +17,7 @@ import Activities from './components/Activities/activities';
 export default function Home() {
   return (
     <main>
-      <HomeBanner />
+      {/* <HomeBanner />
       <Whychooseus />
 
       <MainTaxis />
@@ -44,7 +44,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className={`${styles.activities_sec} common_margin`}>
         <div className="container">
@@ -64,7 +64,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={`${styles.popular_tours} common_margin`}>
+      {/* <section className={`${styles.popular_tours} common_margin`}>
         <div className="container">
           <div className="d_flex justify_content_between align_items_center">
             <div className="common_heading">
@@ -88,7 +88,7 @@ export default function Home() {
         </div>
       </section>
 
-      <BookTaxiBanner />
+      <BookTaxiBanner /> */}
 
     </main>
   )
