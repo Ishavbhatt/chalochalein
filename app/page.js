@@ -14,7 +14,7 @@ import BookTaxiBanner from './components/Banners/BookTaxiBanner';
 import ToursPageCard from './components/Cards/ToursPageCard';
 import Activities from './components/Activities/activities';
 import Accordion from './components/Accordion/Accordion'
-
+import BookCabBanner from './components/Banners/BookCabBanner';
 export default function Home() {
 
   const faqs = [
@@ -96,7 +96,7 @@ export default function Home() {
       </section>
 
       <BookTaxiBanner />
-
+      <BookCabBanner / >
       <div className="faq-accordion">
         {faqs.map((faq, index) => (
           <Accordion key={index} question={faq.question} answer={faq.answer} />
