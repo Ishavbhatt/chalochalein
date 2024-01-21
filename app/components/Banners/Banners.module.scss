@@ -193,4 +193,22 @@
       margin-bottom: 5px;
     }
   }
+
+}
+.cab_banner{
+  width: 100%;
+  justify-content: space-between;
+  background-color: #dbe2e1;
+  border-radius: 6px;
+  height: 230px;
+  .left{
+    width: 50%;
+    padding: 20px;
+    p{
+      padding: 10px 0px;
+    }
+  }
+  .right{
+    width: 23%;
+  }
 }
