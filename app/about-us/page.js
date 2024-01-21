@@ -22,30 +22,30 @@ const AboutUs = () => {
             <div className={styles.right_sec}>
               <div className={styles.about_image}>
                 <Image
-                  src="/images/about-chalo-chalien.png"
+                  src="/images/about-chalochalein.jpg"
                   fill={true}
-                  alt="About us Image"
+                  alt="About Chalo Chalein Trekking"
                 />
               </div>
             </div>
           </div>
           <div className={`${styles.about_us_content} flex_center d_flex`}>
-          <div className={styles.right_sec}>
+            <div className={styles.right_sec}>
               <div className={styles.about_image}>
                 <Image
-                  src="/images/about-chalo-chalien.png"
+                  src="/images/about-chalochalein2.jpg"
                   fill={true}
-                  alt="About us Image"
+                  alt="About Chalo Chalein Taxi Service"
                 />
               </div>
             </div>
             <div className={`${styles.left_sec} ${styles.bottom_sec_content}`}>
               <p>
-              We are not just a travel agency; we are your companions on the road, guiding you through the diverse landscapes, vibrant cultures, and hidden gems that our beautiful destinations have to offer. Whether you're seeking the convenience of seamless taxi services, the excitement of curated tours, or the thrill of adventurous trekking, Chalo Chalein is your trusted partner in every step of the journey.
+                We are not just a travel agency; we are your companions on the road, guiding you through the diverse landscapes, vibrant cultures, and hidden gems that our beautiful destinations have to offer. Whether you're seeking the convenience of seamless taxi services, the excitement of curated tours, or the thrill of adventurous trekking, Chalo Chalein is your trusted partner in every step of the journey.
               </p>
               <p>So, join us on this incredible journey. Let's go explore, let's go discover – Chalo Chalein!</p>
             </div>
-            
+
           </div>
         </div>
       </section>

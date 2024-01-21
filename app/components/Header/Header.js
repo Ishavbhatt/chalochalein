@@ -38,10 +38,10 @@ const Header = () => {
               <Link href="/taxi-services" onClick={toggleMenu} className={styles.header_ancor}>
                 Taxi Services
               </Link>
-              <Link href="/tours" onClick={toggleMenu} className={styles.header_ancor}>
+              <Link href="/tours" onClick={toggleMenu} className={styles.header_ancor} >
                 Tours
               </Link>
-              <Link href="/activities" onClick={toggleMenu}>
+              <Link href="/activities" onClick={toggleMenu} className={styles.header_ancor}>
                 Activities
               </Link>
               <Link href="/destinations" onClick={toggleMenu} className={styles.header_ancor}>
