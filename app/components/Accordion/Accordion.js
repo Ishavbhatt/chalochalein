@@ -1,26 +1,28 @@
-'use client'
+'use client';
 import React, { useState } from 'react';
-import './Accordion.css';
+import styles from './Accordion.module.scss';
 
-const Accordion = ({ question, answer }) => {
-  const [isOpen, setIsOpen] = useState(false);
+const Accordion = ({ question, answer, index }) => {
+    const [isOpen, setIsOpen] = useState(false);
 
-  const toggleAccordion = () => {
-    setIsOpen(!isOpen);
-  };
+    const toggleAccordion = () => {
+        console.log('dfghj')
+        setIsOpen(!isOpen);
+    };
 
-  return (
-    <div className={`accordion-item ${isOpen ? 'open' : ''}`}>
-      <div className="accordion-header" onClick={toggleAccordion}>
-        <div className={`accordion-icon ${isOpen ? 'open' : ''}`}>
-          {isOpen ? '-' : '+'}
+    return (
+        <div className={`${styles.accordionItem} ${isOpen ? styles.open : ''}`}>
+            <div className={styles.accordionHeader} onClick={toggleAccordion}>
+                <h3 className={styles.accordionQuestion}>{1 + index} {question}</h3>
+                <div className={`${styles.accordionIcon} ${isOpen ? styles.open : ''}`}>
+                    {isOpen ? '-' : '+'}
+                </div>
+            </div>
+            <div className={styles.accordionContent} style={{ height: isOpen ? 'auto' : '0px' }}>
+                <p className={styles.contentInner}>{answer}</p>
+            </div>
         </div>
-        <div className="accordion-question">{question}</div>
-      </div>
-      <div className="accordion-content" style={{ height: isOpen ? 'auto' : '0px' }}>
-        <div className="content-inner">{answer}</div>
-      </div>
-    </div>
-  );
+    );
 };
+
 export default Accordion;
