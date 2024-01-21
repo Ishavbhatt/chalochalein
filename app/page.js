@@ -89,7 +89,7 @@ export default function Home() {
       </section>
 
       <BookTaxiBanner />
-
+      
     </main>
   )
 }
