@@ -13,8 +13,15 @@ import { HiOutlineArrowUpRight } from "react-icons/hi2";
 import BookTaxiBanner from './components/Banners/BookTaxiBanner';
 import ToursPageCard from './components/Cards/ToursPageCard';
 import Activities from './components/Activities/activities';
+import Accordion from './components/Accordion/Accordion'
 
 export default function Home() {
+
+  const faqs = [
+    { question: 'Question 1', answer: 'Answer 1' },
+    { question: 'Question 2', answer: 'Answer 2' },
+    // Add more FAQ items as needed
+  ];
   return (
     <main>
       <HomeBanner />
@@ -89,7 +96,13 @@ export default function Home() {
       </section>
 
       <BookTaxiBanner />
-      
+
+      <div className="faq-accordion">
+        {faqs.map((faq, index) => (
+          <Accordion key={index} question={faq.question} answer={faq.answer} />
+        ))}
+      </div>
+
     </main>
   )
 }
