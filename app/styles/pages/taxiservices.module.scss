@@ -18,6 +18,12 @@
             }
 
         }
+        @media screen and (max-width: 600px) {
+            flex-wrap: wrap;
+            .taxi_services_top_left,.taxi_services_top_right{
+                width: 100%;
+            }
+        }
     }
 
     .taxis_listing {
@@ -90,6 +96,12 @@
                             transform: scale(1);
                         }
                     }
+                }
+            }
+            @media screen and (max-width: 600px) {
+                flex-wrap: wrap;
+                .taxis_listing_child{
+                    width: 100%;
                 }
             }
         }

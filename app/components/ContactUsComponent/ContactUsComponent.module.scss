@@ -123,6 +123,12 @@
         height: 40px;
       }
     }
+    @media screen and (max-width: 600px) {
+      flex-wrap: wrap;
+      .contact_main_left,.contact_main_right{
+        width: 100%;
+      }
+  }
   }
 
 

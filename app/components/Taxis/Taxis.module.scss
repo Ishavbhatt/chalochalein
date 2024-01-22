@@ -175,6 +175,12 @@
                     }
                 }
             }
+            @media screen and (max-width: 600px) {
+                flex-wrap: wrap;
+                .mainly_taxi_service_main_child{
+                    width: 100%;
+                }
+            }
         }
     }
 }
@@ -216,6 +222,12 @@
                 .benefits_sec_main_child_image {
                     background-color: $secoundary-color;
                 }
+            }
+        }
+        @media screen and (max-width: 600px) {
+            flex-wrap: wrap;
+            .benefits_sec_main_child{
+               width: 100%;
             }
         }
     }
@@ -275,6 +287,12 @@
                         transform: scale(1.05);
                     }
                 }
+            }
+        }
+        @media screen and (max-width: 600px) {
+            flex-wrap: wrap;
+            .popular_routes_child{
+                width: 100%;
             }
         }
     }

@@ -51,7 +51,18 @@
             position: relative;
         }
     }
-
+    @media screen and (max-width: 600px) {
+        flex-wrap: wrap;
+        .card_left{
+           width: 100%;
+           padding: 0;
+        }
+        .card_content{
+            width: 100%;
+            padding: 20px 0px;
+        }
+    }
+}
     // &:hover {
     //     .card_image {
     //         img {
@@ -59,7 +70,7 @@
     //         }
     //     }
     // }
-}
+
 
 .popular_destination_page_card {
     position: relative;
