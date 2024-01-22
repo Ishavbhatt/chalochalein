@@ -211,4 +211,10 @@
   .right{
     width: 23%;
   }
+  @media screen and (max-width: 600px) {
+    flex-wrap: wrap;
+    .left,.right{
+      width: 100%;
+    }
+  }
 }
