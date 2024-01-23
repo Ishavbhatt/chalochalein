@@ -115,7 +115,7 @@ export default function TaxiServices() {
                                             <li>Music System</li>
                                             <li>Diesel</li>
                                         </ul>
-                                        <Link href="tel:7894651320" className='common_btn inline-block'>
+                                        <Link href="tel:7894651320" className='common_animate_btn inline-block'>
                                            <IoCallSharp /> Call to Book
                                         </Link>
                                     </div>

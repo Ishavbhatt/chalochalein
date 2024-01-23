@@ -22,7 +22,7 @@ export default function DestinationPageCard({ destination }) {
                 <h4>{destination.destination_name}</h4>
                 <p>{destination.short_description}</p>
                 <p className={styles.best_time_to_visit}><strong>Best Time: </strong>{destination.best_time_to_visit}</p >
-                <Link href={`/destinations/${destination.slug}`} className="common_btn">
+                <Link href={`/destinations/${destination.slug}`} className="common_animate_btn">
                     Discover
                     <PiArrowUpRightLight />
                 </Link>

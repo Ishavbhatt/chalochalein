@@ -1,21 +1,25 @@
 import Image from "next/image";
 import styles from './Banners.module.scss'
-const BookCabBanner = () => {
+import Link from "next/link";
+
+const BookCabBanner = (props) => {
     return (
-        <div className="container">
-            <div className={`${styles.cab_banner} d_flex`} >
-                <div className={`${styles.left}`}>
-                    <h3>Book Your Cab</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur. Massa egestas id sit nulla ac. 
-                        Turpis mattis elit purus lorem amet et tempus.
-                         Aliquet viverra ipsum sed purus fermentum.</p>
-                     <button className="common_btn">Book Now</button>
-                </div>
-                <div className={styles.right}>
-                    <Image src='/images/banners/cab-banner.jpeg' width={255} height={230}></Image>
+        <section className="common_margin">
+            <div className="container">
+                <div className={`${styles.cab_banner} d_flex`} >
+                    <div className={`${styles.cab_banner_left}`}>
+                        <h3>{props.title}</h3>
+                        <p>{props.description}</p>
+                        <Link href="tel:9418249045" className="common_animate_btn">{props.CTA_text}</Link>
+                    </div>
+                    <div className={styles.cab_banner_right}>
+                        <div className={styles.cab_banner_right_image}>
+                            <Image src={props.image} fill={true} alt={props.title}></Image>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 export default BookCabBanner;

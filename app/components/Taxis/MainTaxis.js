@@ -48,7 +48,7 @@ const MainTaxis = () => {
                             <span></span>
                         </div>
                         <div>
-                            <Link href="/taxi-services" className='common_btn inline-block'>
+                            <Link href="/taxi-services" className='common_animate_btn inline-block'>
                                 View More <HiOutlineArrowUpRight />
                             </Link>
                         </div>

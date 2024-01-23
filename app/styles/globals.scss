@@ -100,7 +100,6 @@ h6 {
   color: $title-color;
 }
 
-
 .common_heading span {
   border: 2px solid $primary-color;
   width: 100px;
@@ -177,6 +176,43 @@ p {
   &:hover {
     background: $secoundary-color;
     border: 1px solid $secoundary-color;
+  }
+}
+
+.common_animate_btn {
+  padding: 11px 20px 11px 30px;
+  background: #169b80;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #fff;
+  position: relative;
+  z-index: 9;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border: none;
+
+  &::before {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    content: "";
+    background: #ff8c00;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    -webkit-clip-path: circle(27% at -3% 50%);
+    clip-path: circle(27% at -3% 50%);
+    -webkit-transition: all .4s;
+    transition: all .4s;
+    z-index: -1;
+  }
+
+  &:hover {
+    &::before {
+      -webkit-clip-path: circle(150% at 0% 0%);
+      clip-path: circle(150% at 0% 0%);
+    }
   }
 }
 

@@ -16,9 +16,25 @@
             box-shadow: 0 8px 16px 0 rgba(15, 41, 77, 0.06);
             border-radius: 5px;
             overflow: hidden;
+
             @media only screen and (max-width: 768px) {
                 width: 100%;
             }
         }
+    }
+}
+
+.faq_sec {
+    display: flex;
+
+    .faq_sec_left {
+        width: 30%;
+        position: sticky;
+        top: 16px;
+        height: 100%;
+    }
+
+    .faq_sec_right {
+        width: 70%;
     }
 }

@@ -3,19 +3,20 @@
 
 .accordionItem {
   margin-bottom: 16px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid $title-color;
+  border: 1px solid $light-gray;
+  padding: 10px 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: height 0.5s ease; /* Add transition for height */
 
   &.open {
-    .accordionIcon {
-      transform: rotate(359deg);
-    }
+    height: auto; /* Auto height when open */
   }
 
   .accordionHeader {
     display: flex;
     cursor: pointer;
-    // padding-bottom: 5px;
+    align-items: center;
 
     .accordionQuestion {
       font-size: 18px;
@@ -24,19 +25,36 @@
     }
 
     .accordionIcon {
-      margin-right: 10px;
-      font-size: 22px;
-      transition: transform 0.3s;
+      width: 32px;
+      height: 32px;
+      background: #dbe2e1;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.5s ease; /* Add transition for background color */
+
+      span {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+
+    .accordionIcon.opened {
+      background: $primary-color;
+      color: $white-color;
+      .accordionIcon {
+        background: red; /* Change to the desired color when opened */
+      }
     }
   }
 
   .accordionContent {
     overflow: hidden;
-    height: 0;
-    transition: height 1s;
+    transition: opacity 0.5s ease; /* Add transition for opacity */
 
     .contentInner {
-      padding: 10px;
+      padding: 10px 0;
     }
   }
 }

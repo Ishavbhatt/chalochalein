@@ -15,43 +15,10 @@ import ToursPageCard from './components/Cards/ToursPageCard';
 import Activities from './components/Activities/activities';
 import Accordion from './components/Accordion/Accordion'
 import BookCabBanner from './components/Banners/BookCabBanner';
+import homePageFaqs from './Data/homePageFaqs';
+import FaqCallSec from './components/FaqCallSec/FaqCallSec';
+
 export default function Home() {
-
-  const homePageFaqs = [
-    {
-      question: 'What does "Chalo Chalein" mean?',
-      answer: `"Chalo Chalein" is a Hindi phrase that translates to "Let's go" in English. It encapsulates the spirit of our travel agency, inviting you to embark on exciting journeys and adventures.`
-    },
-    {
-      question: 'What services does Chalo Chalein offer?',
-      answer: `Chalo Chalein provides a range of travel services, including taxi services for seamless transportation, curated tours for memorable experiences, adventurous trekking in the lap of nature, thrilling paragliding adventures, and immersive camping experiences.`
-    },
-    {
-      question: 'Where does Chalo Chalein operate?',
-      answer: `Our services extend across Himachal Pradesh, with a primary focus on popular destinations such as Dharamshala, Dalhousie, Manali, Shimla, Kinnaur, Kullu, Lahaul Spiti, as well as connectivity to Amritsar, Chandigarh, and Delhi.`
-    },
-    {
-      question: 'How can I book a taxi with Chalo Chalein?      ',
-      answer: `"Booking a taxi with Chalo Chalein is easy. Simply visit our website, choose your destination, select the type of taxi service you need, and follow the intuitive booking process. Alternatively, you can contact our customer support for assistance.`
-    },
-    {
-      question: 'Are your drivers experienced and professional?',
-      answer: `Yes, our drivers are seasoned professionals with extensive experience. They are not only skilled in safe navigation but also knowledgeable about the local attractions, ensuring you have a comfortable and enjoyable journey.`
-    },
-    {
-      question: 'What safety measures are in place for trekking and paragliding activities?',
-      answer: `Your safety is our priority. Our trekking and paragliding activities adhere to stringent safety protocols. We work with certified guides and instructors, use high-quality equipment, and conduct thorough safety briefings to ensure a secure and enjoyable experience.`
-    },
-    {
-      question: 'Can Chalo Chalein customize tour packages?',
-      answer: `Absolutely! We understand that every traveler has unique preferences. Chalo Chalein offers customizable tour packages to tailor your journey according to your interests, schedule, and group size. Contact us, and we'll create a personalized itinerary for you.      `
-    },
-    {
-      question: 'What amenities are provided during camping trips?',
-      answer: `Our camping trips are designed for comfort and adventure. We provide essential amenities such as tents, sleeping bags, and camping gear. Additionally, our camping experiences include bonfires, delicious meals, and activities to make your stay memorable.`
-    },
-  ];
-
   return (
     <main>
       <HomeBanner />
@@ -67,7 +34,7 @@ export default function Home() {
               <span></span>
             </div>
             <div>
-              <Link href="/destinations" className='common_btn inline-block'>
+              <Link href="/destinations" className='common_animate_btn inline-block'>
                 Explore More <HiOutlineArrowUpRight />
               </Link>
             </div>
@@ -90,17 +57,17 @@ export default function Home() {
               <h5>Explore the Thrill of Our Popular Activities</h5>
               <span></span>
             </div>
-            {/* <div>
-              <Link href="/destinations" className='common_btn inline-block'>
+            <div>
+              <Link href="/destinations" className='common_animate_btn'>
                 Explore More <HiOutlineArrowUpRight />
               </Link>
-            </div> */}
+            </div>
           </div>
           <Activities />
         </div>
       </section>
 
-      <section className={`${styles.popular_tours} common_margin`}>
+      <section className={`${styles.popular_tours}  common_margin`}>
         <div className="container">
           <div className="d_flex justify_content_between align_items_center">
             <div className="common_heading">
@@ -109,7 +76,7 @@ export default function Home() {
               <span></span>
             </div>
             <div>
-              <Link href="/tours" className='common_btn inline-block'>
+              <Link href="/tours" className='common_animate_btn inline-block'>
                 View All Tours <HiOutlineArrowUpRight />
               </Link>
             </div>
@@ -124,16 +91,31 @@ export default function Home() {
         </div>
       </section>
 
-      <BookTaxiBanner />
-
-      <div className="common_margin">
-        <div className='container-sm'>
-          {homePageFaqs.map((faq, index) => (
-            <Accordion key={index} question={faq.question} answer={faq.answer} index={index} />
-          ))}
+      {/* <BookTaxiBanner /> */}
+      <section className={`${styles.faq_sec} common_margin`}>
+        <div className='container'>
+          <div className="common_heading">
+            <h4>Chalo Chalein FAQs</h4>
+            <h5>Your Journey Begins with Answers</h5>
+            <span></span>
+          </div>
+          <div className="d_flex gap_20">
+            <div className={styles.faq_sec_left}>
+              <FaqCallSec />
+            </div>
+            <div className={styles.faq_sec_right}>
+              <Accordion items={homePageFaqs} />
+            </div>
+          </div>
         </div>
-      </div>
-      <BookCabBanner />
+      </section>
+
+      <BookCabBanner
+        title={'Book Your Cab'}
+        description={'Explore Himachal Pradesh with ease. Book your taxi now for a seamless journey through Dharamshala, Manali, and beyond. Our professional drivers ensure comfort and punctuality, making every trip memorable. Start your adventure today!'}
+        CTA_text={'Book Now'}
+        image={'/vectors/taxi.svg'}
+      />
     </main>
   )
 }

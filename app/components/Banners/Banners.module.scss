@@ -195,25 +195,40 @@
   }
 
 }
-.cab_banner{
+
+.cab_banner {
   width: 100%;
   justify-content: space-between;
   background-color: #dbe2e1;
   border-radius: 6px;
+  align-items: center;
   height: 230px;
-  .left{
+  padding: 20px;
+
+  .cab_banner_left {
     width: 50%;
-    padding: 20px;
-    p{
+
+    p {
       padding: 10px 0px;
     }
   }
-  .right{
-    width: 23%;
+
+  .cab_banner_right {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    .cab_banner_right_image {
+      width: 255px;
+      height: 210px;
+      position: relative;
+    }
   }
+
   @media screen and (max-width: 600px) {
     flex-wrap: wrap;
-    .left,.right{
+
+    .cab_banner_left,
+    .cab_banner_right {
       width: 100%;
     }
   }

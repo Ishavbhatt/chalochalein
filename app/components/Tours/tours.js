@@ -42,9 +42,9 @@ const Tours = () => {
                 <div className={`${styles.card_bottom}`}>
                   <h4>{tour.title}</h4>
                   <p>{tour.description}</p>
-                  {/* <button className="common_btn">{destination.button}</button>               */}
+                  {/* <button className="common_animate_btn">{destination.button}</button>               */}
                   <Link href={"/"}>
-                    <button className="common_btn">
+                    <button className="common_animate_btn">
                       Explore <MdArrowOutward />
                     </button>{" "}
                   </Link>
