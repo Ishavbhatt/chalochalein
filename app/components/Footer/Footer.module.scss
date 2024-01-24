@@ -2,11 +2,10 @@
 
 .footer_parent {
   background-color: $footer-bg;
+  padding: 40px 0;
   color: white;
 
   .footer_container {
-    padding: 20px 0;
-
     .footer_column {
       display: flex;
       justify-content: space-between;
@@ -106,24 +105,26 @@
       .footer_last_column {
         width: 27%;
       }
+
       @media only screen and (max-width: 768px) {
         flex-wrap: wrap;
-        .column{
-            width: 100%;
+
+        .column {
+          width: 100%;
         }
+      }
     }
-    }
-    
+
   }
 
   .footer_bottom {
     text-align: center;
     // background-color: #a1a89f;
-    color: white;
-    padding: 10px 0px;
+    margin-top: 20px;
 
     p {
       font-size: 12px;
+      color: $white-color;
     }
   }
 }

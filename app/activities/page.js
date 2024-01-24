@@ -24,10 +24,10 @@ export default function Activities() {
                 </div>
             </section>
             <BookCabBanner
-                title={'Book Your Cab'}
-                description={'Explore Himachal Pradesh with ease. Book your taxi now for a seamless journey through Dharamshala, Manali, and beyond. Our professional drivers ensure comfort and punctuality, making every trip memorable. Start your adventure today!'}
+                title={'Explore the Outdoors with Chalo Chalein'}
+                description={'Unleash the adventurer in you! Choose from exciting trekking trails, exhilarating paragliding experiences, or serene camping getaways. Your next escapade awaits – book now!'}
                 CTA_text={'Book Now'}
-                image={'/vectors/trekking2.svg'}
+                image={'/vectors/trekking.svg'}
             />
         </>
     )

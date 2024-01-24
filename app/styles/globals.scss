@@ -26,7 +26,6 @@ a {
   color: inherit;
   text-decoration: none;
   font-size: 14px;
-
 }
 
 .ancor_click {
@@ -153,8 +152,9 @@ h6 {
 p {
   font-size: 14px;
   line-height: 18px;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-poppins);
   font-weight: 400;
+  color: $para-color;
   margin: 0;
   padding: 0;
 }

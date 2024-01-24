@@ -183,7 +183,7 @@
     width: 100%;
     background: linear-gradient(to top, rgb(0 0 0 / 81%), rgb(0 0 0 / 5%));
     height: 100px;
-    color: white;
+    color: $white-color;
 
     h2 {
       font-family: 'Montserrat', sans-serif;
@@ -191,6 +191,10 @@
       margin-top: 10px;
       font-size: 28px;
       margin-bottom: 5px;
+    color: $white-color;
+    }
+    p {
+      color: $white-color;
     }
   }
 
