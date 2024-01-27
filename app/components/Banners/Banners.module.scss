@@ -56,6 +56,9 @@
       .home_banner_content {
         padding: 0 12px;
         bottom: 30px;
+        h2{
+          color: white;
+        }
       }
     }
   }
@@ -230,7 +233,7 @@
 
   @media screen and (max-width: 600px) {
     flex-wrap: wrap;
-
+    height: auto;
     .cab_banner_left,
     .cab_banner_right {
       width: 100%;

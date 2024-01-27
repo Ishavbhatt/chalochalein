@@ -8,7 +8,9 @@
   border-radius: 5px;
   overflow: hidden;
   transition: height 0.5s ease; /* Add transition for height */
-
+  @media only screen and (max-width: 768px) {
+    padding: 10px 8px;
+  }
   &.open {
     height: auto; /* Auto height when open */
   }
@@ -22,6 +24,9 @@
       font-size: 18px;
       line-height: 22px;
       flex-grow: 1;
+      @media only screen and (max-width: 768px) {
+          font-size: 13px;
+    }
     }
 
     .accordionIcon {
@@ -38,6 +43,14 @@
         font-size: 20px;
         font-weight: bold;
       }
+      @media only screen and (max-width: 768px) {
+        width: 30px;
+        height: 30px;
+        span {
+          font-size: 16px;
+          font-weight: bold;
+        }
+  }
     }
 
     .accordionIcon.opened {
@@ -47,6 +60,7 @@
         background: red; /* Change to the desired color when opened */
       }
     }
+   
   }
 
   .accordionContent {
@@ -55,6 +69,9 @@
 
     .contentInner {
       padding: 10px 0;
+      @media only screen and (max-width: 768px) {
+          font-size: 12px;
+        }
     }
   }
 }

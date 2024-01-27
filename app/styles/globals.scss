@@ -163,6 +163,7 @@ p {
   background: $primary-color;
   color: white;
   padding: 8px 20px;
+  cursor: pointer;
   border-radius: 2px;
   font-size: 14px;
   border: 1px solid $primary-color;
@@ -212,6 +213,7 @@ p {
     &::before {
       -webkit-clip-path: circle(150% at 0% 0%);
       clip-path: circle(150% at 0% 0%);
+      cursor: pointer;
     }
   }
 }
@@ -302,5 +304,24 @@ p {
 .booktaxiform__date_picker_wrapper {
   .react-datepicker-wrapper {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .faq_section{
+    .d_flex{
+      flex-wrap: wrap;
+    }
+  }
+}
+.common_headings_white,.common_para_white{
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .common_parent_div{
+    flex-wrap: wrap;
+    .common_btn_div{
+      display: none;
+    }
   }
 }

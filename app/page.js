@@ -27,13 +27,13 @@ export default function Home() {
 
       <section className={`${styles.popular_destinations} common_margin`}>
         <div className="container">
-          <div className="d_flex justify_content_between align_items_center">
+          <div className="d_flex justify_content_between align_items_center common_parent_div">
             <div className="common_heading">
               <h4>Explore Our Premier Destinations</h4>
               <h5>Discover the Charms of Shimla, Manali, Dharamshala, and More</h5>
               <span></span>
             </div>
-            <div>
+            <div className="common_btn_div">
               <Link href="/destinations" className='common_animate_btn inline-block'>
                 Explore More <HiOutlineArrowUpRight />
               </Link>
@@ -51,13 +51,13 @@ export default function Home() {
 
       <section className={`${styles.activities_sec} common_margin`}>
         <div className="container">
-          <div className="d_flex justify_content_between align_items_center">
+          <div className="d_flex justify_content_between align_items_center common_parent_div">
             <div className="common_heading">
               <h4>Adventure Awaits</h4>
               <h5>Explore the Thrill of Our Popular Activities</h5>
               <span></span>
             </div>
-            <div>
+            <div className="common_btn_div">
               <Link href="/destinations" className='common_animate_btn'>
                 Explore More <HiOutlineArrowUpRight />
               </Link>
@@ -69,13 +69,13 @@ export default function Home() {
 
       <section className={`${styles.popular_tours}  common_margin`}>
         <div className="container">
-          <div className="d_flex justify_content_between align_items_center">
+          <div className="d_flex justify_content_between align_items_center common_parent_div">
             <div className="common_heading">
               <h4>Featured Tours for Unforgettable Adventures</h4>
               <h5>Embark on Exciting Journeys: Explore, Trek, and Discover</h5>
               <span></span>
             </div>
-            <div>
+            <div className="common_btn_div">
               <Link href="/tours" className='common_animate_btn inline-block'>
                 View All Tours <HiOutlineArrowUpRight />
               </Link>
@@ -99,7 +99,7 @@ export default function Home() {
             <h5>Your Journey Begins with Answers</h5>
             <span></span>
           </div>
-          <div className="d_flex gap_20">
+          <div className={`${styles.faq_content_main} d_flex gap_20`}>
             <div className={styles.faq_sec_left}>
               <FaqCallSec />
             </div>
