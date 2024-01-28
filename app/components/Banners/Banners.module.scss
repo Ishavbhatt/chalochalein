@@ -44,7 +44,7 @@
       background: linear-gradient(0deg,
           rgb(0 0 0 / 58%) 0%,
           rgb(0 0 0 / 3%) 49.87%);
-      height: 300px;
+      height: 100%;
       width: 100%;
       bottom: 0;
     }
@@ -170,7 +170,7 @@
 
 .page_top_banner {
   position: relative;
-  height: 300px;
+  height: 400px;
   width: 100%;
 
   img {
@@ -182,7 +182,7 @@
     bottom: 0;
     width: 100%;
     background: linear-gradient(to top, rgb(0 0 0 / 81%), rgb(0 0 0 / 5%));
-    height: 100px;
+    height: 150px;
     color: $white-color;
 
     h2 {
@@ -191,11 +191,24 @@
       margin-top: 10px;
       font-size: 28px;
       margin-bottom: 5px;
-    color: $white-color;
+      color: $white-color;
     }
+
     p {
       color: $white-color;
     }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: url('/vectors/banner-bottom.png');
+    height: 50px;
+    background-repeat: no-repeat;
+    width: 100%;
+    bottom: 0;
+    background-position: center;
+    background-size: cover;
   }
 
 }
@@ -221,6 +234,7 @@
     width: 50%;
     display: flex;
     justify-content: flex-end;
+
     .cab_banner_right_image {
       width: 255px;
       height: 210px;

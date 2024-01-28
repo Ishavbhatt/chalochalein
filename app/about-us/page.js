@@ -22,7 +22,7 @@ const AboutUs = () => {
             <div className={styles.right_sec}>
               <div className={styles.about_image}>
                 <Image
-                  src="/images/about-chalochalein.jpg"
+                  src="/images/about-chalochalein.webp"
                   fill={true}
                   alt="About Chalo Chalein Trekking"
                 />
@@ -33,7 +33,7 @@ const AboutUs = () => {
             <div className={styles.right_sec}>
               <div className={styles.about_image}>
                 <Image
-                  src="/images/about-chalochalein2.jpg"
+                  src="/images/about-chalochalein2.webp"
                   fill={true}
                   alt="About Chalo Chalein Taxi Service"
                 />
