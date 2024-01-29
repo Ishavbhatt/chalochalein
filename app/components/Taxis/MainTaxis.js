@@ -41,13 +41,13 @@ const MainTaxis = () => {
         <>
             <section className={`${styles.main_taxis_sec} `}>
                 <div className="container">
-                    <div className="d_flex justify_content_between align_items_center">
+                    <div className="d_flex justify_content_between align_items_center common_parent_div">
                         <div className="common_heading">
                             <h4>Our Fleet of Reliable Taxis</h4>
                             <h5>Explore Our Diverse Range of Vehicles for Every Need</h5>
                             <span></span>
                         </div>
-                        <div>
+                        <div className="common_btn_div">
                             <Link href="/taxi-services" className='common_animate_btn inline-block'>
                                 View More <HiOutlineArrowUpRight />
                             </Link>
@@ -60,13 +60,16 @@ const MainTaxis = () => {
                                 <div className={styles.main_taxis_child_image}>
                                     <Image src={taxi.taxi_image} height={150} width={150} alt={taxi.taxi_name} priority={true} />
                                 </div>
-                                <div className={styles.taxi_content}>
+                                <div className="d_flex flex_center">
+                                    <div className={styles.taxi_content}>
                                     <h4>{taxi.taxi_name}</h4>
                                     <p>{taxi.description}</p>
                                 </div>
                                 <button className={styles.taxi_btn}>
                                     <FaArrowRight />
-                                </button>
+                                </button> 
+                                </div>
+                               
                             </div>
                         ))}
                     </div>

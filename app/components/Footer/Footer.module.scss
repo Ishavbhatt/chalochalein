@@ -4,7 +4,9 @@
   background-color: $footer-bg;
   padding: 40px 0;
   color: white;
-
+  @media screen and (max-width: 600px) {
+    padding: 0px 0px 20px ;
+    }
   .footer_container {
     .footer_column {
       display: flex;
@@ -109,9 +111,12 @@
 
       @media only screen and (max-width: 768px) {
         flex-wrap: wrap;
-
         .column {
           width: 100%;
+          padding-top: 30px;
+          h4{
+            padding-bottom: 10px;
+          }
         }
       }
     }

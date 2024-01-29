@@ -27,14 +27,28 @@
 .faq_sec {
     display: flex;
 
-    .faq_sec_left {
-        width: 30%;
-        position: sticky;
-        top: 16px;
-        height: 100%;
+    .faq_content_main {
+        .faq_sec_left {
+            width: 30%;
+            position: sticky;
+            top: 16px;
+            height: 100%;
+        }
+
+        .faq_sec_right {
+            width: 70%;
+        }
+
+        @media only screen and (max-width: 768px) {
+            flex-wrap: wrap;
+            .faq_sec_left{
+                position: unset;
+            }
+            .faq_sec_left,
+            .faq_sec_right {
+                width: 100%;
+            }
+        }
     }
 
-    .faq_sec_right {
-        width: 70%;
-    }
 }
