@@ -64,14 +64,29 @@
             }
 
         }
-        @media screen and (max-width: 600px) {
+
+        @media screen and (max-width: 768px) {
             flex-wrap: wrap;
-            .main_taxis_child{
-               flex-wrap: wrap;
-               width: 100%;
-               .main_taxis_child_image{
+
+            .main_taxis_child {
+                flex-wrap: wrap;
                 width: 100%;
-               }
+
+                .main_taxis_child_image {
+                    width: 100%;
+
+                    img {
+                        height: 100px;
+                    }
+                }
+
+                .taxi_content {
+                    padding-top: 16px;
+                }
+
+                .taxi_btn {
+                    padding: 16px 10px 0 10px;
+                }
             }
         }
     }
@@ -175,9 +190,11 @@
                     }
                 }
             }
+
             @media screen and (max-width: 600px) {
                 flex-wrap: wrap;
-                .mainly_taxi_service_main_child{
+
+                .mainly_taxi_service_main_child {
                     width: 100%;
                 }
             }
@@ -224,10 +241,12 @@
                 }
             }
         }
+
         @media screen and (max-width: 600px) {
             flex-wrap: wrap;
-            .benefits_sec_main_child{
-               width: 100%;
+
+            .benefits_sec_main_child {
+                width: 100%;
             }
         }
     }
@@ -289,9 +308,11 @@
                 }
             }
         }
+
         @media screen and (max-width: 600px) {
             flex-wrap: wrap;
-            .popular_routes_child{
+
+            .popular_routes_child {
                 width: 100%;
             }
         }

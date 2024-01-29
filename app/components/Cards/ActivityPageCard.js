@@ -31,7 +31,6 @@ const ActivityPageCard = ({ activity }) => {
                     </div>
                     <Link href='tel:9418249045' className="common_animate_btn"><FiPhoneCall /> {activity.CTA_text}</Link>
                 </div>
-
             </div>
         </div>
     );

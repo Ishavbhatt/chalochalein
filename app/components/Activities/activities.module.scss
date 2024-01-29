@@ -74,11 +74,24 @@
                 }
             }
         }
-       
+
+        @media only screen and (max-width: 768px) {
+            .card_image {
+                height: 300px;
+            }
+
+            .card_content {
+                a {
+                    font-size: 16px;
+                }
+            }
+        }
     }
+
     @media only screen and (max-width: 768px) {
         flex-wrap: wrap;
-        .activity_card{
+
+        .activity_card {
             width: 100%;
         }
     }

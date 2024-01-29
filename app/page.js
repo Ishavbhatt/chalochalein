@@ -72,7 +72,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={`${styles.popular_tours}  common_margin`}>
+      <section className={`${styles.popular_tours} common_margin`}>
         <div className="container">
           <div className="d_flex justify_content_between align_items_center common_parent_div">
             <div className="common_heading">
@@ -88,7 +88,7 @@ export default function Home() {
           </div>
           <div className={styles.popular_tours_cards}>
             {toursData && toursData.slice(0, 4).map((tour, index) => (
-              <div className={styles.popular_destinations_card} key={index} >
+              <div className={styles.popular_tour_card} key={index} >
                 <ToursPageCard tour={tour} />
               </div>
             ))}
