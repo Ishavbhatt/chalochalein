@@ -1,6 +1,6 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+// import axios from 'axios';
 import { WiDaySunny, WiRain, WiSnow, WiThunderstorm, WiCloudy } from 'react-icons/wi';
 import styles from '../../styles/pages/destination.module.scss'
 
