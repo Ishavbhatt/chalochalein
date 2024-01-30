@@ -239,7 +239,7 @@
 
     .activity_page_card_image {
         position: relative;
-        height: 200px;
+        height: 230px;
         width: 100%;
         overflow: hidden;
 
@@ -260,7 +260,7 @@
 
         img {
             opacity: 1;
-            // object-fit: cover;
+            object-fit: cover;
             transition: all 0.3s;
         }
     }
