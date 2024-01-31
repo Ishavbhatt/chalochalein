@@ -3,11 +3,14 @@ const destinationsData = [
     {
         destination_name: 'Shimla',
         slug: 'shimla',
+        meta_title: 'Book Our Tour Packages - Explore the Best Places to Visit in Shimla',
+        meta_description:'Experience the beauty of Shimla with our tour packages. Discover the best places to visit in Shimla, including trekking services and taxi service. Book now and make unforgettable memories.',
         short_description: 'The capital city known for its colonial architecture, Mall Road, and panoramic views. Explore the blend of British heritage and scenic landscapes.',
         destination_image: '/images/destinations/shimla.png',
         region: 'Shivalik Range',
         best_time_to_visit: ' March to June, and October to February',
-        breif_overview: `Shimla, the capital city of Himachal Pradesh, stands as a charming reflection of colonial history amid breathtaking natural beauty. Nestled in the Shivalik Range, this hill station exudes an old-world British charm through its architecture, including landmarks like Christ Church and the Viceregal Lodge. The bustling Mall Road offers a vibrant mix of shops, cafes, and local life, while Jakhu Temple and the Ridge showcase the city's spiritual and cultural side.        `,
+        breif_ovemeta_title: 'Book Our Tour Packages - Explore the Best Places to Visit in Shimla',
+        meta_description:'Experience the beauty of Shimla with our tour packages. Discover the best places to visit in Shimla, including trekking services and taxi service. Book now and make unforgettable memories.',rview: `Shimla, the capital city of Himachal Pradesh, stands as a charming reflection of colonial history amid breathtaking natural beauty. Nestled in the Shivalik Range, this hill station exudes an old-world British charm through its architecture, including landmarks like Christ Church and the Viceregal Lodge. The bustling Mall Road offers a vibrant mix of shops, cafes, and local life, while Jakhu Temple and the Ridge showcase the city's spiritual and cultural side.        `,
         brief_best_time_to_visit: "The best time to visit Shimla is from March to June when the weather is pleasant, and October to February, known for its snowfall and stunning wintry landscapes. These periods offer various experiences, from enjoying outdoor activities in summer to witnessing snow-covered landscapes in winter.",
         places_to_visit: [
             {
@@ -53,6 +56,8 @@ const destinationsData = [
     {
         destination_name: 'Manali',
         slug: 'manali',
+        meta_title: 'Book Our Tour Packages & Taxi Services in Manali | Best Places to Visit Manali',
+        meta_description:'Discover the best places to visit in Manali and book our tour packages, trekking services, and taxi service. Enjoy a memorable vacation in the breathtaking landscapes of Manali.',
         short_description: 'AA popular hill station offering thrilling adventure sports, breathtaking valleys, and serene natural beauty. Discover the essence of mountain life and tranquility.',
         destination_image: '/images/destinations/manali.png',
         region: 'Kullu Valley',
@@ -103,6 +108,8 @@ const destinationsData = [
     {
         destination_name: 'Dharamshala',
         slug: 'dharamshala',
+        meta_title: 'Book Our Taxi Service, Tour Packages, and Trekking Services in Dharamshala',
+        meta_description:'Discover the Best Places to Visit in Dharamshala. Get Reliable Taxi Service, Exciting Tour Packages, and Thrilling Trekking Services. Plan your Visit Today!',
         short_description: 'Home to the Dalai Lama and Tibetan culture, amidst picturesque landscapes ideal for trekking. Immerse in spirituality and stunning mountain vistas.',
         destination_image: '/images/destinations/dharamshala.png',
         region: 'Kangra Valley',
@@ -149,6 +156,8 @@ const destinationsData = [
     {
         destination_name: 'Dalhousie',
         slug: 'dalhousie',
+        meta_title: 'Book Taxi Service, Tours and Trekking in Dalhousie | Best Places to Visit Dalhousie',
+        meta_description:'Explore the Best Places to Visit in Dalhousie with our Book Taxi Service, Tours, and Trekking. Discover scenic beauty & thrilling adventures. Plan your trip now!',
         short_description: 'Known for its colonial-era charm, stunning views of snow-capped peaks, and pine-covered valleys. Experience the nostalgic essence of the British era amidst breathtaking landscapes.',
         region: 'Chamba District',
         destination_image: '/images/destinations/dalhousie.png',
@@ -195,6 +204,8 @@ const destinationsData = [
     {
         destination_name: 'Kullu',
         slug: 'kullu',
+        meta_title: 'Book Taxi Service, Tours, and Trekking in Kullu | Best Places to Visit Kullu',
+        meta_description:'Discover the best places to visit in Kullu. Book taxi service, tours, and trekking to explore the beauty of Kullu valley. Experience the breathtaking landscapes and adventure activities.',
         short_description: 'Famous for its Dussehra festival, adventure sports, and breathtaking scenic beauty. Dive into a vibrant culture, thrilling activities, and captivating landscapes.',
         destination_image: '/images/destinations/kullu.png',
         region: 'Kullu Valley',
@@ -249,6 +260,8 @@ const destinationsData = [
     {
         destination_name: 'Kasol',
         slug: 'kasol',
+        meta_title: 'Book Taxi Service, Tours and Trekking in Kasol | Best Places to Visit Kasol',
+        meta_description:'Discover the best of Kasol with our book taxi service, tours, and trekking experiences. Explore the beauty of Kasol, the top-rated destination for adventure enthusiasts. Plan an unforgettable trip now!',
         short_description: 'Renowned for its picturesque landscapes, trekking trails, and vibrant backpacking culture. Discover tranquility, adventure, and the mesmerizing beauty of Parvati Valley.',
         destination_image: '/images/destinations/kasol.png',
         region: 'Parvati Valley',
@@ -303,6 +316,8 @@ const destinationsData = [
     {
         destination_name: 'Spiti Valley',
         slug: 'spiti-valley',
+        meta_title: 'Book Taxi Service, Tours & Trekking in Spiti Valley | Best Places to Visit',
+        meta_description:'Explore the breathtaking beauty of Spiti Valley with our reliable taxi service, customized tours, and thrilling trekking adventures. Discover the best places to visit and make unforgettable memories.',
         short_description: 'A cold desert mountain valley famous for its landscapes, monasteries, and adventure expeditions. Explore the raw beauty, spirituality, and adventure of this unique Himalayan region.',
         destination_image: '/images/destinations/spiti-valley.png',
         region: 'Lahaul and Spiti District',
@@ -361,6 +376,8 @@ const destinationsData = [
     {
         destination_name: 'Kufri',
         slug: 'kufri',
+        meta_title: 'Book Taxi Service, Tours and Trekking in Kufri - Best Places to Visit Kufri',
+        meta_description:'Plan your visit to Kufri with our reliable taxi service. Explore the best places to visit in Kufri, and experience exciting tours and trekking adventures. Book now!',
         short_description: 'Known for skiing, snow-capped landscapes, and a Himalayan wildlife zoo. Experience adventure, scenic vistas, and winter sports in this charming district of Shimla.',
         region: 'Shimla District',
         best_time_to_visit: ' December to February',

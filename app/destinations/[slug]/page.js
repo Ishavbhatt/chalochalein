@@ -41,6 +41,11 @@ const page = ({ params }) => {
 
     return (
         <>
+                {/* <title>{single_destination.meta_title}</title>
+                <meta
+                        name="description"
+                        content= {single_destination.meta_description}
+                /> */}
             <section className={`${styles.single_destination} common_margin`}>
                 <div className='container'>
                     <div className='d_flex gap_20 justify_content_between'>

@@ -19,13 +19,15 @@
     display: flex;
     cursor: pointer;
     align-items: center;
+    width: 100%;
+    gap: 10px;
 
     .accordionQuestion {
       font-size: 18px;
       line-height: 22px;
       flex-grow: 1;
       @media only screen and (max-width: 768px) {
-          font-size: 13px;
+          font-size: 16px;
     }
     }
 

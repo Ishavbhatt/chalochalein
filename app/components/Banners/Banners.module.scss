@@ -248,6 +248,7 @@
   @media screen and (max-width: 600px) {
     flex-wrap: wrap;
     height: auto;
+    flex-direction: column-reverse;
     .cab_banner_left,
     .cab_banner_right {
       width: 100%;
