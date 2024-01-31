@@ -48,7 +48,7 @@ const page = ({ params }) => {
                 /> */}
             <section className={`${styles.single_destination} common_margin`}>
                 <div className='container'>
-                    <div className='d_flex gap_20 justify_content_between'>
+                    <div className={` ${styles.single_destination_parent} d_flex gap_20 justify_content_between`}>
                         <div className={styles.single_destination_content}>
                             <div className={styles.destination_top_icons}>
                                 <div className={styles.top_icon_col}>
