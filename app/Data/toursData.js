@@ -94,7 +94,7 @@ const toursData = [
   },
   {
     ImageSrc: "/images/destinations/shimla.png",
-    tourName: "/images/tours/Shimla.jpg",
+    tourName: "Dharamshala Dalhousie Manali Shimla Taxi Tour",
     location: 'Dharamshala, Himachal Pradesh',
     inclusion: [
 
