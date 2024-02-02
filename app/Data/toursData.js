@@ -40,7 +40,7 @@ const toursData = [
       },
       {
         icon: <MdHotel />,
-        
+
         text: 'Stay',
       }
     ],
@@ -49,7 +49,7 @@ const toursData = [
     duration: "1D",
   },
   {
-    ImageSrc: "/images/tours/Manali.heic",
+    ImageSrc: "/images/tours/dharamshala-taxi-tour.png",
     tourName: "Dharamshala Taxi Tour",
     location: 'Dharamshala, Himachal Pradesh',
     inclusion: [
@@ -71,7 +71,7 @@ const toursData = [
     duration: "4D/3N",
   },
   {
-    ImageSrc: "/images/tours/Dalhousie.jpg",
+    ImageSrc: "/images/tours/dalhousie.png",
     tourName: "Dharamshala Dalhousie Taxi Tour",
     location: 'Dharamshala, Himachal Pradesh',
     inclusion: [

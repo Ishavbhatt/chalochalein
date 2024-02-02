@@ -7,12 +7,12 @@
   padding: 10px 20px;
   border-radius: 5px;
   overflow: hidden;
-  transition: height 0.5s ease; /* Add transition for height */
-  @media only screen and (max-width: 768px) {
-    padding: 10px 8px;
-  }
+  transition: height 0.5s ease;
+  /* Add transition for height */
+
   &.open {
-    height: auto; /* Auto height when open */
+    height: auto;
+    /* Auto height when open */
   }
 
   .accordionHeader {
@@ -26,9 +26,11 @@
       font-size: 18px;
       line-height: 22px;
       flex-grow: 1;
+
       @media only screen and (max-width: 768px) {
-          font-size: 16px;
-    }
+        font-size: 16px;
+        width: 80%;
+      }
     }
 
     .accordionIcon {
@@ -39,41 +41,54 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: background-color 0.5s ease; /* Add transition for background color */
+      transition: background-color 0.5s ease;
+      /* Add transition for background color */
 
       span {
         font-size: 20px;
         font-weight: bold;
       }
+
       @media only screen and (max-width: 768px) {
-        width: 30px;
+        // width: 30px;
         height: 30px;
+        width: 20%;
+
+
         span {
           font-size: 16px;
           font-weight: bold;
         }
-  }
+      }
     }
 
     .accordionIcon.opened {
       background: $primary-color;
       color: $white-color;
+
       .accordionIcon {
-        background: red; /* Change to the desired color when opened */
+        background: red;
+        /* Change to the desired color when opened */
       }
     }
-   
+
   }
 
   .accordionContent {
     overflow: hidden;
-    transition: opacity 0.5s ease; /* Add transition for opacity */
+    transition: opacity 0.5s ease;
+    /* Add transition for opacity */
 
     .contentInner {
       padding: 10px 0;
+
       @media only screen and (max-width: 768px) {
-          font-size: 12px;
-        }
+        font-size: 12px;
+      }
     }
+  }
+
+  @media only screen and (max-width: 768px) {
+    padding: 10px 8px;
   }
 }
