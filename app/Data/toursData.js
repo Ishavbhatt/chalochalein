@@ -40,6 +40,7 @@ const toursData = [
       },
       {
         icon: <MdHotel />,
+        
         text: 'Stay',
       }
     ],

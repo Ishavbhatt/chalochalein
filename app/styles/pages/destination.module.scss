@@ -20,7 +20,7 @@
 
 .single_destination {
 .single_destination_parent{
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     .single_destination_content {
         border: 1px solid $light-gray;
         border-radius: 5px;
@@ -99,6 +99,14 @@
         top: 10px;
         padding: 20px;
     }
+    @media screen and (max-width: 768px) {
+        flex-wrap: wrap; 
+        flex-direction: column-reverse;
+        .weather_widget {
+            position: unset;
+        }
+    }
+
 }
     
 }
