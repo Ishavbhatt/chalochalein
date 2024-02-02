@@ -4,7 +4,7 @@ import { MdArrowOutward } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
 import Link from "next/link";
 import ToursData from "../../Data/toursData";
-import ToursPageCard from './ToursPageCard'
+import ToursPageCard from '../Cards/ToursPageCard'
 const Tours = () => {
   return (
     <section className={styles.destination_section}>
