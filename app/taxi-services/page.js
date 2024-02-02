@@ -80,7 +80,7 @@ export default function TaxiServices() {
     return (
         <>
             <PageTopBanner
-                bannerImage={'/images/banners/about-banner.jpg'}
+                bannerImage={'/images/banners/taxi-page-banner.webp'}
                 title={'Taxi Services'}
                 subtitle={'Reliable Transport Solutions'}
             />

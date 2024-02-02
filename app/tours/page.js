@@ -10,7 +10,7 @@ export default function Tours() {
     return (
         <>
             <PageTopBanner
-                bannerImage={'/images/banners/about-banner.jpg'}
+                bannerImage={'/images/banners/tours-page-banner.webp'}
                 title={'Tours'}
                 subtitle={'Explore Our Exciting Offerings'}
             />

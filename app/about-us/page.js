@@ -11,7 +11,7 @@ const AboutUs = () => {
   return (
     <>
       <PageTopBanner
-        bannerImage={'/images/banners/about-banner.jpg'}
+        bannerImage={'/images/banners/about-page-banner.webp'}
         title={'About Us'}
         subtitle={'Our Journey, Your Experience'}
       />

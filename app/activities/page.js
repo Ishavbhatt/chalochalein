@@ -13,7 +13,7 @@ export default function Activities() {
     return (
         <>
             <PageTopBanner
-                bannerImage={'/images/banners/about-banner.jpg'}
+                bannerImage={'/images/banners/activities-page-banner.webp'}
                 title={'Explore the Wild: Trek, Glide, Camp'}
                 subtitle={'Embark on Thrilling Treks, Soar through the Skies with Paragliding, and Unwind Amidst Nature with Camping.'}
             />

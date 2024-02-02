@@ -10,7 +10,7 @@ export default function Destinations() {
     return (
         <>
             <PageTopBanner
-                bannerImage={'/images/banners/about-banner.jpg'}
+                bannerImage={'/images/banners/destination-page-banner.webp'}
                 title={'Destinations'}
                 subtitle={'Your Gateway to Adventure'}
             />
