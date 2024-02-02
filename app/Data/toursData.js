@@ -4,7 +4,7 @@ import { MdHotel } from 'react-icons/md';
 
 const toursData = [
   {
-    ImageSrc: "/images/destinations/shimla.png",
+    ImageSrc: "/images/tours/machleodganj.webp",
     tourName: "Mcleodganj Taxi Tour",
     location: 'Dharamshala, Himachal Pradesh',
     inclusion: [
@@ -26,7 +26,7 @@ const toursData = [
     duration: "1D",
   },
   {
-    ImageSrc: "/images/destinations/shimla.png",
+    ImageSrc: "/images/tours/Baijnath.jpg",
     tourName: "Baijnath Taxi Tour",
     location: 'Baijnath, Himachal Pradesh',
     inclusion: [
@@ -49,7 +49,7 @@ const toursData = [
     duration: "1D",
   },
   {
-    ImageSrc: "/images/destinations/shimla.png",
+    ImageSrc: "/images/tours/Manali.heic",
     tourName: "Dharamshala Taxi Tour",
     location: 'Dharamshala, Himachal Pradesh',
     inclusion: [
@@ -71,7 +71,7 @@ const toursData = [
     duration: "4D/3N",
   },
   {
-    ImageSrc: "/images/destinations/shimla.png",
+    ImageSrc: "/images/tours/Dalhousie.jpg",
     tourName: "Dharamshala Dalhousie Taxi Tour",
     location: 'Dharamshala, Himachal Pradesh',
     inclusion: [
@@ -94,9 +94,10 @@ const toursData = [
   },
   {
     ImageSrc: "/images/destinations/shimla.png",
-    tourName: "Dharamshala Dalhousie Manali Shimla Taxi Tour",
+    tourName: "/images/tours/Shimla.jpg",
     location: 'Dharamshala, Himachal Pradesh',
     inclusion: [
+
       {
         icon: <FaTaxi />,
         text: 'Transfer'
@@ -115,7 +116,7 @@ const toursData = [
     duration: "11N/12D",
   },
   {
-    ImageSrc: "/images/destinations/shimla.png",
+    ImageSrc: "/images/tours/Manali.heic",
     tourName: "Dharamshala Dalhousie Manali Taxi Tour",
     location: 'Dharamshala, Himachal Pradesh',
     inclusion: [
@@ -137,7 +138,7 @@ const toursData = [
     duration: "(8N/9D)",
   },
   {
-    ImageSrc: "/images/destinations/shimla.png",
+    ImageSrc: "/images/tours/devi-darshan.jpg",
     tourName: "Devi Darshan Taxi Tour",
     location: 'Himachal Pradesh',
     inclusion: [
@@ -159,7 +160,7 @@ const toursData = [
     duration: "2D/3N",
   },
   {
-    ImageSrc: "/images/destinations/shimla.png",
+    ImageSrc: "/images/tours/golden-temple.webp",
     tourName: "Golden Temple Taxi Tour",
 
     inclusion: [
