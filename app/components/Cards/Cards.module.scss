@@ -138,7 +138,7 @@
         cursor: pointer;
 
         .card_image {
-            height: 180px;
+            height: 250px;
             position: relative;
             background: rgb(2, 0, 36);
             background: linear-gradient(135deg, #aa95a8 0%, #94a996 100%);
@@ -148,6 +148,9 @@
                 width: 100%;
                 transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) all;
                 transform: scale(1.2);
+            }
+            .card_image img{
+                object-fit: cover;
             }
         }
 

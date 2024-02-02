@@ -60,7 +60,7 @@ const MainTaxis = () => {
                                 <div className={styles.main_taxis_child_image}>
                                     <Image src={taxi.taxi_image} height={150} width={150} alt={taxi.taxi_name} priority={true} />
                                 </div>
-                                <div className="">
+                             
                                     <div className={styles.taxi_content}>
                                         <h4>{taxi.taxi_name}</h4>
                                         <p>{taxi.description}</p>
@@ -68,7 +68,7 @@ const MainTaxis = () => {
                                     <button className={styles.taxi_btn}>
                                         <FaArrowRight />
                                     </button>
-                                </div>
+                                
                             </div>
                         ))}
                     </div>
