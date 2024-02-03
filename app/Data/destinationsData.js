@@ -9,8 +9,7 @@ const destinationsData = [
         destination_image: '/images/destinations/shimla.png',
         region: 'Shivalik Range',
         best_time_to_visit: ' March to June, and October to February',
-        breif_ovemeta_title: 'Book Our Tour Packages - Explore the Best Places to Visit in Shimla',
-        meta_description:'Experience the beauty of Shimla with our tour packages. Discover the best places to visit in Shimla, including trekking services and taxi service. Book now and make unforgettable memories.',rview: `Shimla, the capital city of Himachal Pradesh, stands as a charming reflection of colonial history amid breathtaking natural beauty. Nestled in the Shivalik Range, this hill station exudes an old-world British charm through its architecture, including landmarks like Christ Church and the Viceregal Lodge. The bustling Mall Road offers a vibrant mix of shops, cafes, and local life, while Jakhu Temple and the Ridge showcase the city's spiritual and cultural side.        `,
+        breif_overview: `Shimla, the capital city of Himachal Pradesh, stands as a charming reflection of colonial history amid breathtaking natural beauty. Nestled in the Shivalik Range, this hill station exudes an old-world British charm through its architecture, including landmarks like Christ Church and the Viceregal Lodge. The bustling Mall Road offers a vibrant mix of shops, cafes, and local life, while Jakhu Temple and the Ridge showcase the city's spiritual and cultural side.`,
         brief_best_time_to_visit: "The best time to visit Shimla is from March to June when the weather is pleasant, and October to February, known for its snowfall and stunning wintry landscapes. These periods offer various experiences, from enjoying outdoor activities in summer to witnessing snow-covered landscapes in winter.",
         places_to_visit: [
             {

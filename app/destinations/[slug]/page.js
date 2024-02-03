@@ -5,6 +5,7 @@ import { FaMountainSun, FaPersonHiking } from "react-icons/fa6";
 import { FaPrayingHands, FaLandmark } from "react-icons/fa";
 import DestinationCard from '../../components/Cards/DestinationCard';
 import WeatherWidget from '../../components/WeatherWidget/WeatherWidget';
+import Head from 'next/head';
 
 function getDestination(slug) {
     return destinationsData.find(destination => destination.slug === slug);
@@ -13,6 +14,21 @@ function getDestination(slug) {
 function otherDestination(slug) {
     return destinationsData.filter(destination => destination.slug != slug);
 }
+
+// export const metadata = {
+//     title: 'Book Taxi in Dharamshala, Himachal Pradesh - Reliable and Convenient Taxi Service',
+//     description: 'Experience the convenience of booking a taxi in Dharamshala, Himachal Pradesh. Our reliable taxi service offers hassle-free transportation for your travel needs. Book now!',
+// }
+
+export async function generateMetadata({ params }) {
+
+    const single_destination = getDestination(params?.slug);
+    return {
+        title: single_destination.meta_title,
+        description: single_destination.meta_description
+    }
+}
+
 
 const page = ({ params }) => {
     const todayDate = new Date();
@@ -41,11 +57,6 @@ const page = ({ params }) => {
 
     return (
         <>
-                {/* <title>{single_destination.meta_title}</title>
-                <meta
-                        name="description"
-                        content= {single_destination.meta_description}
-                /> */}
             <section className={`${styles.single_destination} common_margin`}>
                 <div className='container'>
                     <div className={` ${styles.single_destination_parent} d_flex gap_20 justify_content_between`}>

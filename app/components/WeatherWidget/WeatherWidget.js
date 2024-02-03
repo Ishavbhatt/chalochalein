@@ -1,10 +1,10 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-// import axios from 'axios';
+import axios from 'axios';
 import { WiDaySunny, WiRain, WiSnow, WiThunderstorm, WiCloudy } from 'react-icons/wi';
 import styles from '../../styles/pages/destination.module.scss'
 
-const WeatherWidget = ({ destinationName, latitude, longitude, apiKey }) => {
+const WeatherWidget = ({ city, latitude, longitude, apiKey }) => {
     const todayDate = new Date();
     const [weatherData, setWeatherData] = useState(null);
     const [lastUpdated, setLastUpdated] = useState(null);
@@ -12,19 +12,14 @@ const WeatherWidget = ({ destinationName, latitude, longitude, apiKey }) => {
     useEffect(() => {
         const fetchWeather = async () => {
             try {
-                let apiUrl;
-
-                if (latitude && longitude) {
-                    apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}`;
-                } else if (destinationName) {
-                    apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${destinationName}&appid=${apiKey}`;
-                } else {
-                    // Handle the case where neither latitude/longitude nor destinationName is provided.
-                    console.error('Invalid WeatherWidget configuration.');
+                if (!city) {
+                    console.error('Invalid WeatherWidget configuration: City is required.');
                     return;
                 }
 
+                const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
                 const response = await axios.get(apiUrl);
+
                 setWeatherData(response.data);
                 setLastUpdated(new Date());
             } catch (error) {
@@ -33,8 +28,7 @@ const WeatherWidget = ({ destinationName, latitude, longitude, apiKey }) => {
         };
 
         fetchWeather();
-    }, [destinationName, latitude, longitude, apiKey]);
-
+    }, [city, latitude, longitude, apiKey]);
 
     const getWeatherIcon = (weatherCode) => {
         // Map OpenWeatherMap weather codes to corresponding Weather Icons
@@ -69,9 +63,7 @@ const WeatherWidget = ({ destinationName, latitude, longitude, apiKey }) => {
                 return <WiDaySunny />;
         }
     };
-
-    console.log(todayDate);
-
+    console.log(weatherData);
     return (
         <div>
             {weatherData && (
@@ -80,7 +72,7 @@ const WeatherWidget = ({ destinationName, latitude, longitude, apiKey }) => {
                     <div className={styles.weather_icon}>{getWeatherIcon(weatherData.weather[0].icon)}</div>
                     <h4>{weatherData.name} Weather</h4>
                     {/* <p>{todayDate}</p> */}
-                    <p>Temperature: {weatherData.main.temp}°C</p>
+                    <p>Temperature: {(weatherData.main.temp - 273.15).toFixed(2)}°C</p>
                     <p>Humidity: {weatherData.main.humidity}%</p>
                     <p>Wind Speed: {weatherData.wind.speed} m/s</p>
                     <p>Weather: {weatherData.weather[0].description}</p>
