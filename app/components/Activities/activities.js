@@ -1,7 +1,7 @@
 // import adventureActivitiesData from "../../Data/activitiesData";
 import styles from "./activities.module.scss";
 import Image from "next/image";
-import { FaHiking , FaMountain, FaParachuteBox } from 'react-icons/fa';
+import { FaHiking, FaMountain, FaParachuteBox } from 'react-icons/fa';
 import { GiCampingTent } from "react-icons/gi";
 import Link from 'next/link';
 
@@ -33,12 +33,12 @@ const Activities = () => {
       {activitiesData.map((activity) => (
         <div className={styles.activity_card} key={activity.activity_name}>
           <div className={styles.card_image}>
-            <Image src={activity.activity_image} fill={true} />
+            <Image src={activity.activity_image} fill={true} alt={activity.activity_name + 'with Chalo Chalein'} />
           </div>
           <div className={styles.card_content}>
             <div className={styles.card_content_icon}>{activity.icon}</div>
             <vr />
-            <Link href='/'>{activity.activity_name}</Link>
+            <Link href='/activities'>{activity.activity_name}</Link>
             {/* <p>{activity.short_description}</p> */}
           </div>
         </div>

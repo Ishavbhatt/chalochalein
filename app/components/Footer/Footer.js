@@ -85,7 +85,7 @@ export default function Footer() {
                 <div className={styles.projects_list}>
                   <Image className={styles.project_image}
                     src="/images/destinations/dharamshala.png"
-                    alt="Picture of the author"
+                    alt='Dharamshala'
                     // fill={true}
                     height={90}
                     width={88}
@@ -97,7 +97,7 @@ export default function Footer() {
                     src="/images/destinations/shimla.png"
                     height={90}
                     width={88}
-                    alt="Picture of the author"
+                    alt="Shimla"
                   />
                   <Link href='/destinations/shimla'>Shimla</Link>
                 </div>
@@ -106,7 +106,7 @@ export default function Footer() {
                     src="/images/destinations/dalhousie.png"
                     height={90}
                     width={88}
-                    alt="Picture of the author"
+                      alt="Dalhousie"
                   />
                   <Link href='/destinations/dalhousie'>Dalhousie</Link>
                 </div>
@@ -115,7 +115,7 @@ export default function Footer() {
                     src="/images/destinations/kullu.png"
                     height={90}
                     width={88}
-                    alt="Picture of the author"
+                    alt="Kullu"
                   />
                   <Link href='/destinations/kullu'>Kullu</Link>
                 </div>
@@ -124,7 +124,7 @@ export default function Footer() {
                     src="/images/destinations/kasol.png"
                     height={90}
                     width={88}
-                    alt="Picture of the author"
+                    alt="kasol"
                   />
                   <Link href='/destinations/kasol'>kasol</Link>
                 </div>
@@ -133,7 +133,7 @@ export default function Footer() {
                     src="/images/destinations/manali.png"
                     height={90}
                     width={88}
-                    alt="Picture of the author"
+                    alt="Manali"
                   />
                   <Link href='/destinations/manali'>Manali</Link>
                 </div>

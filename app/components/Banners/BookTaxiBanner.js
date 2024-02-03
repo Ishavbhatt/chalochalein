@@ -7,11 +7,10 @@ const BookTaxiBanner = () => {
     return (
         <>
             <div className="common_margin">
-
                 <section className={styles.book_taxi_banner}>
                     <div className="container">
                         <div className={styles.book_taxi_banner_main}>
-                            <Image src="/images/taxi/taxi-banner.png" alt="Book A Taxi" fill={true} priority={true} sizes="(max-width: 768px) 400px, (max-width: 1200px) 600px, 1200px" />
+                            <Image src="/images/taxi/taxi-banner.png" alt="book taxi in dharamshala" fill={true} priority={true} sizes="(max-width: 768px) 400px, (max-width: 1200px) 600px, 1200px" />
                             <div className={styles.book_taxi_banner_main_content}>
                                 <h2>Seamless Travel Experiences </h2>
                                 <h2>Await</h2>

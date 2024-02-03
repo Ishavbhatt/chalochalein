@@ -19,7 +19,7 @@ const AboutUs = () => {
         <div className="container">
           <div className={`${styles.about_us_content} ${styles.about_us_content1} flex_center d_flex`}>
             <div className={`${styles.left_sec} ${styles.top_sec_content} common_heading`}>
-              <h4ssss>What is Chalo-Chalien?</h4ssss>
+              <h4>What is Chalo-Chalien?</h4>
               <p>
                 At Chalo Chalein, the very essence of our name, 'Chalo Chalein,' encapsulates the spirit of exploration and the call to embark on unforgettable journeys. In Hindi, 'Chalo Chalein' translates to 'let's go,' and for us, it represents more than just a phrase – it's an invitation to discover, experience, and create lasting memories.
               </p>
@@ -29,7 +29,7 @@ const AboutUs = () => {
                 <Image
                   src="/images/about-chalochalein.webp"
                   fill={true}
-                  alt="About Chalo Chalein Trekking"
+                  alt="Chalo Chalein Trekking Service"
                 />
               </div>
             </div>
@@ -40,7 +40,7 @@ const AboutUs = () => {
                 <Image
                   src="/images/about-chalochalein2.webp"
                   fill={true}
-                  alt="About Chalo Chalein Taxi Service"
+                  alt="Chalo Chalein Taxi Service"
                 />
               </div>
             </div>

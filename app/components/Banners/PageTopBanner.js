@@ -8,7 +8,7 @@ const PageTopBanner = ( props ) => {
             <Image
                 src={props?.bannerImage}
                 fill={true}
-                alt="About Banner"
+                alt={props?.title}
             />
             <div className={styles.page_top_banner_content}>
                 <div className="container">

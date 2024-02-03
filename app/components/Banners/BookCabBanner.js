@@ -14,7 +14,7 @@ const BookCabBanner = (props) => {
                     </div>
                     <div className={styles.cab_banner_right}>
                         <div className={styles.cab_banner_right_image}>
-                            <Image src={props.image} fill={true} alt={props.title}></Image>
+                            <Image src={props.image} fill={true} alt={'book cab in dharamshala'}></Image>
                         </div>
                     </div>
                 </div>

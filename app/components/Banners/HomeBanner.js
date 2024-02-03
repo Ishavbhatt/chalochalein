@@ -58,7 +58,7 @@ const HomeBanner = () => {
             <div className={styles.home_banner} key={banner.id}>
               <Image
                 src={banner.imgSrc}
-                alt="Banner Image"
+                alt={banner.button_icon + 'with Chalo Chalein'}
                 fill={true}
               />
               <div className="container">

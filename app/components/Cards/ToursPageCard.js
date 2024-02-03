@@ -14,7 +14,7 @@ export default function ToursPageCard({ tour }) {
                         className={styles.image}
                         src={tour.ImageSrc}
                         fill={true}
-                        alt="Picture of the tour"
+                        alt={tour.tourName}
                     />
                 </div>
                 {/* <div className={styles.tour_gradient}></div>
