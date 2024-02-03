@@ -61,27 +61,27 @@ function ContactUsComponent() {
                                     <div className={styles.contact_main_left_details_child}>
                                         <IoCall />
                                         <Link href="tel:8219454140" className={styles.contact_links}>
-                                            82194-54140
+                                            8894460060
                                         </Link>
                                     </div>
                                     <div className={styles.contact_main_left_details_child}>
                                         <IoMdMailUnread />
                                         <Link href="mailto:rahul@asianclassictravels.com" className={styles.contact_links}>
-                                            rahul@asianclassictravels.com
+                                            rahulmaddykapoor@gmail.com
                                         </Link>
                                     </div>
                                     <div className={styles.contact_main_left_details_child}>
                                         <PiMapPinFill />
                                         <Link href="https://maps.app.goo.gl/kGgCUqjXfRjm8Wtf8" className={styles.contact_links}>
-                                            101 Kitchener Road, Jln Besar, #03-32 A, Singapore 208511
+                                            Dharamshala, Himachal Pradesh
                                         </Link>
                                     </div>
                                     <div className="d_flex gap_10">
                                         <Link href="https://www.facebook.com/asianclassic?fref=ts" className={styles.round_icons}>
-                                           <FaFacebookF />
+                                            <FaFacebookF />
                                         </Link>
                                         <Link href="https://www.instagram.com/act_dmc_singapore/" className={styles.round_icons}>
-                                           <FiInstagram />
+                                            <FiInstagram />
                                         </Link>
                                     </div>
                                 </div>
@@ -159,16 +159,11 @@ function ContactUsComponent() {
                         </div>
                     </div>
                 </div>
-
-                <iframe
-                    className={styles.map_frame}
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.777492578274!2d103.85551797365203!3d1.3087597986788229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19c7652d782f%3A0xcd94f0ef21378665!2sSingapore%20DMC%20%2F%2F%20Asian%20Classic%20Travels!5e0!3m2!1sen!2sin!4v1690533191556!5m2!1sen!2sin"
-                    width="100%"
-                    height="450"
-                    allowFullScreen=""
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                ></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27004.263703675362!2d76.29856558917037!3d32.216813188215404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b50df65bd7311%3A0x3e08bdb100c6dc10!2sDharamshala%2C%20Himachal%20Pradesh!5e0!3m2!1sen!2sin!4v1706974501263!5m2!1sen!2sin" 
+                width="100%" height="450"
+                allowfullscreen="" 
+                style={{border:'0'}}
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
         </>
     );

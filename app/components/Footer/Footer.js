@@ -23,15 +23,15 @@ export default function Footer() {
               <ul>
                 <li>
                   <IoCall />
-                  <span>+91 9876543210</span>
+                  <span>+91 8894460060</span>
                 </li>
                 <li>
                   <IoMail />
-                  <span>john@gmail.com</span>
+                  <span>rahulmaddykapoor@gmail.com</span>
                 </li>
                 <li>
                   <FaLocationDot />
-                  <span>Office San Diego — 845 15th</span>
+                  <span>Dharamshala, Himachal Pradesh</span>
                 </li>
               </ul>
               <div className={styles.social_icons_main}>
@@ -72,11 +72,11 @@ export default function Footer() {
             <div className={styles.column}>
               <h4>Tours</h4>
               <ul className="tours_list">
-                <li>Gulmarg </li>
-                <li>Phalgam </li>
-                <li>Sonamarg </li>
-                <li>Srinagar</li>
-                <li> More</li>
+                <li href='/tours'>Mcleodganj Taxi Tour</li>
+                <li href='/tours'>Dharamshala Taxi Tour</li>
+                <li href='/tours'>Devi Darshan Taxi Tour</li>
+                <li href='/tours'>Golden Temple Taxi Tour</li>
+                <li href='/tours'> More</li>
               </ul>
             </div>
             <div className={`${styles.column} ${styles.footer_last_column}`}>
