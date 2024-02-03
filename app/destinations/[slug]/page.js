@@ -112,7 +112,7 @@ const page = ({ params }) => {
                         </div>
                         <div className={styles.weather_widget}>
                             <WeatherWidget
-                                city={destinationWeather.city}
+                                city={destinationWeather.city === 'Dharamshala' ? 'Dharamsala' : destinationWeather.city}
                                 latitude={destinationWeather.latitude}
                                 longitude={destinationWeather.longitude}
                                 apiKey={WeatherAPIKey}
