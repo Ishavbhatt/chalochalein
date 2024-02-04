@@ -11,10 +11,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <meta name="google-site-verification" content="INwIwhGc1iaKYZ5krbOiw9dWLNNUZy12hRySLWJqdPk" />
         <Header />
         {children}
         <Footer />
-        
+
         <ToastContainer
           position="top-center"
           autoClose={5000}

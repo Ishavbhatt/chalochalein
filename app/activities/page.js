@@ -5,7 +5,7 @@ import styles from '../styles/pages/activities.module.scss';
 import BookCabBanner from "../components/Banners/BookCabBanner";
 
 export const metadata = {
-    title: 'Book Adventure Activities with Chalo Chalein | Trekking, Paragliding, Camping in Dharamshala, Himachal',
+    title: 'Book Adventure Activities with Chalo Chalein | Trekking, Paragliding, Camping',
     description: 'Experience thrilling adventure activities in Himachal Pradesh with Chalo Chalein! Book trekking, paragliding, camping in Dharamshala and explore the stunning landscapes of Himachal.',
 }
 

@@ -19,7 +19,7 @@ import homePageFaqs from './Data/homePageFaqs';
 import FaqCallSec from './components/FaqCallSec/FaqCallSec';
 
 export const metadata = {
-  title: 'Book Taxi in Dharamshala, Himachal Pradesh - Reliable and Convenient Taxi Service',
+  title: 'Book Taxi in Dharamshala, Himachal Pradesh - Reliable Taxi Service',
   description: 'Experience the convenience of booking a taxi in Dharamshala, Himachal Pradesh. Our reliable taxi service offers hassle-free transportation for your travel needs. Book now!',
 }
 

@@ -3,7 +3,7 @@ import styles from "../styles/pages/about.module.scss";
 import Image from "next/image";
 
 export const metadata = {
-  title: 'About Chalo Chalein Tour and Travel - Taxi Service, Tours, and Travel in Himachal Pradesh',
+  title: 'About Chalo Chalein Tour and Travel | Taxi Service, Tours, and Travel',
   description: 'Discover the beauty of Himachal Pradesh with Chalo Chalein Tour and Travel. Offering reliable taxi service, guided tours, and unforgettable travel experiences. Plan your adventure today!',
 }
 
