@@ -72,11 +72,11 @@ export default function Footer() {
             <div className={styles.column}>
               <h4>Tours</h4>
               <ul className="tours_list">
-                <li href='/tours'>Mcleodganj Taxi Tour</li>
-                <li href='/tours'>Dharamshala Taxi Tour</li>
-                <li href='/tours'>Devi Darshan Taxi Tour</li>
-                <li href='/tours'>Golden Temple Taxi Tour</li>
-                <li href='/tours'> More</li>
+                <li> <Link href='/tours'>Mcleodganj Taxi Tour</Link></li>
+                <li> <Link href='/tours'>Dharamshala Taxi Tour</Link></li>
+                <li> <Link href='/tours'>Devi Darshan Taxi Tour</Link></li>
+                <li> <Link href='/tours'>Golden Temple Taxi Tour</Link></li>
+                <li> <Link href='/tours'>More</Link></li>
               </ul>
             </div>
             <div className={`${styles.column} ${styles.footer_last_column}`}>
