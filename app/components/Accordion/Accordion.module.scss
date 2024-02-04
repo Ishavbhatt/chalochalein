@@ -29,49 +29,58 @@
 
       @media only screen and (max-width: 768px) {
         font-size: 16px;
-        width: 80%;
+        width: 90%;
       }
     }
 
-    .accordionIcon {
-      width: 32px;
-      height: 32px;
-      background: #dbe2e1;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: background-color 0.5s ease;
-      /* Add transition for background color */
+    .accordion_btn {
+      
+      .accordionIcon {
+        width: 32px;
+        height: 32px;
+        background: #dbe2e1;
+        border: none;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        justify-content: center;
+        transition: background-color 0.5s ease;
+        /* Add transition for background color */
 
-      span {
-        font-size: 20px;
-        font-weight: bold;
+        span {
+          font-size: 20px;
+          font-weight: bold;
+        }
+
+        @media only screen and (max-width: 768px) {
+          width: 30px;
+          height: 30px;
+          span {
+            font-size: 16px;
+            font-weight: bold;
+          }
+        }
+      }
+
+      .accordionIcon.opened {
+        background: $primary-color;
+        color: $white-color;
+
+        .accordionIcon {
+          background: red;
+          /* Change to the desired color when opened */
+        }
       }
 
       @media only screen and (max-width: 768px) {
-        // width: 30px;
-        height: 30px;
-        width: 20%;
-
-
-        span {
-          font-size: 16px;
-          font-weight: bold;
-        }
+        font-size: 16px;
+        width: 10%;
       }
     }
-
-    .accordionIcon.opened {
-      background: $primary-color;
-      color: $white-color;
-
-      .accordionIcon {
-        background: red;
-        /* Change to the desired color when opened */
-      }
+    @media only screen and (max-width: 768px) {
+      align-items: flex-start;
     }
-
   }
 
   .accordionContent {

@@ -15,8 +15,10 @@ const Accordion = ({ items }) => {
                 <div key={index} className={`${styles.accordionItem} ${index === openIndex ? styles.open : ''}`}>
                     <div className={styles.accordionHeader} onClick={() => handleItemClick(index)}>
                         <h3 className={styles.accordionQuestion}>{item.question}</h3>
-                        <div className={`${styles.accordionIcon} ${index === openIndex ? styles.opened : ''}`}>
-                            <span>{index === openIndex ? '-' : '+'}</span>
+                        <div className={styles.accordion_btn}>
+                            <button className={`${styles.accordionIcon} ${index === openIndex ? styles.opened : ''}`}>
+                                <span>{index === openIndex ? '-' : '+'}</span>
+                            </button>
                         </div>
                     </div>
                     {index === openIndex && (

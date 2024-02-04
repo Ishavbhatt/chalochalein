@@ -23,11 +23,11 @@ export default function Footer() {
               <ul>
                 <li>
                   <IoCall />
-                  <span>+91 8894460060</span>
+                  <Link href='tel:8894460060'>+91 8894460060</Link>
                 </li>
                 <li>
                   <IoMail />
-                  <span>rahulmaddykapoor@gmail.com</span>
+                  <Link href='mailto:rahulmaddykapoor@gmail.com'>rahulmaddykapoor@gmail.com</Link>
                 </li>
                 <li>
                   <FaLocationDot />
