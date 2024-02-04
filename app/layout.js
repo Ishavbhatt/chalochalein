@@ -26,6 +26,21 @@ export default function RootLayout({ children }) {
         }}
       />
 
+      {/*  Global Tag (gtag.js) - Google Analytics */}
+      <Script
+        strategy="afterInteractive"
+        src={`https://www.googletagmanager.com/gtag/js?id=G-WREE0ZHTWF`}
+      />
+
+      <Script id="google-tag" strategy="afterInteractive">
+        {`
+               window.dataLayer = window.dataLayer || [];
+               function gtag(){dataLayer.push(arguments);}
+               gtag('js', new Date());
+               gtag('config', 'G-WREE0ZHTWF');
+        `}
+      </Script>
+
       <body>
         <meta
           name="google-site-verification"
