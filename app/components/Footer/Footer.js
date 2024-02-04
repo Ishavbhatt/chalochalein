@@ -22,15 +22,15 @@ export default function Footer() {
               <h4>Follow Us</h4>
               <ul>
                 <li>
-                  <IoCall />
-                  <Link href='tel:8894460060'>+91 8894460060</Link>
+                  <p style={{ width: '20px', color: 'white' }}><IoCall /></p>
+                  <span> <Link href='tel:8894460060'>+91 8894460060</Link></span>
                 </li>
                 <li>
-                  <IoMail />
-                  <Link href='mailto:rahulmaddykapoor@gmail.com'>rahulmaddykapoor@gmail.com</Link>
+                  <p style={{ width: '20px', color: 'white' }}> <IoMail /></p>
+                  <span> <Link href='mailto:rahulmaddykapoor@gmail.com'>rahulmaddykapoor@gmail.com</Link></span>
                 </li>
                 <li>
-                  <FaLocationDot />
+                  <p style={{ width: '20px', color: 'white' }}> <FaLocationDot /></p>
                   <span>Dharamshala, Himachal Pradesh</span>
                 </li>
               </ul>
@@ -106,7 +106,7 @@ export default function Footer() {
                     src="/images/destinations/dalhousie.png"
                     height={90}
                     width={88}
-                      alt="Dalhousie"
+                    alt="Dalhousie"
                   />
                   <Link href='/destinations/dalhousie'>Dalhousie</Link>
                 </div>

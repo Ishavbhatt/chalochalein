@@ -14,8 +14,8 @@ const HomeBanner = () => {
       id: 1,
       title: `Seamless Transfers`,
       description: 'Effortless journeys across Himachal Pradesh with our reliable taxi services. Your destination, our priority.',
-      imgSrc: "/images/banners/taxi-banner.jpg",
-      mobileBannerImage: "/images/banners/taxi-banner.jpg",
+      imgSrc: "/images/banners/taxi-banner.webp",
+      mobileBannerImage: "/images/banners/taxi-banner.webp",
       button_text: 'Book A Taxi',
       button_icon: <FaTaxi />
     },
