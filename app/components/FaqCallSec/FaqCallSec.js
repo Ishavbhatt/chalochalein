@@ -14,7 +14,7 @@ const FaqCallSec = () => {
                 </div>
                 <h3>Do You Still Have Question?</h3>
                 <p>Call Anytime</p>
-                <Link href="tel:9418249045">+91 94182-49045</Link>
+                <Link href="tel:8894460060">+91 8894460060</Link>
             </div>
         </div>
     );

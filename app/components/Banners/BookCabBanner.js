@@ -10,7 +10,7 @@ const BookCabBanner = (props) => {
                     <div className={`${styles.cab_banner_left}`}>
                         <h3>{props.title}</h3>
                         <p>{props.description}</p>
-                        <Link href="tel:9418249045" className="common_animate_btn">{props.CTA_text}</Link>
+                        <Link href="tel:8894460060" className="common_animate_btn">{props.CTA_text}</Link>
                     </div>
                     <div className={styles.cab_banner_right}>
                         <div className={styles.cab_banner_right_image}>

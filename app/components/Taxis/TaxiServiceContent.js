@@ -67,7 +67,7 @@ export default function TaxiServiceContent() {
                             <Image src={item.taxi_image} alt={item.title} fill={true} priority />
                             <div className={styles.mainly_taxi_service_content}>
                                 <h4>{item.title}</h4>
-                                <Link href="tel:9418249045" className="transparent_button">
+                                <Link href="tel:8894460060" className="transparent_button">
                                     <IoCallSharp />
                                     Book Now
                                 </Link>

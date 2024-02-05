@@ -60,7 +60,7 @@ function ContactUsComponent() {
                                     <h4 className="text-white"> Get In Touch</h4>
                                     <div className={styles.contact_main_left_details_child}>
                                         <IoCall />
-                                        <Link href="tel:8219454140" className={styles.contact_links}>
+                                        <Link href="tel:8894460060" className={styles.contact_links}>
                                             8894460060
                                         </Link>
                                     </div>

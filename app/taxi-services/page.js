@@ -8,10 +8,13 @@ import Link from 'next/link';
 import PopularRoutes from '../components/Taxis/PopularRouts';
 import PageTopBanner from '../components/Banners/PageTopBanner';
 import { IoCallSharp } from 'react-icons/io5';
+import SEOContent from '../components/SEOContent/SEOContent';
+
 export const metadata = {
     title: 'Taxi Service in Dharamshala, Shimla, Kullu, Manali - Book Your Cab',
     description: 'We provide taxi service in all over Himachal Pradesh. Book your cab now and explore the scenic beauty of Dharamshala, Shimla, Kullu, Manali. Hassle-free travel with experienced drivers.',
-  }
+}
+
 export default function TaxiServices() {
 
     const taxis = [
@@ -84,6 +87,14 @@ export default function TaxiServices() {
                 title={'Taxi Services'}
                 subtitle={'Reliable Transport Solutions'}
             />
+
+            <SEOContent
+                title="Chalo Chalein taxi service in dharamshala"
+                description={`Explore Himachal with Ease – Premier Taxi Services in Dharamshala, Kangra, Shimla & Kullu Manali 
+                
+                At Chalo Chalein, we are proud to unveil our dedicated taxi service page, catering to your travel needs across the enchanting realms of Himachal Pradesh. Our focus is on providing reliable and comfortable taxi services, especially tailored for the picturesque towns of Dharamshala, Kangra, Shimla, and Kullu Manali. Whether you're planning a serene retreat in the hills or an adventurous excursion, our experienced drivers ensure your journey through the scenic beauty of Himachal is safe, enjoyable, and unforgettable. With our user-friendly online booking system, tourists can effortlessly reserve their preferred vehicles and customize their itineraries. Trust Chalo Chalein to be your travel companion as you embark on an exquisite exploration of Himachal's most beloved destinations.`}
+            />
+
             <section className={`${styles.taxi_services} common_margin`}>
                 <div className="container">
                     <div className={styles.taxi_services_top}>
@@ -119,7 +130,7 @@ export default function TaxiServices() {
                                             <li>Diesel</li>
                                         </ul>
                                         <Link href="tel:7894651320" className='common_animate_btn inline-block'>
-                                           <IoCallSharp /> Call to Book
+                                            <IoCallSharp /> Call to Book
                                         </Link>
                                     </div>
                                 </div>
