@@ -96,7 +96,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* <BookTaxiBanner /> */}
       <section className={`${styles.faq_sec} common_margin`}>
         <div className='container'>
           <div className="common_heading">
@@ -121,6 +120,7 @@ export default function Home() {
         CTA_text={'Book Now'}
         image={'/vectors/taxi.svg'}
       />
+      
     </main>
   )
 }

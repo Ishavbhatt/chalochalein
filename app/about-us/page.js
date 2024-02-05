@@ -1,3 +1,4 @@
+import BookTaxiBanner from "../components/Banners/BookTaxiBanner";
 import PageTopBanner from "../components/Banners/PageTopBanner";
 import styles from "../styles/pages/about.module.scss";
 import Image from "next/image";
@@ -53,6 +54,8 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
+      <BookTaxiBanner />
+
     </>
   );
 };

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import styles from './Whychooseus.module.scss'
 import { MdLocalTaxi } from "react-icons/md";
@@ -30,7 +29,7 @@ const Whychooseus = () => {
             title: 'Adventurous Trekking',
             description: `Immerse yourself in nature's beauty on our thrilling treks. Our expert guides lead you through awe-inspiring trails, showcasing the wonders of the outdoors for an unforgettable adventure.`,
             cta_text: 'Start Trekking',
-            cta_link: '',
+            cta_link: '/activities',
         },
     ];
 
@@ -49,7 +48,7 @@ const Whychooseus = () => {
                                 <span className={styles.whychooseus_sec_child_icon}>{item.icon}</span>
                                 <h4>{item.title}</h4>
                                 <p>{item.description}</p>
-                                <Link className={styles.whychooseus_sec_child_ancor} href='/'>{item.cta_text}</Link>
+                                <Link className={styles.whychooseus_sec_child_ancor} href={item.cta_link}>{item.cta_text}</Link>
                             </div>
                         ))}
                     </div>
