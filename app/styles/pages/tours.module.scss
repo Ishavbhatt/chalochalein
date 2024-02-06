@@ -33,9 +33,13 @@
             overflow: hidden;
             box-shadow: 0 4px 4px 0px rgba(127, 155, 179, 0.1),
                 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-                @media screen and (max-width: 768px) {
-                    width: 100%;
+                
+                @media only screen and (min-width: 480px) and (max-width: 768px) {
+                    width: 48%;
                 }
+                @media only screen and (min-width: 320px) and (max-width: 480px) {
+                    width: 100%;
+                 }
         }
         
     }
