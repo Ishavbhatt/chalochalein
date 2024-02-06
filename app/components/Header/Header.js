@@ -53,7 +53,7 @@ const Header = () => {
             </div>
           </div>
           {/* <div className={styles.header_right}>
-            <Link href="tel:9418249045">9418249045</Link>
+            <Link href="tel:8894460060">8894460060</Link>
           </div> */}
           <div className={styles.hamburger} onClick={toggleMenu}>
             <CgMenuRight />

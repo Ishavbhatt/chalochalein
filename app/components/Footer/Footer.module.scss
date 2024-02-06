@@ -4,9 +4,11 @@
   background-color: $footer-bg;
   padding: 40px 0;
   color: white;
+
   @media screen and (max-width: 600px) {
-    padding: 0px 0px 20px ;
-    }
+    padding: 0px 0px 20px;
+  }
+
   .footer_container {
     .footer_column {
       display: flex;
@@ -77,6 +79,7 @@
 
             img {
               transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) all;
+
               @media only screen and (max-width: 768px) {
                 width: 100%;
                 height: 100%;
@@ -115,11 +118,13 @@
 
       @media only screen and (max-width: 768px) {
         flex-wrap: wrap;
+
         .column {
           width: 100%;
-          padding-top: 30px;
-          h4{
-            padding-bottom: 10px;
+          padding-top: 20px;
+
+          h4 {
+            padding-bottom: 5px;
           }
         }
       }
@@ -129,12 +134,22 @@
 
   .footer_bottom {
     text-align: center;
-    // background-color: #a1a89f;
     margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
     p {
       font-size: 12px;
       color: $white-color;
+
+      @media only screen and (max-width: 768px) {
+        margin-top: 10px;
+      }
+
+      a {
+        color: $secoundary-color;
+      }
     }
   }
 }

@@ -24,8 +24,8 @@ export async function generateMetadata({ params }) {
 
     const single_destination = getDestination(params?.slug);
     return {
-        title: single_destination.meta_title,
-        description: single_destination.meta_description
+        title: single_destination?.meta_title,
+        description: single_destination?.meta_description
     }
 }
 

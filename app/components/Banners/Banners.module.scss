@@ -47,6 +47,7 @@
       height: 100%;
       width: 100%;
       bottom: 0;
+
     }
 
     @media only screen and (max-width: 768px) {
@@ -56,7 +57,8 @@
       .home_banner_content {
         padding: 0 12px;
         bottom: 30px;
-        h2{
+
+        h2 {
           color: white;
         }
       }
@@ -157,6 +159,10 @@
       @media screen and (max-width: 768px) {
         bottom: 0;
         background: linear-gradient(to top, #000000, #ffffff00);
+        padding: 0 20px;
+        a {
+          margin-bottom: 20px;
+        }
       }
     }
 
@@ -212,6 +218,10 @@
     bottom: 0;
     background-position: center;
     background-size: cover;
+
+    @media only screen and (max-width: 768px) {
+      height: 40px;
+    }
   }
 
 }
@@ -249,12 +259,14 @@
     flex-wrap: wrap;
     height: auto;
     flex-direction: column-reverse;
+
     .cab_banner_left,
     .cab_banner_right {
       width: 100%;
       justify-content: flex-start;
     }
-    .cab_banner_right_image{
+
+    .cab_banner_right_image {
       width: 100%;
     }
   }

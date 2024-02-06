@@ -1,4 +1,6 @@
+import BookTaxiBanner from "../components/Banners/BookTaxiBanner";
 import PageTopBanner from "../components/Banners/PageTopBanner";
+import SEOContent from "../components/SEOContent/SEOContent";
 import styles from "../styles/pages/about.module.scss";
 import Image from "next/image";
 
@@ -15,6 +17,12 @@ const AboutUs = () => {
         title={'About Us'}
         subtitle={'Our Journey, Your Experience'}
       />
+
+      <SEOContent
+        title="About chalo chalein tour & travel"
+        description="Welcome to Chalo Chalein, your premier tour and travel agency in Himachal Pradesh, where the essence of wanderlust blends with expert travel services. As our name suggests, 'Chalo Chalein' which means 'let's go' in Hindi, we are dedicated to igniting the spirit of adventure and guiding you through the serene landscapes of the Himalayas. Whether you're looking to book a taxi in Dharamshala, embark on a scenic trek, or explore the cultural rich heritage of this mountainous region, our local expertise and personalized services ensure an unforgettable experience. At Chalo Chalein, we pride ourselves on crafting tailor-made itineraries that cater to your unique travel desires, all while ensuring comfort, safety, and the highest standards of hospitality. Join us on a journey of discovery and enchantment with Chalo Chalein, where every trip is more than just travel—it's a seamless blend of exploration, excitement, and memories that last a lifetime."
+      />
+
       <section className={`${styles.about_us_sec} common_margin`}>
         <div className="container">
           <div className={`${styles.about_us_content} ${styles.about_us_content1} flex_center d_flex`}>
@@ -53,6 +61,9 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
+
+      <BookTaxiBanner />
+
     </>
   );
 };

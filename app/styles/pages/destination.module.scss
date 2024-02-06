@@ -19,100 +19,109 @@
 }
 
 .single_destination {
-.single_destination_parent{
-    // flex-wrap: wrap;
-    .single_destination_content {
-        border: 1px solid $light-gray;
-        border-radius: 5px;
-        padding: 0 10px;
-        width: 70%;
+    .single_destination_parent {
 
-        h3 {
-            font-size: 20px;
-            font-family: 'Montserrat', sans-serif;
-            letter-spacing: 1px;
-            margin-bottom: 7px;
-        }
+        // flex-wrap: wrap;
+        .single_destination_content {
+            border: 1px solid $light-gray;
+            border-radius: 5px;
+            padding: 0 10px;
+            width: 70%;
 
-        .destination_top_icons {
-            display: flex;
-            gap: 40px;
-            margin: 20px 0;
-
-            .top_icon_col {
-                text-align: center;
-                svg {
-                    font-size: 26px;
-                    color: $primary-color;
-                }
-                h5 {
-                    font-size: 14px;
-                    font-weight: 500;
-                }
+            h3 {
+                font-size: 20px;
+                font-family: 'Montserrat', sans-serif;
+                letter-spacing: 1px;
+                margin-bottom: 7px;
             }
-            @media screen and (max-width: 600px) {
-                // width: 35%;
-                flex-wrap: wrap;
-                .top_icon_col{
-                    width: 41%;
+
+            .destination_top_icons {
+                display: flex;
+                gap: 40px;
+                margin: 20px 0;
+
+                .top_icon_col {
+                    text-align: center;
+
+                    svg {
+                        font-size: 26px;
+                        color: $primary-color;
+                    }
+
+                    h5 {
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
                 }
-            }
-        }
 
-        .destination_overview {
-        margin-bottom: 20px;
+                @media screen and (max-width: 600px) {
+                    // width: 35%;
+                    flex-wrap: wrap;
 
-            ul {
-                font-size: 14px;
-                list-style: square;
-                padding: 0;
-                font-family: 'Poppins', sans-serif;
-
-                li {
-                    list-style-type: none;
-                    position: relative;
-                    padding-left: 18px;
-                    margin: 10px 0;
-
-                    &::after {
-                        content: "";
-                        position: absolute;
-                        left: 0;
-                        top: 10px;
-                        width: 7px;
-                        height: 7px;
-                        background-color: $primary-color;
+                    .top_icon_col {
+                        width: 41%;
                     }
                 }
             }
-        }
-        @media screen and (max-width: 768px) {
-         width: 100%;
-        }
-    }
 
-    .weather_widget {
-        width: 30%;
-        background-color: $bg;
-        height: 100%;
-        position: sticky;
-        top: 10px;
-        padding: 20px;
-    }
-    @media screen and (max-width: 768px) {
-        flex-wrap: wrap; 
-        flex-direction: column-reverse;
+            .destination_overview {
+                margin-bottom: 20px;
+
+                ul {
+                    font-size: 14px;
+                    list-style: square;
+                    padding: 0;
+                    font-family: 'Poppins', sans-serif;
+
+                    li {
+                        list-style-type: none;
+                        position: relative;
+                        padding-left: 18px;
+                        margin: 10px 0;
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            top: 10px;
+                            width: 7px;
+                            height: 7px;
+                            background-color: $primary-color;
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+        }
+
         .weather_widget {
-            position: unset;
+            width: 30%;
+            background-color: $bg;
+            height: 100%;
+            position: sticky;
+            top: 10px;
+            padding: 20px;
         }
+
+        @media screen and (max-width: 768px) {
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+
+            .weather_widget {
+                position: unset;
+            }
+        }
+
     }
 
-}
-    
 }
 
 .popular_destinations,
 .popular_tours {
+
     .popular_destinations_cards,
     .popular_tours_cards {
         display: flex;
@@ -127,32 +136,59 @@
             border-radius: 5px;
             overflow: hidden;
         }
+
         @media screen and (max-width: 768px) {
-               flex-wrap: wrap; 
-               .popular_destinations_card{
+            flex-wrap: wrap;
+
+            .popular_destinations_card {
                 width: 46%;
             }
-            
-            
+
+
         }
     }
 }
 
+.weather_information {
+    h3 {
+        font-size: 20px;
+    }
 
-    .weather_information {
-        h3 {
+    h4 {
+        font-size: 16px;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    p {
+        margin: 5px 0;
+    }
+
+    .weather_icon {
+        font-size: 54px;
+        height: 54px;
+        width: 54px;
+    }
+}
+
+.seo_content {
+    border: 1px solid $light-gray;
+    border-radius: 5px;
+    padding: 20px;
+
+    h1 {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 8px;
+
+    }
+
+    @media screen and (max-width: 768px) {
+
+        padding: 10px;
+
+        h1 {
             font-size: 20px;
-        }
-        h4 {
-            font-size: 16px;
-            font-family: "Montserrat", sans-serif;
-        }
-        p {
-            margin: 5px 0;
-        }
-        .weather_icon {
-            font-size: 54px;
-            height: 54px;
-            width: 54px;
+            line-height: 24px;
         }
     }
+}

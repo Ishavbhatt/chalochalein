@@ -15,8 +15,8 @@ const BookTaxiBanner = () => {
                                 <h2>Seamless Travel Experiences </h2>
                                 <h2>Await</h2>
                                 <p>Book Your Ride Now</p>
-                                <Link className="transparent_button" href="tel:9418249045">
-                                    <IoCallSharp /> +91 94182-49045</Link>
+                                <Link className="transparent_button" href="tel:8894460060">
+                                    <IoCallSharp /> +91 8894460060</Link>
                             </div>
                         </div>
                     </div>

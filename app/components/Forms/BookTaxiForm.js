@@ -87,8 +87,8 @@ export default function BookTaxiForm() {
       </div>
       <div className={styles.info_contact}>
         <p>For more information :</p>
-        <Link href="tel:9418249045">
-          +91 94182-49045
+        <Link href="tel:8894460060">
+          +91 8894460060
         </Link>
       </div>
     </>

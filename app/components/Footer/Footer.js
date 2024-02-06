@@ -41,9 +41,9 @@ export default function Footer() {
                 <Link href="/" className={styles.social_icons}>
                   <FaInstagram />
                 </Link>
-                <Link href="/" className={styles.social_icons}>
+                {/* <Link href="/" className={styles.social_icons}>
                   <FaTwitter />
-                </Link>
+                </Link> */}
               </div>
             </div>
             <div className={styles.column}>
@@ -76,7 +76,7 @@ export default function Footer() {
                 <li> <Link href='/tours'>Dharamshala Taxi Tour</Link></li>
                 <li> <Link href='/tours'>Devi Darshan Taxi Tour</Link></li>
                 <li> <Link href='/tours'>Golden Temple Taxi Tour</Link></li>
-                <li> <Link href='/tours'>More</Link></li>
+                <li> <Link href='/tours'>Explore More</Link></li>
               </ul>
             </div>
             <div className={`${styles.column} ${styles.footer_last_column}`}>
@@ -141,9 +141,10 @@ export default function Footer() {
             </div>
           </div>
         </div>
-      </div>
-      <div className={styles.footer_bottom}>
-        <p>Copyright © 2024 Chalo Chalein Tour & Travel</p>
+        <div className={styles.footer_bottom}>
+          <p>Copyright © 2024 Chalo Chalein Tour & Travel</p>
+          <p>Design & Developed by <Link href='https://ishav.netlify.app/' target="_blank">Ishav Bhatt</Link></p>
+        </div>
       </div>
     </footer>
   );
