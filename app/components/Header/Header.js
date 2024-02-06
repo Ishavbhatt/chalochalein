@@ -18,7 +18,7 @@ const Header = () => {
         <nav className={styles.navbar}>
           <div className={styles.header_logo}>
             <Link href="/">
-              <Image src="/logo-color.png" height={80} width={100} alt="Chalo Chalein Logo" />
+              <Image src="/logo-color.png" height={80} width={100} alt="Chalo Chalein Tour & Travel Logo" />
             </Link>
           </div>
           <div

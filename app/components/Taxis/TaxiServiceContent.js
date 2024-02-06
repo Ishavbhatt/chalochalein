@@ -19,23 +19,24 @@ export default function TaxiServiceContent() {
         {
             id: 1,
             title: `Taxi Service in\n Dharamshala`,
-            taxi_image: '/images/taxi/taxi.jpg'
+            taxi_image: '/images/taxi/taxi-service-in-dharamshala.webp',
+            alt_Tag: 'Taxi service in Dharamshala'
         },
         {
             id: 2,
             title: `Taxi Service in\n Kangra Airport`,
-            taxi_image: '/images/taxi/taxi.jpg'
+            taxi_image: '/images/taxi/taxi-service-in-kangra-airport.webp',
+            alt_Tag: 'Taxi service in Kangr Airport'
 
         },
         {
             id: 3,
             title: `Taxi Service in\n McLeod Ganj`,
-            taxi_image: '/images/taxi/taxi.jpg'
-
+            taxi_image: '/images/taxi/taxi-service-in-mcleodganj.webp',
+            alt_Tag: 'Taxi service in Mcleod Ganj'
         }
     ];
 
-  
     return (
         <div className={`${styles.taxi_service_overview} `}>
             <div className='common_heading'>
@@ -67,10 +68,10 @@ export default function TaxiServiceContent() {
                             <Image src={item.taxi_image} alt={item.title} fill={true} priority />
                             <div className={styles.mainly_taxi_service_content}>
                                 <h4>{item.title}</h4>
-                                <Link href="tel:8894460060" className="transparent_button">
+                                {/* <Link href="tel:8894460060" className="transparent_button">
                                     <IoCallSharp />
                                     Book Now
-                                </Link>
+                                </Link> */}
                             </div>
                         </div>
                     ))}
@@ -90,7 +91,6 @@ export default function TaxiServiceContent() {
                     <p>Let's venture into the heart of Himachal Pradesh together. Chalo Chalein – Let's go!</p>
                 </div>
             </div>
-
         </div>
     )
 }

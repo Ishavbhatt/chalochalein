@@ -1,4 +1,4 @@
-import BookTaxiBanner from "../components/Banners/BookTaxiBanner";
+import BookCabBanner from "../components/Banners/BookCabBanner";
 import PageTopBanner from "../components/Banners/PageTopBanner";
 import SEOContent from "../components/SEOContent/SEOContent";
 import styles from "../styles/pages/about.module.scss";
@@ -62,9 +62,14 @@ const AboutUs = () => {
         </div>
       </section>
 
-      <BookTaxiBanner />
-
+      <BookCabBanner
+        title={'Book Your Cab'}
+        description={'Explore Himachal Pradesh with ease. Book your taxi now for a seamless journey through Dharamshala, Manali, and beyond. Our professional drivers ensure comfort and punctuality, making every trip memorable. Start your adventure today!'}
+        CTA_text={'Book Now'}
+        image={'/vectors/taxi.svg'}
+      />
     </>
   );
 };
+
 export default AboutUs;

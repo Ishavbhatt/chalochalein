@@ -9,6 +9,7 @@ import PopularRoutes from '../components/Taxis/PopularRouts';
 import PageTopBanner from '../components/Banners/PageTopBanner';
 import { IoCallSharp } from 'react-icons/io5';
 import SEOContent from '../components/SEOContent/SEOContent';
+import BookTaxiBanner from '../components/Banners/BookTaxiBanner';
 
 export const metadata = {
     title: 'Taxi Service in Dharamshala, Shimla, Kullu, Manali - Book Your Cab',
@@ -141,6 +142,8 @@ export default function TaxiServices() {
                     <PopularRoutes />
                 </div>
             </section>
+
+            <BookTaxiBanner />
         </>
     )
 }
