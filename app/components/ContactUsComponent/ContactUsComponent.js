@@ -66,8 +66,8 @@ function ContactUsComponent() {
                                     </div>
                                     <div className={styles.contact_main_left_details_child}>
                                         <IoMdMailUnread />
-                                        <Link href="mailto:rahul@asianclassictravels.com" className={styles.contact_links}>
-                                            rahulmaddykapoor@gmail.com
+                                        <Link href="mailto:chalochaleintourandtravel@gmail.com" className={styles.contact_links}>
+                                            chalochaleintourandtravel@gmail.com
                                         </Link>
                                     </div>
                                     <div className={styles.contact_main_left_details_child}>
@@ -159,11 +159,11 @@ function ContactUsComponent() {
                         </div>
                     </div>
                 </div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27004.263703675362!2d76.29856558917037!3d32.216813188215404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b50df65bd7311%3A0x3e08bdb100c6dc10!2sDharamshala%2C%20Himachal%20Pradesh!5e0!3m2!1sen!2sin!4v1706974501263!5m2!1sen!2sin" 
-                width="100%" height="450"
-                allowFullScreen=""
-                style={{border:'0'}}
-                loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27004.263703675362!2d76.29856558917037!3d32.216813188215404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b50df65bd7311%3A0x3e08bdb100c6dc10!2sDharamshala%2C%20Himachal%20Pradesh!5e0!3m2!1sen!2sin!4v1706974501263!5m2!1sen!2sin"
+                    width="100%" height="450"
+                    allowFullScreen=""
+                    style={{ border: '0' }}
+                    loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </section>
         </>
     );

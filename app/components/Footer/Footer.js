@@ -27,7 +27,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <p style={{ width: '20px', color: 'white' }}> <IoMail /></p>
-                  <span> <Link href='mailto:rahulmaddykapoor@gmail.com'>rahulmaddykapoor@gmail.com</Link></span>
+                  <span> <Link href='mailto:chalochaleintourandtravel@gmail.com'>chalochaleintourandtravel@gmail.com</Link></span>
                 </li>
                 <li>
                   <p style={{ width: '20px', color: 'white' }}> <FaLocationDot /></p>
