@@ -16,6 +16,7 @@ const AboutUs = () => {
         bannerImage={'/images/banners/about-page-banner.webp'}
         title={'About Us'}
         subtitle={'Our Journey, Your Experience'}
+        altTag={'About Chalo Chalein tour and travel'}
       />
 
       <SEOContent

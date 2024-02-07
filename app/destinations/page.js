@@ -16,6 +16,7 @@ export default function Destinations() {
                 bannerImage={'/images/banners/destination-page-banner.webp'}
                 title={'Destinations'}
                 subtitle={'Your Gateway to Adventure'}
+                altTag={'Chalo Chalein tour and travel sightseeing'}
             />
 
             <SEOContent

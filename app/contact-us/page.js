@@ -12,9 +12,10 @@ const page = () => {
     return (
         <>
             <PageTopBanner
-                bannerImage={'/images/banners/about-banner.jpg'}
+                bannerImage={'/images/banners/contact-page-banner.webp'}
                 title={'Contact Us'}
                 subtitle={'Contact for Queries, Ready to Assist'}
+                altTag={'Contact Chalo Chalein tour and travel'}
             />
 
             <SEOContent

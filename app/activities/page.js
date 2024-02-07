@@ -17,6 +17,8 @@ export default function Activities() {
                 bannerImage={'/images/banners/activities-page-banner.webp'}
                 title={'Explore the Wild: Trek, Glide, Camp'}
                 subtitle={'Embark on Thrilling Treks, Soar through the Skies with Paragliding, and Unwind Amidst Nature with Camping.'}
+                altTag={'Chalo Chalein tour and travel activities'}
+
             />
 
             <SEOContent

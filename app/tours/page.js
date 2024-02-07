@@ -16,6 +16,7 @@ export default function Tours() {
                 bannerImage={'/images/banners/tours-page-banner.webp'}
                 title={'Tours'}
                 subtitle={'Explore Our Exciting Offerings'}
+                altTag={'Chalo Chalein himachal tour packages'}
             />
             <SEOContent
                 title="Himachal tour packages with chalo chalein"

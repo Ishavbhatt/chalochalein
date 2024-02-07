@@ -87,6 +87,7 @@ export default function TaxiServices() {
                 bannerImage={'/images/banners/taxi-page-banner.webp'}
                 title={'Taxi Services'}
                 subtitle={'Reliable Transport Solutions'}
+                altTag={'Chalo Chalein taxi service in dharamshala'}
             />
 
             <SEOContent

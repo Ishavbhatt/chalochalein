@@ -143,7 +143,7 @@ export default function Footer() {
         </div>
         <div className={styles.footer_bottom}>
           <p>Copyright © 2024 Chalo Chalein Tour & Travel</p>
-          <p>Design & Developed by <Link href='https://ishav.netlify.app/' target="_blank">Ishav Bhatt</Link></p>
+          <p>Design & Developed by <Link href='https://ishav.netlify.app' target="_blank">Ishav Bhatt</Link></p>
         </div>
       </div>
     </footer>

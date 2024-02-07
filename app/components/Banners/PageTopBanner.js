@@ -2,13 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from './Banners.module.scss'
 
-const PageTopBanner = ( props ) => {
+const PageTopBanner = (props) => {
     return (
         <div className={styles.page_top_banner}>
             <Image
                 src={props?.bannerImage}
                 fill={true}
-                alt={props?.title}
+                alt={props?.altTag}
+                quality={100}
             />
             <div className={styles.page_top_banner_content}>
                 <div className="container">
