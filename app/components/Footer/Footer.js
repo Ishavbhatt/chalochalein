@@ -18,7 +18,7 @@ export default function Footer() {
             <h3>#Chalo Chalein</h3>
           </div> */}
           <div className={styles.footer_column}>
-            <div className={styles.column}>
+            <div className={`${styles.column} ${styles.footer_first_column}`}>
               <h4>Follow Us</h4>
               <ul>
                 <li>
@@ -35,10 +35,10 @@ export default function Footer() {
                 </li>
               </ul>
               <div className={styles.social_icons_main}>
-                <Link href="/" className={styles.social_icons}>
+                <Link href="/"  aria-label="Facebook"  className={styles.social_icons}>
                   <FaFacebookF />
                 </Link>
-                <Link href="/" className={styles.social_icons}>
+                <Link href="/"  aria-label="Instagram"  className={styles.social_icons}>
                   <FaInstagram />
                 </Link>
                 {/* <Link href="/" className={styles.social_icons}>
@@ -46,7 +46,7 @@ export default function Footer() {
                 </Link> */}
               </div>
             </div>
-            <div className={styles.column}>
+            <div className={`${styles.column} ${styles.footer_secound_column}`}>
               <h4>Quick Links</h4>
               <ul>
                 <li>
@@ -69,7 +69,7 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-            <div className={styles.column}>
+            <div className={`${styles.column} ${styles.footer_third_column}`}>
               <h4>Tours</h4>
               <ul className="tours_list">
                 <li> <Link href='/tours'>Mcleodganj Taxi Tour</Link></li>
@@ -87,16 +87,16 @@ export default function Footer() {
                     src="/images/destinations/dharamshala.png"
                     alt='Dharamshala'
                     // fill={true}
-                    height={90}
-                    width={88}
+                    height={95}
+                    width={93}
                   />
                   <Link href='/destinations/dharamshala'>Dharamshala</Link>
                 </div>
                 <div className={styles.projects_list}>
                   <Image className={styles.project_image}
                     src="/images/destinations/shimla.png"
-                    height={90}
-                    width={88}
+                    height={95}
+                    width={93}
                     alt="Shimla"
                   />
                   <Link href='/destinations/shimla'>Shimla</Link>
@@ -104,8 +104,8 @@ export default function Footer() {
                 <div className={styles.projects_list}>
                   <Image className={styles.project_image}
                     src="/images/destinations/dalhousie.png"
-                    height={90}
-                    width={88}
+                    height={95}
+                    width={93}
                     alt="Dalhousie"
                   />
                   <Link href='/destinations/dalhousie'>Dalhousie</Link>
@@ -113,8 +113,8 @@ export default function Footer() {
                 <div className={styles.projects_list}>
                   <Image className={styles.project_image}
                     src="/images/destinations/kullu.png"
-                    height={90}
-                    width={88}
+                    height={95}
+                    width={93}
                     alt="Kullu"
                   />
                   <Link href='/destinations/kullu'>Kullu</Link>
@@ -122,8 +122,8 @@ export default function Footer() {
                 <div className={styles.projects_list}>
                   <Image className={styles.project_image}
                     src="/images/destinations/kasol.png"
-                    height={90}
-                    width={88}
+                    height={95}
+                    width={93}
                     alt="kasol"
                   />
                   <Link href='/destinations/kasol'>kasol</Link>
@@ -131,8 +131,8 @@ export default function Footer() {
                 <div className={styles.projects_list}>
                   <Image className={styles.project_image}
                     src="/images/destinations/manali.png"
-                    height={90}
-                    width={88}
+                    height={95}
+                    width={93}
                     alt="Manali"
                   />
                   <Link href='/destinations/manali'>Manali</Link>

@@ -56,7 +56,7 @@ const MainTaxis = () => {
                     <div className={styles.main_taxis}>
                         {taxisData.map((taxi) => (
                             <div className={styles.main_taxis_child} key={taxi.id}>
-                                <Link href={'/taxi-services'}></Link>
+                                <Link href={'/taxi-services'}  aria-label="Taxi Services" ></Link>
                                 <div className={styles.main_taxis_child_image}>
                                     <Image src={taxi.taxi_image} height={150} width={150} alt={taxi.taxi_name} priority={true} />
                                 </div>
@@ -65,10 +65,9 @@ const MainTaxis = () => {
                                         <h4>{taxi.taxi_name}</h4>
                                         <p>{taxi.description}</p>
                                     </div>
-                                    <button className={styles.taxi_btn}>
+                                    <button className={styles.taxi_btn} aria-label="Taxi Services">
                                         <FaArrowRight />
                                     </button>
-                                
                             </div>
                         ))}
                     </div>

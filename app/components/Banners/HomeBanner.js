@@ -53,7 +53,7 @@ const HomeBanner = () => {
   return (
     <>
       <section className={styles.desktop_banner}>
-        <Slider {...settings} className="banner_slider">
+        <Slider {...settings} className="banner_slider" aria-hidden="true">
           {banners.map((banner) => (
             <div className={styles.home_banner} key={banner.id}>
               <Image
@@ -74,7 +74,7 @@ const HomeBanner = () => {
       </section>
 
       <section className={styles.mobile_banner}>
-        <Slider {...settings} className='banner_slider' >
+        <Slider {...settings} className='banner_slider' aria-hidden="true">
           {banners.map((banner) => (
             <div className={styles.home_banner} key={banner.id}>
               <img src={banner.mobileBannerImage} width="100%" height="100%" />

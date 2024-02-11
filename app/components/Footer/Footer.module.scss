@@ -16,7 +16,7 @@
       width: 100%;
 
       .column {
-        width: 24%;
+        // width: 24%;
 
         .footer_logo_main {
           padding-bottom: 20px;
@@ -111,9 +111,17 @@
           }
         }
       }
-
+      .footer_first_column {
+        width: 30%;
+      }
+      .footer_secound_column {
+        width: 20%;
+      }
+      .footer_third_column {
+        width: 20%;
+      }
       .footer_last_column {
-        width: 27%;
+        width: 30%;
       }
 
       @media only screen and (max-width: 768px) {
