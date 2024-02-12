@@ -18,7 +18,7 @@ export async function POST(request) {
 
     const mailOption = {
       from: email,
-      to: "ishavbhattkhaniyara@gmail.com",
+      to: "chalochaleintourandtravel@gmail.com",
       subject: "Email From Chalo Chalein Taxi Service Page",
       html: `
       <h4>Chalo Chalein Website Taxi Booking Form Enquiry. Here are the Details:</h4>

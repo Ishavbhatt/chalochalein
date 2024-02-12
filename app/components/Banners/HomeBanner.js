@@ -6,8 +6,10 @@ import Link from "next/link";
 import { FaTaxi } from "react-icons/fa";
 import { TbTrekking } from "react-icons/tb";
 import { MdOutlineTour } from "react-icons/md";
+import { useState, useEffect } from "react";
 
 const HomeBanner = () => {
+  const [isDesktop, setIsDesktop] = useState(true);
 
   const banners = [
     {
@@ -45,14 +47,61 @@ const HomeBanner = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    // autoplay: true,
-    autoplaySpeed: 3000,
+    autoplay: true,
+    autoplaySpeed: 5000,
     arrows: false,
   };
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth > 600);
+    };
+
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     <>
-      <section className={styles.desktop_banner}>
+      {isDesktop ? (
+        <section className={styles.desktop_banner}>
+          <Slider {...settings} className="banner_slider">
+            {banners.map((banner, index) => (
+              <div className={`slick-slide ${styles.home_banner} ${index === 0 ? 'slick-active slick-current' : ''}`} key={banner.id}>
+                <Image
+                  src={banner.imgSrc}
+                  alt={banner.button_icon + 'with Chalo Chalein'}
+                  fill={true}
+                />
+                <div className="container">
+                  <div className={styles.home_banner_content}>
+                    <h2 className="common_headings_white">{banner.title}</h2>
+                    <p className="common_para_white">{banner.description}</p>
+                    <Link href="tel:8894460060" className="common_animate_btn">{banner.button_icon} {banner.button_text}</Link>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </Slider>
+        </section>
+      ) : (
+        <section className={styles.mobile_banner}>
+          <Slider {...settings} className='banner_slider'>
+            {banners.map((banner, index) => (
+              <div className={`slick-slide ${styles.home_banner} ${index === 0 ? 'slick-active slick-current' : ''}`} key={banner.id}>
+                <div className={styles.home_banner_content}>
+                  <h2 className="common_headings_white">{banner.title}</h2>
+                  <p className="common_para_white">{banner.description}</p>
+                  <Link href="tel:8894460060" className="common_animate_btn">{banner.button_icon} {banner.button_text}</Link>
+                </div>
+              </div>
+            ))}
+          </Slider>
+        </section>
+      )}
+      {/* <section className={styles.desktop_banner}>
         <Slider {...settings} className="banner_slider" aria-hidden="true">
           {banners.map((banner) => (
             <div className={styles.home_banner} key={banner.id}>
@@ -85,7 +134,7 @@ const HomeBanner = () => {
             </div>
           ))}
         </Slider>
-      </section>
+      </section> */}
     </>
   );
 };
