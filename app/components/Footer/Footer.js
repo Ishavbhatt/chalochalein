@@ -31,7 +31,9 @@ export default function Footer() {
                 </li>
                 <li>
                   <p style={{ width: '20px', color: 'white' }}> <FaLocationDot /></p>
-                  <span>Dharamshala, Himachal Pradesh</span>
+                  <Link href="https://maps.app.goo.gl/3XAQGtFt4k7oMKDq6" className={styles.contact_links} style={{padding:'10px 15px'}}>
+                    Shyam Nagar, Uparli Barol, Dharamshala, Himachal Pradesh 176215
+                  </Link>
                 </li>
               </ul>
               <div className={styles.social_icons_main}>
