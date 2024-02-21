@@ -30,15 +30,19 @@ export default function Footer() {
                   <span> <Link href='mailto:chalochaleintourandtravel@gmail.com'>chalochaleintourandtravel@gmail.com</Link></span>
                 </li>
                 <li>
-                  <p style={{ width: '20px', color: 'white' }}> <FaLocationDot /></p>
-                  <span>Dharamshala, Himachal Pradesh</span>
+                  <p style={{ width: '30px', color: 'white' }}> <FaLocationDot /></p>
+                  <span>
+                    <Link href="https://maps.app.goo.gl/3XAQGtFt4k7oMKDq6" className={styles.contact_links} >
+                      Shyam Nagar, Uparli Barol, Dharamshala, Himachal Pradesh 176215
+                    </Link>
+                  </span>
                 </li>
               </ul>
               <div className={styles.social_icons_main}>
-                <Link href="/"  aria-label="Facebook"  className={styles.social_icons}>
+                <Link href="/" aria-label="Facebook" className={styles.social_icons}>
                   <FaFacebookF />
                 </Link>
-                <Link href="/"  aria-label="Instagram"  className={styles.social_icons}>
+                <Link href="/" aria-label="Instagram" className={styles.social_icons}>
                   <FaInstagram />
                 </Link>
                 {/* <Link href="/" className={styles.social_icons}>

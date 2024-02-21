@@ -72,8 +72,8 @@ function ContactUsComponent() {
                                     </div>
                                     <div className={styles.contact_main_left_details_child}>
                                         <PiMapPinFill />
-                                        <Link href="https://maps.app.goo.gl/kGgCUqjXfRjm8Wtf8" className={styles.contact_links}>
-                                            Dharamshala, Himachal Pradesh
+                                        <Link href="https://maps.app.goo.gl/3XAQGtFt4k7oMKDq6" className={styles.contact_links}>
+                                        Shyam Nagar, Uparli Barol, Dharamshala, Himachal Pradesh 176215
                                         </Link>
                                     </div>
                                     <div className="d_flex gap_10">
@@ -144,6 +144,7 @@ function ContactUsComponent() {
                                             className="form-control"
                                             id="message"
                                             name="message"
+                                            style={{resize:'vertical'}}
                                             value={formData.message}
                                             onChange={handleInputChange}
                                             rows="4"
@@ -159,11 +160,11 @@ function ContactUsComponent() {
                         </div>
                     </div>
                 </div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27004.263703675362!2d76.29856558917037!3d32.216813188215404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b50df65bd7311%3A0x3e08bdb100c6dc10!2sDharamshala%2C%20Himachal%20Pradesh!5e0!3m2!1sen!2sin!4v1706974501263!5m2!1sen!2sin"
-                    width="100%" height="450"
-                    allowFullScreen=""
-                    style={{ border: '0' }}
-                    loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2007.2397935734793!2d76.32651030811837!3d32.21065684345586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x29892b774742b635%3A0x5244c2d8b236f47f!2sChalo%20Chalein%20Tours%20and%20Travel!5e0!3m2!1sen!2sin!4v1708517075479!5m2!1sen!2sin" 
+                width="100%" height="450"
+                allowFullScreen=""
+                style={{border:'0'}}
+                loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </section>
         </>
     );
