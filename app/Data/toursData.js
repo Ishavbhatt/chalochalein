@@ -26,6 +26,28 @@ const toursData = [
     duration: "1D",
   },
   {
+    ImageSrc: "/images/tours/dharamshala-ropeway.webp",
+    tourName: "Dharamshala to Mcleodganj Ropeway",
+    location: 'Dharamshala, Himachal Pradesh',
+    inclusion: [
+      {
+        icon: <FaTaxi />,
+        text: 'Transfer'
+      },
+      {
+        icon: <FaBinoculars />,
+        text: 'Sightseeing',
+      },
+      {
+        icon: <MdHotel />,
+        text: 'Stay',
+      }
+    ],
+    description:
+      "Immerse yourself in nature's beauty on our thrilling treks.",
+    duration: "1D",
+  },
+  {
     ImageSrc: "/images/tours/Baijnath.jpg",
     tourName: "Baijnath Taxi Tour",
     location: 'Baijnath, Himachal Pradesh',
@@ -184,4 +206,5 @@ const toursData = [
     duration: "1N/2D",
   },
 ];
+
 export default toursData;

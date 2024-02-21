@@ -37,6 +37,7 @@ export default function Activities() {
                     </div>
                 </div>
             </section>
+            
             <BookCabBanner
                 title={'Explore the Outdoors with Chalo Chalein'}
                 description={'Unleash the adventurer in you! Choose from exciting trekking trails, exhilarating paragliding experiences, or serene camping getaways. Your next escapade awaits – book now!'}
