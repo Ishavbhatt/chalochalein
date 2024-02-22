@@ -22,61 +22,62 @@ export default function TaxiServices() {
             id: 1,
             taxi_name: `Alto`,
             seats: '4 + 1',
-            taxi_image: '/images/taxi/taxi.jpg'
+            taxi_image: '/images/taxi/alto.jpg'
         },
         {
             id: 2,
             taxi_name: `Swift Dezire`,
             seats: '4 + 1',
-            taxi_image: '/images/taxi/taxi.jpg'
+            taxi_image: '/images/taxi/swift-dezire.webp'
         },
         {
             id: 3,
             taxi_name: `Toyota Rumion`,
             seats: '6 + 1',
-            taxi_image: '/images/taxi/taxi.jpg'
+            taxi_image: '/images/taxi/toyota-rumion.jpg'
         },
         {
             id: 4,
             taxi_name: `Innova Crysta`,
             seats: '6 + 1',
-            taxi_image: '/images/taxi/taxi.jpg'
+            taxi_image: '/images/taxi/innova-crysta.jpg'
         },
         {
             id: 5,
             taxi_name: `Ertiga `,
             seats: '6 + 1',
-            taxi_image: '/images/taxi/taxi.jpg'
+            taxi_image: '/images/taxi/ertiga.webp'
         },
         {
             id: 6,
             taxi_name: `Toyota Etios`,
             seats: '4 + 1',
-            taxi_image: '/images/taxi/taxi.jpg'
+            taxi_image: '/images/taxi/toyota-etios.webp'
         },
+       
         {
             id: 7,
             taxi_name: `Mahindra Bolero`,
             seats: '6 + 1',
-            taxi_image: '/images/taxi/taxi.jpg'
+            taxi_image: '/images/taxi/mahinda-bolero.webp'
         },
         {
             id: 8,
             taxi_name: `Sedan`,
             seats: '4 + 1',
-            taxi_image: '/images/taxi/taxi.jpg'
+            taxi_image: '/images/taxi/sedar-car.jpg'
         },
         {
             id: 9,
             taxi_name: `Suv`,
             seats: '6 + 1',
-            taxi_image: '/images/taxi/taxi.jpg'
+            taxi_image: '/images/taxi/suv.webp'
         },
         {
             id: 10,
             taxi_name: `Tempo Traveller`,
             seats: '12 + 1',
-            taxi_image: '/images/taxi/taxi.jpg'
+            taxi_image: '/images/taxi/tampo-traveller.jpg'
         },
     ];
 
