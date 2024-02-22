@@ -91,6 +91,11 @@ const HomeBanner = () => {
           <Slider {...settings} className='banner_slider'>
             {banners.map((banner, index) => (
               <div className={`slick-slide ${styles.home_banner} ${index === 0 ? 'slick-active slick-current' : ''}`} key={banner.id}>
+                <Image
+                  src={banner.imgSrc}
+                  alt={banner.button_icon + 'with Chalo Chalein'}
+                  fill={true}
+                />
                 <div className={styles.home_banner_content}>
                   <h2 className="common_headings_white">{banner.title}</h2>
                   <p className="common_para_white">{banner.description}</p>

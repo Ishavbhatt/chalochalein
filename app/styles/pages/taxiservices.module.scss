@@ -47,8 +47,7 @@
 
                     img {
                         transition: transform 0.5s;
-                        object-fit: cover;
-                        // transform: scale(1.05);
+                        object-fit: contain;
                     }
                 }
 
@@ -100,9 +99,10 @@
             }
             @media screen and (max-width: 600px) {
                 flex-wrap: wrap;
+                gap: 10px;
+                justify-content: space-between;
                 .taxis_listing_child{
-                    width: 100%;
-                }
+                    width: calc(50% - 5px);                }
             }
         }
     }
