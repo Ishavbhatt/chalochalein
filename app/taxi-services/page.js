@@ -71,7 +71,7 @@ export default function TaxiServices() {
             id: 9,
             taxi_name: `Suv`,
             seats: '6 + 1',
-            taxi_image: '/images/taxi/suv.webp'
+            taxi_image: '/images/taxi/suv-car.jpg'
         },
         {
             id: 10,
