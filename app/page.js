@@ -17,6 +17,7 @@ import Accordion from './components/Accordion/Accordion'
 import BookCabBanner from './components/Banners/BookCabBanner';
 import homePageFaqs from './Data/homePageFaqs';
 import FaqCallSec from './components/FaqCallSec/FaqCallSec';
+import Benefits from './components/Taxis/Benifits';
 
 export const metadata = {
   title: 'Book Taxi in Dharamshala, Himachal Pradesh - Reliable Taxi Service',
@@ -113,6 +114,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+      
+      <Benefits />
 
       <BookCabBanner
         title={'Book Your Cab'}

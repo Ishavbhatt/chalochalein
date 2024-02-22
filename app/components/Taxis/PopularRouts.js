@@ -16,46 +16,46 @@ const PopularRoutes = () => {
         },
         {
             id: 3, title: 'Dharamshala to Rampur Taxi',
-            route_img: '/images/tours/Shimla.jpg',
+            route_img: '/images/adventure-activities/trekking/triund-trek.jpg',
         },
         {
             id: 4, title: 'Dharamshala To Katra Taxi Service',
-            route_img: '/images/tours/Shimla.jpg',
+            route_img: '/images/adventure-activities/trekking/kareri-lake-trek.webp',
 
         },
         {
             id: 5, title: 'Dharamshala To Jalandhar Taxi',
-            route_img: '/images/tours/Shimla.jpg',
+            route_img: '/images/adventure-activities/trekking/indrahar-paas-trek.jpg',
 
         },
         {
             id: 6, title: 'Dharamshala To Gurugram Taxi',
-            route_img: '/images/tours/Shimla.jpg',
+            route_img: '/images/adventure-activities/trekking/malana-trek.jpg',
 
         },
         {
             id: 7, title: 'Dharamshala To Amritsar Taxi',
-            route_img: '/images/tours/Shimla.jpg',
+            route_img: '/images/adventure-activities/trekking/kheerganga-trek.jpg',
 
         },
         {
             id: 8, title: 'Dharamshala To Chandigarh Taxi',
-            route_img: '/images/tours/Shimla.jpg',
+            route_img: '/images/adventure-activities/trekking/bir-billing-paragliding.jpg',
 
         },
         {
             id: 9, title: 'Gagret To Dharamshala Taxi',
-            route_img: '/images/tours/Shimla.jpg',
+            route_img: '/images/adventure-activities/trekking/thatharna-trek.jpg',
 
         },
         {
             id: 10, title: 'Dharamshala Jwalaji Taxi',
-            route_img: '/images/tours/Shimla.jpg',
+            route_img: '/images/adventure-activities/camping.jpg',
 
         },
         {
             id: 11, title: 'Dharamshala Chintapurni Taxi',
-            route_img: '/images/tours/Shimla.jpg',
+            route_img: '/images/adventure-activities/trekking/snow-line-trek.jpg',
 
         },
         {
@@ -73,7 +73,7 @@ const PopularRoutes = () => {
         },
         {
             id: 15, title: 'Dharamahala To Delhi Taxi',
-            route_img: '/images/tours/Shimla.jpg',
+            route_img: '/images/tours/Baijnath.jpg',
 
         },
         {
@@ -83,34 +83,34 @@ const PopularRoutes = () => {
         },
         {
             id: 18, title: 'Dharamshala to Dalhousie Taxi',
-            route_img: '/images/tours/dalhousie.png',
+            route_img: '/images/tours/dharamshala-taxi-tour.png',
         },
         {
             id: 19, title: 'Dharamshala to Chamba Taxi',
-            route_img: '/images/tours/dalhousie.png',
+            route_img: '/images/tours/golden-temple.webp',
         },
         { id: 20, title: 'Dharamshala to Mandi Taxi' ,  route_img: '/images/tours/dalhousie.png',},
         {
             id: 21, title: 'Dharamshala to Manali Taxi',
-            route_img: '/images/destinations/manali.jpg',
+            route_img: '/images/tours/Baijnath.jpg',
         },
         {
             id: 22, title: 'Dharamshala to Rohtang Taxi',
             route_img: '/images/destinations/manali.png',
         },
-        { id: 23, title: 'Dharamshala to Leh Taxi',  route_img: '/images/tours/dalhousie.png', },
-        { id: 24, title: 'Dharamshala to Solan Taxi',  route_img: '/images/tours/dalhousie.png', },
-        { id: 25, title: 'Hamirpur To Dharamshala Taxi',  route_img: '/images/tours/dalhousie.png', },
+        { id: 23, title: 'Dharamshala to Leh Taxi',  route_img: '/images/tours/dharamshala-ropeway.webp', },
+        { id: 24, title: 'Dharamshala to Solan Taxi',  route_img: '/images/tours/golden-temple.webp', },
+        { id: 25, title: 'Hamirpur To Dharamshala Taxi',  route_img: '/images/tours/dharamshala-taxi-tour.png', },
         {
             id: 26, title: 'Bilaspur To Dharmahala Taxi',  route_img: '/images/tours/dalhousie.png',
         },
-        { id: 27, title: 'Dharamshala To Baddi Taxi',  route_img: '/images/tours/dalhousie.png', },
-        { id: 28, title: 'Dharamshala To Haridwar Taxi',  route_img: '/images/tours/dalhousie.png', },
-        { id: 29, title: 'Dharamshala To Jammu Taxi',  route_img: '/images/tours/dalhousie.png', },
+        { id: 27, title: 'Dharamshala To Baddi Taxi',  route_img: '/images/tours/dharamshala-ropeway.webp', },
+        { id: 28, title: 'Dharamshala To Haridwar Taxi',  route_img: '/images/destinations/dharamshala.png', },
+        { id: 29, title: 'Dharamshala To Jammu Taxi',  route_img: '/images/tours/golden-temple.webp', },
         { id: 30, title: 'Dharamshala To Ludhiana Taxi',  route_img: '/images/tours/dalhousie.png', },
-        { id: 31, title: 'Dharamshala To Pathankot Taxi',  route_img: '/images/tours/dalhousie.png', },
-        { id: 32, title: 'Kasol To Dharamshala Taxi',  route_img: '/images/tours/dalhousie.png', },
-        { id: 33, title: 'Dharamshala To Chamunda Taxi',  route_img: '/images/tours/dalhousie.png', }
+        { id: 31, title: 'Dharamshala To Pathankot Taxi',  route_img: '/images/tours/Baijnath.jpg', },
+        { id: 32, title: 'Kasol To Dharamshala Taxi',  route_img: '/images/tours/dharamshala-taxi-tour.png', },
+        { id: 33, title: 'Dharamshala To Chamunda Taxi',  route_img: '/images/tours/devi-darshan.jpg', }
     ];
 
     return (
