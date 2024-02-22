@@ -4,6 +4,7 @@ import nodemailer from "nodemailer";
 export async function POST(request) {
   try {
     const { name, message, email, phoneNumber } = await request.json();
+    console.log(name, message, email, phoneNumber)
 
     const transporter = nodemailer.createTransport({
       service: "gmail",
@@ -11,8 +12,8 @@ export async function POST(request) {
       port: 465,
       secure: true,
       auth: {
-        user: "ishavbhattkhaniyara@gmail.com",
-        pass: "fdqs lttd hdry edof",
+        user: process.env.MY_EMAIL,
+        pass: process.env.MY_PASSWORD,
       },
     });
 

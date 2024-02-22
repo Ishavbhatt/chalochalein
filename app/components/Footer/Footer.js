@@ -39,10 +39,10 @@ export default function Footer() {
                 </li>
               </ul>
               <div className={styles.social_icons_main}>
-                <Link href="/" aria-label="Facebook" className={styles.social_icons}>
+                <Link href="https://www.facebook.com/people/Chalo-Chalein-Tours-and-Travels/61556841593754/?mibextid=ZbWKwL" target="_blank" aria-label="Facebook" className={styles.social_icons}>
                   <FaFacebookF />
                 </Link>
-                <Link href="/" aria-label="Instagram" className={styles.social_icons}>
+                <Link href="https://www.instagram.com/aochalochalein/" target="_blank" aria-label="Instagram" className={styles.social_icons}>
                   <FaInstagram />
                 </Link>
                 {/* <Link href="/" className={styles.social_icons}>

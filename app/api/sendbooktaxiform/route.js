@@ -11,8 +11,8 @@ export async function POST(request) {
       port: 465,
       secure: true,
       auth: {
-        user: "ishavbhattkhaniyara@gmail.com",
-        pass: "fdqs lttd hdry edof",
+        user: process.env.MY_EMAIL,
+        pass: process.env.MY_PASSWORD,
       },
     });
 

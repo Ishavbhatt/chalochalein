@@ -12,6 +12,8 @@ import { FaFacebookF } from "react-icons/fa6";
 import { FiInstagram } from "react-icons/fi";
 
 function ContactUsComponent() {
+    const [sending, setSending] = useState(false);
+
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -27,7 +29,7 @@ function ContactUsComponent() {
 
     const sendMail = async (e) => {
         e.preventDefault();
-
+        setSending(true);
         const response = await fetch('/api/sendContactForm', {
             method: 'POST',
             headers: {
@@ -43,8 +45,10 @@ function ContactUsComponent() {
 
         if (response.status === 200) {
             showSuccessToast("Message Submit Successfuly!")
+            setSending(false);
             setFormData({ name: '', email: '', message: '', phoneNumber: '' });
         } else {
+            setSending(false);
             showErrorToast("Something Went Wrong. Please Try Again Later...")
         }
     };
@@ -73,14 +77,14 @@ function ContactUsComponent() {
                                     <div className={styles.contact_main_left_details_child}>
                                         <PiMapPinFill />
                                         <Link href="https://maps.app.goo.gl/3XAQGtFt4k7oMKDq6" className={styles.contact_links}>
-                                        Shyam Nagar, Uparli Barol, Dharamshala, Himachal Pradesh 176215
+                                            Shyam Nagar, Uparli Barol, Dharamshala, Himachal Pradesh 176215
                                         </Link>
                                     </div>
                                     <div className="d_flex gap_10">
-                                        <Link href="https://www.facebook.com/asianclassic?fref=ts" className={styles.round_icons}>
+                                        <Link href="https://www.facebook.com/people/Chalo-Chalein-Tours-and-Travels/61556841593754/?mibextid=ZbWKwL" target="_blank" className={styles.round_icons}>
                                             <FaFacebookF />
                                         </Link>
-                                        <Link href="https://www.instagram.com/act_dmc_singapore/" className={styles.round_icons}>
+                                        <Link href="https://www.instagram.com/aochalochalein" target="_blank" className={styles.round_icons}>
                                             <FiInstagram />
                                         </Link>
                                     </div>
@@ -144,7 +148,7 @@ function ContactUsComponent() {
                                             className="form-control"
                                             id="message"
                                             name="message"
-                                            style={{resize:'vertical'}}
+                                            style={{ resize: 'vertical' }}
                                             value={formData.message}
                                             onChange={handleInputChange}
                                             rows="4"
@@ -155,16 +159,17 @@ function ContactUsComponent() {
                                     <button type="submit" className="common_btn justify_content_center">
                                         Send Message
                                     </button>
+                                    {sending && <p className={styles.sending_msg}>Sending, Please Wait!</p>}
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2007.2397935734793!2d76.32651030811837!3d32.21065684345586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x29892b774742b635%3A0x5244c2d8b236f47f!2sChalo%20Chalein%20Tours%20and%20Travel!5e0!3m2!1sen!2sin!4v1708517075479!5m2!1sen!2sin" 
-                width="100%" height="450"
-                allowFullScreen=""
-                style={{border:'0'}}
-                loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2007.2397935734793!2d76.32651030811837!3d32.21065684345586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x29892b774742b635%3A0x5244c2d8b236f47f!2sChalo%20Chalein%20Tours%20and%20Travel!5e0!3m2!1sen!2sin!4v1708517075479!5m2!1sen!2sin"
+                    width="100%" height="450"
+                    allowFullScreen=""
+                    style={{ border: '0' }}
+                    loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </section>
         </>
     );

@@ -113,7 +113,12 @@
             //   border: 1px solid $paragraph-color !important;
           }
         }
-
+        .sending_msg {
+          font-size: 13px;
+          color: $secoundary-color;
+          text-align: left;
+          margin-top: 10px;
+      }
       }
 
       button {

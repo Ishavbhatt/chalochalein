@@ -6,11 +6,12 @@ import Footer from './components/Footer/Footer';
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Script from 'next/script';
+import WhatsappIcon from './components/WhatsappIcon/WhatsappIcon';
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
       {/* google tag manager */}
       <Script
@@ -60,7 +61,7 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <Footer />
-
+        <WhatsappIcon />
         <ToastContainer
           position="top-center"
           autoClose={5000}

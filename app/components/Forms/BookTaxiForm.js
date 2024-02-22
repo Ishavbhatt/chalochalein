@@ -44,7 +44,6 @@ export default function BookTaxiForm() {
         date: formattedDate,
       })
     });
-    console.log(response);
 
     if (response.status === 200) {
       setSending(false);
