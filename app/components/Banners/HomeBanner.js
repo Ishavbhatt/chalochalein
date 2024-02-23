@@ -87,8 +87,8 @@ const HomeBanner = () => {
           </Slider>
         </section>
       ) : (
-        <section className={styles.mobile_banner}>
-          <Slider {...settings} className='banner_slider' aria-hidden={true}>
+        <section className={styles.mobile_banner} aria-hidden={true}>
+          <Slider {...settings} className='banner_slider' >
             {banners.map((banner, index) => (
               <div className={`slick-slide ${styles.home_banner} ${index === 0 ? 'slick-active slick-current' : ''}`} key={banner.id}>
                 <Image
