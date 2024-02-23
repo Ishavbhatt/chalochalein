@@ -66,7 +66,7 @@ const HomeBanner = () => {
   return (
     <>
       {isDesktop ? (
-        <section className={styles.desktop_banner}>
+        <section className={styles.desktop_banner} aria-hidden={true}>
           <Slider {...settings} className="banner_slider">
             {banners.map((banner, index) => (
               <div className={`slick-slide ${styles.home_banner} ${index === 0 ? 'slick-active slick-current' : ''}`} key={banner.id}>
@@ -88,7 +88,7 @@ const HomeBanner = () => {
         </section>
       ) : (
         <section className={styles.mobile_banner}>
-          <Slider {...settings} className='banner_slider'>
+          <Slider {...settings} className='banner_slider' aria-hidden={true}>
             {banners.map((banner, index) => (
               <div className={`slick-slide ${styles.home_banner} ${index === 0 ? 'slick-active slick-current' : ''}`} key={banner.id}>
                 <Image

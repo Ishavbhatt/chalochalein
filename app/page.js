@@ -28,6 +28,7 @@ export default function Home() {
   return (
     <main>
       <HomeBanner />
+      <h1 style={{display:'none'}}>Book Taxi in Dharamshala</h1>
       <Whychooseus />
       <MainTaxis />
 

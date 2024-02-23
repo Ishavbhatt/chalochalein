@@ -87,6 +87,7 @@
                             }
                         }
                     }
+                   
                 }
 
                 &:hover {
@@ -108,3 +109,8 @@
     }
 
 }
+@media screen and (max-width: 768px) {
+    .taxis_listing_child.common_animate_btn{
+        font-size: 12px;
+    }
+} 

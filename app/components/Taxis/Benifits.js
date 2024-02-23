@@ -46,7 +46,6 @@ const Benefits = () => {
                     <div className={styles.benefits_sec_main}>
                         {benefits.map((benefit) => (
                             <div className={styles.benefits_sec_main_child} key={benefit.id}>
-                                <Link href={'/'}></Link>
                                 <div className={styles.benefits_sec_main_child_image}>
                                     {benefit.icon}
                                 </div>
