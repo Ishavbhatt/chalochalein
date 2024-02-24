@@ -97,6 +97,7 @@
                         }
                     }
                 }
+               
             }
             @media screen and (max-width: 600px) {
                 flex-wrap: wrap;
@@ -110,7 +111,7 @@
 
 }
 @media screen and (max-width: 768px) {
-    .taxis_listing_child.common_animate_btn{
+    .taxiservices_taxi_services .taxiservices_taxis_listing.taxiservices_taxis_listing_main .taxiservices_taxis_listing_child .common_animate_btn{
         font-size: 12px;
     }
 } 

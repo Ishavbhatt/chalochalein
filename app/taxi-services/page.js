@@ -64,15 +64,17 @@ export default function TaxiServices() {
         },
         {
             id: 8,
-            taxi_name: `Sedan`,
-            seats: '4 + 1',
-            taxi_image: '/images/taxi/sedar-car.jpg'
+            // taxi_name: `Sedan`,
+            taxi_name: `Scorpio`,
+            seats: '6 + 1',
+            taxi_image: '/images/taxi/scorpio.jpg'
         },
         {
             id: 9,
-            taxi_name: `Suv`,
+            // taxi_name: `Suv`,
+            taxi_name: `Fortuner`,
             seats: '6 + 1',
-            taxi_image: '/images/taxi/suv-car.jpg'
+            taxi_image: '/images/taxi/fortuner.jpg'
         },
         {
             id: 10,
