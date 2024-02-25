@@ -11,38 +11,38 @@ import { useState, useEffect } from "react";
 const HomeBanner = () => {
   const [isDesktop, setIsDesktop] = useState(true);
 
-  const banners = [
-    {
-      id: 1,
-      title: `Seamless Transfers`,
-      description: 'Effortless journeys across Himachal Pradesh with our reliable taxi services. Your destination, our priority.',
-      // imgSrc: "/images/banners/taxi-banner.webp",
-      imgSrc: '/images/banners/home-banner4.jpg',
-      mobileBannerImage: "/images/banners/taxi-banner.webp",
-      button_text: 'Book A Taxi',
-      button_icon: <FaTaxi />
-    },
-    {
-      id: 2,
-      title: `Journey into Himachal's Charm`,
-      description: `Explore Himachal's wonders with our curated tours. Discover the beauty and culture that define this mesmerizing region`,
-      // imgSrc: "/images/banners/tours-banner.jpg",
-      imgSrc: '/images/banners/home-baner2.jpeg',
-      mobileBannerImage: "/images/banners/tours-banner.jpg",
-      button_text: 'Book a Tours',
-      button_icon: <MdOutlineTour />
-    },
-    {
-      id: 3,
-      title: `Trek Beyond Boundaries`,
-      description: `Unleash your spirit of adventure amidst the Himalayas. Experience exhilarating treks and stunning vistas that defy imagination.`,
-      // imgSrc: "/images/banners/trekking-banner.jpg",
-      imgSrc: '/images/banners/home-banner1.jpeg',
-      mobileBannerImage: "/images/banners/trekking-banner.jpg",
-      button_text: 'Book Treks',
-      button_icon: <TbTrekking />
-    },
-  ];
+  // const banners = [
+  //   {
+  //     id: 1,
+  //     title: `Seamless Transfers`,
+  //     description: 'Effortless journeys across Himachal Pradesh with our reliable taxi services. Your destination, our priority.',
+  //     // imgSrc: "/images/banners/taxi-banner.webp",
+  //     imgSrc: '/images/banners/home-banner4.jpg',
+  //     mobileBannerImage: "/images/banners/taxi-banner.webp",
+  //     button_text: 'Book A Taxi',
+  //     button_icon: <FaTaxi />
+  //   },
+  //   {
+  //     id: 2,
+  //     title: `Journey into Himachal's Charm`,
+  //     description: `Explore Himachal's wonders with our curated tours. Discover the beauty and culture that define this mesmerizing region`,
+  //     // imgSrc: "/images/banners/tours-banner.jpg",
+  //     imgSrc: '/images/banners/home-baner2.jpeg',
+  //     mobileBannerImage: "/images/banners/tours-banner.jpg",
+  //     button_text: 'Book a Tours',
+  //     button_icon: <MdOutlineTour />
+  //   },
+  //   {
+  //     id: 3,
+  //     title: `Trek Beyond Boundaries`,
+  //     description: `Unleash your spirit of adventure amidst the Himalayas. Experience exhilarating treks and stunning vistas that defy imagination.`,
+  //     // imgSrc: "/images/banners/trekking-banner.jpg",
+  //     imgSrc: '/images/banners/home-banner1.jpeg',
+  //     mobileBannerImage: "/images/banners/trekking-banner.jpg",
+  //     button_text: 'Book Treks',
+  //     button_icon: <TbTrekking />
+  //   },
+  // ];
 
   const settings = {
     dots: true,
