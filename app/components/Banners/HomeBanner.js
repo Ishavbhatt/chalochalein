@@ -11,38 +11,38 @@ import { useState, useEffect } from "react";
 const HomeBanner = () => {
   const [isDesktop, setIsDesktop] = useState(true);
 
-  // const banners = [
-  //   {
-  //     id: 1,
-  //     title: `Seamless Transfers`,
-  //     description: 'Effortless journeys across Himachal Pradesh with our reliable taxi services. Your destination, our priority.',
-  //     // imgSrc: "/images/banners/taxi-banner.webp",
-  //     imgSrc: '/images/banners/home-banner4.jpg',
-  //     mobileBannerImage: "/images/banners/taxi-banner.webp",
-  //     button_text: 'Book A Taxi',
-  //     button_icon: <FaTaxi />
-  //   },
-  //   {
-  //     id: 2,
-  //     title: `Journey into Himachal's Charm`,
-  //     description: `Explore Himachal's wonders with our curated tours. Discover the beauty and culture that define this mesmerizing region`,
-  //     // imgSrc: "/images/banners/tours-banner.jpg",
-  //     imgSrc: '/images/banners/home-baner2.jpeg',
-  //     mobileBannerImage: "/images/banners/tours-banner.jpg",
-  //     button_text: 'Book a Tours',
-  //     button_icon: <MdOutlineTour />
-  //   },
-  //   {
-  //     id: 3,
-  //     title: `Trek Beyond Boundaries`,
-  //     description: `Unleash your spirit of adventure amidst the Himalayas. Experience exhilarating treks and stunning vistas that defy imagination.`,
-  //     // imgSrc: "/images/banners/trekking-banner.jpg",
-  //     imgSrc: '/images/banners/home-banner1.jpeg',
-  //     mobileBannerImage: "/images/banners/trekking-banner.jpg",
-  //     button_text: 'Book Treks',
-  //     button_icon: <TbTrekking />
-  //   },
-  // ];
+  const banners = [
+    {
+      id: 1,
+      title: `Seamless Transfers`,
+      description: 'Effortless journeys across Himachal Pradesh with our reliable taxi services. Your destination, our priority.',
+      // imgSrc: "/images/banners/taxi-banner.webp",
+      imgSrc: '/images/banners/taxi-home-banner.webp',
+      mobileBannerImage: "/images/banners/taxi-home-banner-mobile.webp",
+      button_text: 'Book A Taxi',
+      button_icon: <FaTaxi />
+    },
+    {
+      id: 2,
+      title: `Trek Beyond Boundaries`,
+      description: `Unleash your spirit of adventure amidst the Himalayas. Experience exhilarating treks and stunning vistas that defy imagination.`,
+      // imgSrc: "/images/banners/trekking-banner.jpg",
+      imgSrc: '/images/banners/trekking-home-banner.webp',
+      mobileBannerImage: "/images/banners/trekking-home-banner-mobile.webp",
+      button_text: 'Book Treks',
+      button_icon: <TbTrekking />
+    },
+    {
+      id: 3,
+      title: `Journey into Himachal's Charm`,
+      description: `Explore Himachal's wonders with our curated tours. Discover the beauty and culture that define this mesmerizing region`,
+      // imgSrc: "/images/banners/tours-banner.jpg",
+      imgSrc: '/images/banners/tours-home-banner.webp',
+      mobileBannerImage: "/images/banners/tours-home-banner-mobile.webp",
+      button_text: 'Book a Tours',
+      button_icon: <MdOutlineTour />
+    },
+  ];
 
   const settings = {
     dots: true,
@@ -75,7 +75,7 @@ const HomeBanner = () => {
               <div className={`slick-slide ${styles.home_banner} ${index === 0 ? 'slick-active slick-current' : ''}`} key={banner.id}>
                 <Image
                   src={banner.imgSrc}
-                  alt={banner.button_icon + 'with Chalo Chalein'}
+                  alt={banner.button_text + 'with Chalo Chalein'}
                   fill={true}
                 />
                 <div className="container">
@@ -95,8 +95,8 @@ const HomeBanner = () => {
             {banners.map((banner, index) => (
               <div className={`slick-slide ${styles.home_banner} ${index === 0 ? 'slick-active slick-current' : ''}`} key={banner.id}>
                 <Image
-                  src={banner.imgSrc}
-                  alt={banner.button_icon + 'with Chalo Chalein'}
+                  src={banner.mobileBannerImage}
+                  alt={banner.button_text + 'with Chalo Chalein'}
                   fill={true}
                 />
                 <div className={styles.home_banner_content}>
