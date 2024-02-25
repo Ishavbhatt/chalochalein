@@ -76,12 +76,12 @@ export default function TaxiServices() {
             seats: '6 + 1',
             taxi_image: '/images/taxi/fortuner.jpg'
         },
-        // {
-        //     id: 10,
-        //     taxi_name: `Tempo Traveller`,
-        //     seats: '12 + 1',
-        //     taxi_image: '/images/taxi/tampo-traveller.jpg'
-        // },
+        {
+            id: 10,
+            taxi_name: `Tempo Traveller`,
+            seats: '12 + 1',
+            taxi_image: '/images/taxi/tampo-traveller.jpg'
+        },
     ];
 
     return (
