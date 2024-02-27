@@ -84,7 +84,7 @@ function ContactUsComponent() {
                                         <Link href="https://www.facebook.com/people/Chalo-Chalein-Tours-and-Travels/61556841593754/?mibextid=ZbWKwL" target="_blank" className={styles.round_icons}>
                                             <FaFacebookF />
                                         </Link>
-                                        <Link href="https://www.instagram.com/aochalochalein" target="_blank" className={styles.round_icons}>
+                                        <Link href="https://www.instagram.com/chalochaleintoursandtravel/" target="_blank" className={styles.round_icons}>
                                             <FiInstagram />
                                         </Link>
                                     </div>

@@ -42,7 +42,7 @@ export default function Footer() {
                 <Link href="https://www.facebook.com/people/Chalo-Chalein-Tours-and-Travels/61556841593754/?mibextid=ZbWKwL" target="_blank" aria-label="Facebook" className={styles.social_icons}>
                   <FaFacebookF />
                 </Link>
-                <Link href="https://www.instagram.com/aochalochalein/" target="_blank" aria-label="Instagram" className={styles.social_icons}>
+                <Link href="https://www.instagram.com/chalochaleintoursandtravel//" target="_blank" aria-label="Instagram" className={styles.social_icons}>
                   <FaInstagram />
                 </Link>
                 {/* <Link href="/" className={styles.social_icons}>
