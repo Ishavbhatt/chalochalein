@@ -44,6 +44,7 @@ export default function Footer() {
                 </Link>
                 <Link href="https://www.instagram.com/chalochaleintoursandtravel//" target="_blank" aria-label="Instagram" className={styles.social_icons}>
                   <FaInstagram />
+
                 </Link>
                 {/* <Link href="/" className={styles.social_icons}>
                   <FaTwitter />
@@ -102,9 +103,11 @@ export default function Footer() {
                     height={100}
                     width={100}
                     alt="Shimla"
+                  
                   />
                   <Link href='/destinations/shimla'>Shimla</Link>
                 </div>
+                
                 <div className={styles.projects_list}>
                   <Image className={styles.project_image}
                     src="/images/destinations/dalhousie.png"
@@ -112,6 +115,7 @@ export default function Footer() {
                     width={100}
                     alt="Dalhousie"
                   />
+
                   <Link href='/destinations/dalhousie'>Dalhousie</Link>
                 </div>
                 <div className={styles.projects_list}>
@@ -121,6 +125,7 @@ export default function Footer() {
                     width={100}
                     alt="Kullu"
                   />
+
                   <Link href='/destinations/kullu'>Kullu</Link>
                 </div>
                 <div className={styles.projects_list}>
@@ -130,8 +135,10 @@ export default function Footer() {
                     width={100}
                     alt="kasol"
                   />
+                    
                   <Link href='/destinations/kasol'>kasol</Link>
                 </div>
+                   
                 <div className={styles.projects_list}>
                   <Image className={styles.project_image}
                     src="/images/destinations/manali.png"
@@ -139,12 +146,13 @@ export default function Footer() {
                     width={100}
                     alt="Manali"
                   />
-                  <Link href='/destinations/manali'>Manali</Link>
+                  <Link href='/destinations/manali'> Manali</Link>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
         <div className={styles.footer_bottom}>
           <p>Copyright © 2024 Chalo Chalein Tours & Travel</p>
           <p>Design & Developed by <Link href='https://ishav.netlify.app' target="_blank">Ishav Bhatt</Link></p>

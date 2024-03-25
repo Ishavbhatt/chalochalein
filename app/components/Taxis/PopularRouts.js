@@ -125,17 +125,16 @@ const PopularRoutes = () => {
                     <div className={styles.popular_routes_main}>
                         {popularRoutes.map((route) => (
                             <div className={styles.popular_routes_child} key={route.id}>
-                                <Link href='tel:8894460060' />
+                                <Link href='tel:8894460060' aria-label={'Book' + route.title}></Link>
                                 <div className={styles.popular_routes_child_image}>
                                     <Image src={route.route_img} fill={true} alt={route.title} />
                                 </div>
                                 <div className={styles.popular_routes_child_right}>
                                     <p>{route.title}</p>
-                                    <span>Book Now</span>
+                                    <span aria-label={'Book' + route.title}>Book Now</span>
                                 </div>
                             </div>
                         ))}
-
                     </div>
                 </div>
             </section>

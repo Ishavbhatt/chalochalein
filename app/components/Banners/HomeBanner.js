@@ -99,10 +99,12 @@ const HomeBanner = () => {
                   alt={banner.button_text + 'with Chalo Chalein'}
                   fill={true}
                 />
+                
                 <div className={styles.home_banner_content}>
                   <h2 className="common_headings_white">{banner.title}</h2>
                   <p className="common_para_white">{banner.description}</p>
-                  <Link href="tel:8894460060" className="common_animate_btn">{banner.button_icon} {banner.button_text}</Link>
+                  <Link href="tel:8894460060" className="common_animate_btn">{banner.button_icon} {banner.button_text}
+                  </Link>
                 </div>
               </div>
             ))}
@@ -117,12 +119,14 @@ const HomeBanner = () => {
                 src={banner.imgSrc}
                 alt={banner.button_icon + 'with Chalo Chalein'}
                 fill={true}
+
               />
               <div className="container">
                 <div className={styles.home_banner_content}>
                   <h2 className="common_headings_white">{banner.title}</h2>
                   <p className="common_para_white">{banner.description}</p>
-                  <Link href="tel:8894460060" className="common_animate_btn">{banner.button_icon} {banner.button_text}</Link>
+                  <Link href="tel:8894460060" className="common_animate_btn">{banner.button_icon} {banner.button_text}
+                  </Link>
                 </div>
               </div>
             </div>
